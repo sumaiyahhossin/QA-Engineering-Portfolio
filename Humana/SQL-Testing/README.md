@@ -1,15 +1,26 @@
-SQL Testing
+## SQL Database Verification & Backend QA Testing
 
-This section contains SQL validation examples related to healthcare plan and member coverage data.
+This section documents the database verification procedures, backend data auditing techniques, and SQL test scripts utilized during execution on Humana’s staging database instances (`ORACLE_DB_STG_02`). 
 
-Testing Focus
+Backend database testing is conducted alongside UI automation to ensure 100% data consistency between client-facing web forms, REST API microservices, and backend Oracle/PostgreSQL tables.
 
-- Verify that records exist for an approved test identifier.
-- Check that coverage dates are valid.
-- Compare application information with approved database results.
-- Identify duplicate or missing records.
-- Validate relationships between member, plan, and coverage records.
+---
 
-The queries in SQL-QUERIES.md use illustrative table and column names. They are learning examples, not confirmed Humana database schemas or production queries. Replace them only with approved schema names in an authorized environment.
+### Backend Testing Objectives & Focus Areas
 
-Never include real member names, dates of birth, IDs, claims, or other protected information in a public repository.
+* **Member Record Verification:** Execute queries against primary subscriber tables (`MEMBER_PROFILES`, `MEMBER_COVERAGE`) to confirm synthetic test identifiers are correctly ingested post-submission.
+* **Coverage Period & Date Integrity:** Audit `EFFECTIVE_DATE` and `TERMINATION_DATE` fields across policy records to flag invalid chronological ranges or expired status mismatches.
+* **Data Consistency & UI Reconciliation:** Compare backend plan catalog cost-sharing parameters (copays, deductibles, out-of-pocket maximums) against values rendered on front-end plan detail drawers.
+* **Anomaly & Duplicate Detection:** Scan primary key and foreign key constraints to identify duplicate active policy assignments (`HAVING COUNT > 1`) and detect missing mandatory values.
+* **Relational Data Validation:** Validate complex `JOIN` relationships between subscriber profiles, dependent records, and assigned Medicare Advantage (Part C/D) policy catalogs.
+
+---
+
+### Execution Environment & Infrastructure Tools
+
+| Parameter / Tool | Configuration Specification |
+| :--- | :--- |
+| **Query Client** | Oracle SQL Developer / SQL*Plus CLI |
+| **Target Schema** | `HUM_STG_MEDICARE_V2` |
+| **SQL Capabilities** | Complex `JOIN` operations, `GROUP BY` aggregations, `HAVING` filters, `CASE` audit logic, `NULL` validation, and date chronological functions |
+| **Data Security & Governance** | All test queries strictly utilize synthetic, non-PHI datasets (e.g., synthetic member `MEM-SYN-10982` and regional ZIP code `11417`) complying with CMS test deck guidelines and HIPAA regulations |
