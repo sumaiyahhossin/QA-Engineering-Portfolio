@@ -10,8 +10,6 @@
 
 The latest completed workflow run reviewed for this report was **Run #37**, completed on **November 5, 2026**.
 
-<badge-placeholder />
-
 | Metric | Result |
 | :--- | :--- |
 | Workflow | Humana Selenium Tests |
@@ -33,7 +31,7 @@ The latest completed workflow run reviewed for this report was **Run #37**, comp
 | ZIP code entry | The input value did not match the expected ZIP code |
 | Plan search results | Expected results heading was not found before the wait timed out |
 
-These results describe what the automated run reported. They do not, by themselves, establish whether the cause is an application defect, a changed public page, test data, or an automation issue. Each failure needs investigation before a defect is assigned.
+These results describe what the automated run reported. They do not, by themselves, establish whether the cause is an application defect, a changed page, test data, or an automation issue. Each failure needs investigation before a defect is assigned.
 
 ## 3. Execution Review
 
@@ -43,8 +41,8 @@ When reviewing a run, check:
 - Failed test names and assertion messages.
 - Browser version and driver initialization.
 - Element locators and page changes.
-- Test data and any environment-dependent behavior.
-- Whether the test was skipped because required configuration was unavailable.
+- Test data and environment-dependent behavior.
+- Whether a test was skipped because required configuration was unavailable.
 
 ## 4. Status Definitions
 
@@ -59,5 +57,7 @@ When reviewing a run, check:
 ## 5. Reporting Notes
 
 Execution status is updated from the actual GitHub Actions and TestNG reports. A passing result should only be recorded when the corresponding run confirms that the tests completed successfully.
+
+Before running this suite again, confirm that every target URL is an environment you are authorized to automate. Do not run automated tests against a public production site without explicit authorization.
 
 This report is a snapshot of the latest run reviewed, not a claim that the suite is currently passing.
