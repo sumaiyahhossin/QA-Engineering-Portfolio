@@ -49,6 +49,7 @@ Healthfirst
 Independent Portfolio Practice
 - [Postman Echo API Testing](Portfolio-Practice/API-Testing/README.md)
 - [Postman Collection](Portfolio-Practice/API-Testing/Postman-Echo-API-Tests.postman_collection.json)
+- [Playwright Automation Practice](Portfolio-Practice/Playwright-Demo/README.md)
 
 Learning and Interview Preparation
 - [Study Notes](Study-Notes/README.md)
