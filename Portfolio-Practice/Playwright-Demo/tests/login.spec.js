@@ -17,7 +17,7 @@ test.describe('Public demo login page', () => {
     await page.getByRole('button', { name: 'Login' }).click();
 
     await expect(page.locator('#flash')).toContainText('You logged into a secure area!');
-    await expect(page.getByRole('heading', { name: 'Secure Area' })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Secure Area', exact: true })).toBeVisible();
 
     await page.getByRole('link', { name: 'Logout' }).click();
     await expect(page.locator('#flash')).toContainText('You logged out of the secure area!');
