@@ -57,17 +57,7 @@ Independent Portfolio Practice
 - [Postman Collection](Portfolio-Practice/API-Testing/Postman-Echo-API-Tests.postman_collection.json)
 - [Playwright Automation Practice](Portfolio-Practice/Playwright-Demo/README.md)
 
-Portfolio Build Status\n- [Portfolio Roadmap](PORTFOLIO-ROADMAP.md)\n\nLearning and Interview Preparation
-- [Study Notes](Study-Notes/README.md)
-- [Manual Testing Notes](Study-Notes/Manual-Testing/README.md)
-- [Automation Notes](Study-Notes/Automation-Testing/README.md)
-- [API Testing Notes](Study-Notes/API-Testing/README.md)
-- [SQL Testing Notes](Study-Notes/SQL-Testing/README.md)
-- [Agile and Scrum Notes](Study-Notes/Agile-Scrum/README.md)
-- [QA Concepts](Study-Notes/QA-Concepts/README.md)
-- [Interview Preparation](Interview-Preparation/README.md)
-
-Professional Summary
+Portfolio Build Status\n- [Portfolio Roadmap](PORTFOLIO-ROADMAP.md)\n\nProfessional Summary
 
 Quality assurance specialist with 3 years of experience in manual and automated testing of healthcare and insurance applications. Skilled in test design, eligibility-based workflows, defect analysis, and reliable software releases.
 
