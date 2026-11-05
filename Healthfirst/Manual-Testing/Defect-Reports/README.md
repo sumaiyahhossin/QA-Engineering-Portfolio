@@ -1,28 +1,7 @@
-Defect Reports
+# Defect Reports
 
-Defect ID:
-Summary:
-Module / Workflow:
-Environment:
-Build:
-Severity:
-Priority:
-Date Reported:
+This folder contains a reusable defect report template for documenting issues found during testing.
 
-Preconditions:
+- [Defect report template](DEFECT-REPORT-TEMPLATE.md)
 
-Steps to Reproduce:
-1.
-2.
-3.
-
-Expected Result:
-
-Actual Result:
-
-Evidence:
-Related Test Case:
-Status:
-Retest Result:
-
-Use sanitized screenshots and approved test data only. Do not include member identifiers, personal information, tokens, internal URLs, or confidential application details in this public portfolio.
+A defect report should include clear reproduction steps, expected and actual results, the environment, severity, priority, and the related test case.
