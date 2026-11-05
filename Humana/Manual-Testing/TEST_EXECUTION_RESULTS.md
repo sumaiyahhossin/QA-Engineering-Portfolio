@@ -6,7 +6,7 @@ Company: Humana
 
 Execution Summary
 
-This document is used to record the results of manual test execution for healthcare plan browsing and member coverage workflows.
+This document is used to record the results of manual test execution for healthcare plan browsing and public account access workflows.
 
 Test Execution Details
 
@@ -52,7 +52,7 @@ Actual Result: Pending execution
 
 Test Case ID: TC006
 
-Test Scenario: Verify member coverage information
+Test Scenario: Verify sign-in advances to the next account setup step
 
 Execution Status: Not Run
 
