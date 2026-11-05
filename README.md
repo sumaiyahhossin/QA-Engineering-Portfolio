@@ -2,7 +2,7 @@ QA Engineering Portfolio
 
 Welcome to my QA Engineering Portfolio.
 
-This repository brings together selected QA examples and technical skills across healthcare and insurance application testing. It includes project documentation, manual test cases, Selenium automation, API testing practice, and SQL validation examples.
+This repository brings together selected QA examples and technical skills across healthcare and insurance application testing. It includes project documentation, manual test cases, Selenium automation, and SQL validation examples.
 
 Professional Experience
 
@@ -52,19 +52,17 @@ Healthfirst
 - [API Testing](Healthfirst/API-Testing/README.md)
 - [SQL Testing](Healthfirst/SQL-Testing/README.md)
 
-Independent Portfolio Practice
-- [Postman Echo API Testing](Portfolio-Practice/API-Testing/README.md)
-- [Postman Collection](Portfolio-Practice/API-Testing/Postman-Echo-API-Tests.postman_collection.json)
-- [Playwright Automation Practice](Portfolio-Practice/Playwright-Demo/README.md)
+Portfolio Build Status
+- [Portfolio Roadmap](PORTFOLIO-ROADMAP.md)
 
-Portfolio Build Status\n- [Portfolio Roadmap](PORTFOLIO-ROADMAP.md)\n\nProfessional Summary
+Professional Summary
 
 Quality assurance specialist with 3 years of experience in manual and automated testing of healthcare and insurance applications. Skilled in test design, eligibility-based workflows, defect analysis, and reliable software releases.
 
 Portfolio Notes
 
-- This repository contains selected examples and practice materials that demonstrate QA methods and technical skills.
+- This repository contains selected examples that demonstrate QA methods and technical skills.
 - No confidential employer documents, production credentials, private member information, or internal application details should be included.
 - Test execution results are marked Not Run, Pending, or Skipped unless actual execution has been verified.
-- Employer-related sections summarize the user's experience. Generic and independent practice materials are labeled separately.
+- Employer-related sections summarize the user's experience.
 - Public Humana plan browsing is not the same as Medicare eligibility, enrollment, or access to private member coverage.
