@@ -1,35 +1,41 @@
-Test Strategy
+# Test Strategy
 
-Project Area: Member-Facing Healthcare Workflows
+**Project area:** Member-facing healthcare workflows
 
-1. Functional Coverage
-Focus on member-facing navigation, eligibility-based workflows, health plan selection, validation messages, and error handling.
+## Functional Testing
 
-2. Positive Testing
-Verify expected behavior when approved valid test data is entered and supported workflows are completed.
+Cover the main member workflows, eligibility-related steps, plan browsing, plan selection, required fields, and error messages.
 
-3. Negative Testing
-Check missing required fields, invalid formats, unsupported values, and unsuccessful service responses.
+## Positive and Negative Testing
 
-4. Boundary Testing
-Check values at and around documented limits, such as minimum and maximum allowed input lengths or date boundaries.
+Check normal user flows as well as missing information, invalid formats, unsupported values, and unsuccessful service responses.
 
-5. API Testing
-Use Postman to validate request methods, status codes, response structure, required fields, error responses, and data consistency against documented API requirements.
+## Boundary Testing
 
-6. UI Automation
-Use Playwright or Cypress for stable, repeatable browser workflows. Prefer accessible locators, explicit assertions, isolated test data, and cleanup where applicable.
+Check values around documented limits, including date ranges and minimum or maximum field lengths.
 
-7. Data Validation
-Use approved SQL read queries or other authorized data checks to compare application results with expected test records.
+## UI Automation
 
-8. Regression Testing
-Retest impacted areas after code changes and defect fixes. Include related workflows that could be affected by the change.
+Use Playwright and Cypress for repeatable browser checks. Keep tests focused on user-visible behavior, use stable locators, and avoid depending on test execution order.
 
-9. Defect Management
-Document clear reproduction steps, expected and actual behavior, severity, priority, and evidence. Retest fixes and run relevant regression cases.
+## API Testing
 
-10. Test Data and Privacy
-Use only approved test data. Never publish member information, production credentials, internal URLs, or confidential application details.
+Use Postman to check request methods, status codes, response structure, required fields, error responses, and values against the API requirements.
 
-This is a general portfolio strategy, not an internal Healthfirst document.
+## Data Validation
+
+Compare application or API values with expected test data. SQL examples in this portfolio use generic table and column names.
+
+## Regression Testing
+
+After a change or defect fix, retest the affected workflow and check related areas that could be impacted.
+
+## Defect Reporting
+
+Include clear steps to reproduce, expected behavior, actual behavior, severity, priority, and relevant evidence. Retest the fix and run the related regression checks.
+
+## Test Data
+
+Use synthetic values in public examples. Do not include member information, credentials, private URLs, internal schemas, or confidential employer material.
+
+This strategy describes the approach used in the portfolio examples; it is not an internal Healthfirst document.
