@@ -1,6 +1,6 @@
 # QA Test Environment Overview
 
-**Project Focus:** Healthcare plan browsing and public account access  
+**Project Focus:** Healthcare plan browsing and member-facing workflows  
 **Role:** Junior QA Analyst  
 **Testing Areas:** Manual functional testing, browser automation, and SQL validation
 
@@ -10,7 +10,7 @@
 
 Testing activities covered application workflows in QA or staging environments. The environment information in this public document is intentionally general; internal hostnames, private routes, infrastructure identifiers, and connection details are not included.
 
-The documented scope includes plan browsing, plan information display, public sign-in behavior, form validation, and selected data checks where authorized access was available.
+The documented scope includes plan browsing, member coverage scenarios, enrollment form validation, sign-in behavior, and selected data checks where authorized access was available.
 
 ## 2. Application Areas
 
@@ -18,8 +18,9 @@ The documented scope includes plan browsing, plan information display, public si
 | :--- | :--- |
 | Plan Search | ZIP code entry, search submission, and results display |
 | Plan Details | Plan information, benefit details, and navigation |
+| Member Coverage | Coverage status, date display, and member-to-plan relationship scenarios using test data |
+| Enrollment Form | Required fields, input validation, and review behavior using test data |
 | Public Account Access | Sign-in page loading and form validation |
-| Form Validation | Required fields, invalid input, and error messaging |
 | Data Validation | Review of authorized test records using SQL examples |
 
 ## 3. Tools & Technologies
@@ -42,6 +43,8 @@ Test scenarios use representative inputs for positive, negative, and boundary co
 
 - Valid and invalid ZIP code formats.
 - Blank and incomplete form submissions.
+- Member coverage scenarios using synthetic test data.
+- Enrollment form validation scenarios using test data.
 - Valid and invalid sign-in inputs using authorized test accounts where applicable.
 - Synthetic identifiers in public SQL examples.
 
