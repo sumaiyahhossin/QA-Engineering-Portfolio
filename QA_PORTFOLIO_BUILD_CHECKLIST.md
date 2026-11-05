@@ -15,7 +15,7 @@ A short list of the files in the repository and the checks left to do.
 
 ## Selenium Status
 
-The latest run is [GitHub Actions #44](https://github.com/sumaiyahhossin/QA-Engineering-Portfolio/actions/runs/42092137266).
+The latest run is [GitHub Actions #50](https://github.com/sumaiyahhossin/QA-Engineering-Portfolio/actions/runs/42093938034).
 
 - **Result:** Success
 - **Tests run:** 9
