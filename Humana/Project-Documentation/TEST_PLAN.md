@@ -48,7 +48,7 @@ Java, Selenium WebDriver, TestNG, Maven, IntelliJ IDEA, Oracle SQL Developer, Ji
 
 ## 6. Test Data
 
-For actual testing, use only accounts and records approved for the environment. All names, identifiers, ZIP codes, and other values shown in this public portfolio are synthetic.
+All names, identifiers, ZIP codes, and other values shown in this public portfolio are synthetic. No live member data is included.
 
 ## 7. Out of Scope
 
