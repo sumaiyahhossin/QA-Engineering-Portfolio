@@ -43,4 +43,4 @@ When a test fails, record the steps, expected result, actual result, and useful 
 
 ## Test Data
 
-The public examples use synthetic test values. In an actual work environment, use only test accounts and data approved for that environment.
+The public examples use synthetic test values. No live member information or employer credentials are included.
