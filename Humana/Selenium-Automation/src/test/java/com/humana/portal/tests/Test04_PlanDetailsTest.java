@@ -34,20 +34,24 @@ public class Test04_PlanDetailsTest {
     @BeforeMethod
     public void setUp() {
         ChromeOptions options = new ChromeOptions();
-        //options.addArguments("--headless=new"); //uncomment if running in jenkins pipeline
+
+        //chrome settings for github actions
+        options.addArguments("--headless=new");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--disable-gpu");
         options.addArguments("--window-size=1920,1080");
-        options.addArguments("--disable-blink-features=AutomationControlled");
 
         driver = new ChromeDriver(options);
         wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 
-        //open direct medicare finder portal before test
+        //open direct medicare finder url before test
         driver.get(MEDICARE_FINDER_URL);
     }
 
     @Test(priority = 1, description = "Verify continuous workflow loading plan results for ZIP 11417 and expanding view plan details")
     public void testContinuousPlanDetailsVerification() throws InterruptedException {
+
         //1.wait for zip code input box to be visible on portal
         WebElement zipcodeField = wait.until(ExpectedConditions.visibilityOfElementLocated(zipcodeInputLocator));
         Assert.assertTrue(zipcodeField.isDisplayed(), "Medicare plan lookup ZIP input field failed to load.");
