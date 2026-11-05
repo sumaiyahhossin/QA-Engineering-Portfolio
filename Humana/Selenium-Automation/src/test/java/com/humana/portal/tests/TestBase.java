@@ -24,6 +24,7 @@ public abstract class TestBase {
 
         driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(Duration.ZERO);
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
     }
 
     protected void openFixture(String fileName) {
@@ -34,7 +35,7 @@ public abstract class TestBase {
         driver.get(fixturePath);
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void tearDown() {
         if (driver != null) {
             driver.quit();
