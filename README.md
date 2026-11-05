@@ -76,6 +76,6 @@ Quality assurance specialist with 3 years of experience in manual and automated 
 
 - This repository contains selected examples demonstrating QA methods, testing workflows, and technical skills.
 - No confidential employer documents, production credentials, private member information, or internal application details are intentionally included.
-- Test execution results are marked Not Run, Pending, or Skipped unless actual execution has been verified.
+- Test execution results are reported only when supported by the corresponding workbook or CI report; the latest Selenium run reviewed is documented as failed.
 - Humana and Healthfirst sections summarize professional experience and related QA work. Generalized examples are used where necessary to protect confidential information.
 - Humana manual documentation includes member coverage and enrollment form validation scenarios using test data. Public portfolio examples do not perform live eligibility determinations, real enrollment transactions, or access real member records.
