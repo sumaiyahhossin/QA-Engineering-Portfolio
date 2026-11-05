@@ -16,21 +16,16 @@ Completed Portfolio Sections
 - [x] Healthfirst manual test cases and execution tracking
 - [x] Healthfirst defect report template
 - [x] Healthfirst automation, API testing, and SQL documentation
-- [x] Independent Postman Echo API practice collection
-- [x] Independent Playwright demo project with login, logout, and invalid-login scenarios
 
 Automation Status
 
-- Playwright practice workflow: passed in GitHub Actions on the latest verified run.
-- Humana Selenium workflow: awaiting the latest queued run. Previous runs failed, so do not describe the Selenium suite as passing until a completed run confirms it.
-- Postman Echo collection: provided for independent practice; import and execute it in Postman before reporting results.
-- Healthfirst scripts: internal application scripts are not recreated here. The repository includes a documented automation approach and a separate public practice project.
+- Humana Selenium workflow: check the latest GitHub Actions run before describing the suite as passing. Previous runs failed, so do not describe the Selenium suite as passing until a completed run confirms it.
+- Healthfirst scripts: internal application scripts are not recreated here. The repository includes a documented automation approach.
 
 Final Review Still Needed
 
 - [ ] Review the existing Humana Excel workbook in GitHub's preview and after downloading it.
 - [ ] Confirm the latest Humana Selenium Actions result and update the execution report.
-- [ ] Run the Postman Echo collection in Postman and record the actual result.
 - [ ] Add only sanitized screenshots or reports that do not contain personal or confidential information.
 
 Accuracy and Privacy
