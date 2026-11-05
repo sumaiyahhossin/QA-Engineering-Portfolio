@@ -1,17 +1,18 @@
 name: Humana Selenium Tests
 
 on:
+  push:
+    paths:
+      - "Humana/Selenium-Automation/**"
+      - ".github/workflows/humana-selenium.yml"
+  pull_request:
+    paths:
+      - "Humana/Selenium-Automation/**"
+      - ".github/workflows/humana-selenium.yml"
   workflow_dispatch:
-    inputs:
-      confirm_authorized_test_environment:
-        description: "Confirm the test URLs point to an environment you are authorized to automate (not a public production site)."
-        required: true
-        type: boolean
-        default: false
 
 jobs:
   selenium-tests:
-    if: inputs.confirm_authorized_test_environment == true
     runs-on: ubuntu-latest
 
     defaults:
