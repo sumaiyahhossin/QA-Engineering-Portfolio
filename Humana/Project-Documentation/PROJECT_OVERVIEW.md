@@ -59,4 +59,4 @@ My QA work included manual test design and execution, browser automation with Ja
 ### Data Checks
 - Used SQL queries to review test records, dates, statuses, and relationships between related records when database access was available.
 
-The folders alongside this document contain the manual test cases, project notes, Selenium code, and SQL examples related to these testing areas. The public Selenium suite uses local HTML pages and synthetic values so the browser tests can be run independently from this repository.
+The folders alongside this document contain portfolio examples of test cases, project notes, Selenium code, and SQL checks related to these testing areas. These materials were prepared for this portfolio and are not internal Humana documents. The public Selenium suite uses local HTML pages and synthetic values, so the browser tests can run independently of any employer system.
