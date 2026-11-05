@@ -20,7 +20,7 @@ Java 17, Selenium WebDriver, TestNG, Maven, Chrome, IntelliJ IDEA, Oracle SQL De
 
 ## Test Data
 
-For testing, use the test accounts and records approved for the environment. The public SQL examples and local browser pages in this repository use synthetic values, such as test member IDs and ZIP codes.
+For actual testing, use only accounts and records approved for the environment. The public SQL examples and local browser pages in this repository use synthetic values, including test member IDs and ZIP codes. No live member information or employer credentials are included.
 
 ## Running the Public Selenium Tests
 
