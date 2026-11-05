@@ -1,116 +1,42 @@
-# Humana QA Project: Healthcare Plan Browsing & Member-Facing Workflows
+# Humana — QA Experience
 
-**Company:** Humana  
 **Role:** Junior QA Analyst  
-**Project Focus:** Healthcare plan browsing and member-facing application workflows  
-**Methodology:** Agile / Scrum  
-**Testing Areas:** Manual testing, Selenium automation, functional testing, and SQL validation
+**Dates:** October 2023 – March 2025  
+**Focus:** Healthcare plan browsing and member-facing workflows
 
----
+## What I Worked On
 
-## 1. Project Overview
+At Humana, I tested healthcare application workflows that let users browse health plans, review plan information, and access member-related features.
 
-This section summarizes QA work related to healthcare plan browsing and member-facing application workflows.
+My QA work included:
 
-My work included reviewing application behavior, preparing and executing manual test cases, writing Selenium WebDriver tests, documenting defects, and using SQL to support data verification where authorized access was available.
+- Reviewing requirements and clarifying expected behavior with the team.
+- Writing and maintaining manual test cases.
+- Running functional, smoke, regression, and integration tests.
+- Checking ZIP code search, plan listings, plan details, and coverage information.
+- Testing sign-in and form validation.
+- Writing Java and Selenium WebDriver tests for selected workflows.
+- Using TestNG to organize and run automated checks.
+- Using SQL to help verify data when database access was part of the test.
+- Logging and following up on defects in Jira and managing test cases in Zephyr.
+- Taking part in sprint planning, stand-ups, reviews, and other team discussions.
 
-The manual test suite covers plan browsing, member coverage scenarios, enrollment form validation, navigation and security checks, and selected QA workflow checks. The public automation examples focus on a smaller set of browser workflows.
+## Tools
 
-The public portfolio contains selected documentation and generalized examples. It does not reproduce internal application code, private environments, or confidential employer systems.
+Java, Selenium WebDriver, TestNG, Maven, SQL, Oracle SQL Developer, Jira, Zephyr, Git, GitHub Actions, IntelliJ IDEA, and Excel.
 
-### Testing Scope
+## What's in This Folder
 
-- **Plan Browsing:** Checked plan finder pages, plan listings, and plan detail information.
-- **ZIP Code Search:** Tested ZIP code entry, search submission, and results behavior.
-- **Member Coverage Scenarios:** Documented checks for coverage status, coverage dates, member-to-plan relationships, and related page behavior using synthetic test data.
-- **Enrollment Form Validation:** Documented form validation and review scenarios using test data; this does not represent live enrollment processing.
-- **Account Sign-In:** Tested sign-in page behavior and form validation using authorized test accounts where applicable.
-- **Navigation & Security:** Documented navigation, session, and input validation scenarios.
-- **Database Validation:** Used SQL to review test records, coverage dates, and relationships between related records where authorized access was available.
+| Folder | Contents |
+| --- | --- |
+| Project Documentation | Overview, test plan, strategy, environment notes, and scenarios |
+| Manual Testing | 50 manual test cases, workbook, and execution tracking |
+| Defect Reports | Defect report template |
+| Selenium Automation | Java test classes, local test pages, Maven, and TestNG |
+| SQL Testing | SQL checks for member and coverage data |
 
-Actual eligibility determinations, live enrollment transactions, and access to real member records are outside the public portfolio demonstration.
+## Automation in This Repository
 
----
+The Java suite covers sign-in, form validation, plan search, and plan details. In this repository, it runs against local HTML pages with synthetic test values. That keeps the tests easy to run and avoids depending on a company system or a live website.
 
-## 2. Tools & Technologies
-
-| Category | Tools |
-| :--- | :--- |
-| Programming Language | Java 17 |
-| Browser Automation | Selenium WebDriver 4.27.0 |
-| Test Runner | TestNG 7.10.2 |
-| Build Tool | Apache Maven |
-| Database Tool | Oracle SQL Developer |
-| Defect Tracking | Jira |
-| Test Management | Zephyr |
-| CI/CD | GitHub Actions |
-| Browser | Chrome / Headless Chrome |
-| IDE | IntelliJ IDEA |
-| Version Control & Documentation | Git, GitHub, Markdown |
-
----
-
-## 3. Portfolio Contents
-
-| Section | Included Artifacts |
-| :--- | :--- |
-| Project Documentation | Project overview, test plan, test strategy, test environment, and test scenarios |
-| Manual Testing | 50 manual test cases, Excel workbook, and execution tracking |
-| Defect Management | Defect report template and a generalized example |
-| Selenium Automation | Four Java TestNG test classes, Maven configuration, and TestNG suite |
-| SQL Testing | Generalized SQL examples using synthetic test data |
-| CI/CD | GitHub Actions workflow for automated test execution |
-
----
-
-## 4. QA Approach
-
-### Manual Testing
-
-- Reviewed application workflows and expected behavior.
-- Prepared and organized detailed test cases.
-- Covered positive, negative, and boundary scenarios.
-- Checked plan browsing, member coverage, form validation, and navigation workflows.
-- Recorded test outcomes and documented issues for follow-up.
-
-### Selenium Automation
-
-- Wrote Java Selenium WebDriver tests for selected browser workflows.
-- Used TestNG annotations and assertions to organize execution.
-- Used explicit waits to handle page elements and dynamic behavior.
-- Managed dependencies and test execution with Maven.
-- Configured a GitHub Actions workflow to run the suite.
-
-The current public test code keeps its locators and browser interactions in the individual test classes; it does not currently use a separate Page Object Model layer.
-
-### SQL Validation
-
-- Used SELECT queries to review member and coverage test records.
-- Checked coverage status and date ranges.
-- Queried for possible duplicate active coverage records.
-- Used joins to review relationships between related records.
-
-The SQL files in this repository use generalized table names and synthetic identifiers. They are examples for demonstrating query structure and are not internal database definitions.
-
----
-
-## 5. Privacy & Public Portfolio Notes
-
-- No production credentials, real member information, or protected health information (PHI) are included.
-- Internal hostnames, private routes, API endpoints, database connection details, and confidential infrastructure information are not published.
-- SQL examples use generalized table names and synthetic test data.
-- Employer experience is summarized in my own words; public code and examples are sanitized for portfolio use.
-- The public automation examples do not connect to private member records or perform live enrollment or eligibility processing.
-
----
-
-## 6. Skills Demonstrated
-
-- Manual test design and execution
-- Functional, negative, and regression testing
-- Java and Selenium WebDriver
-- TestNG annotations and assertions
-- Maven project configuration
-- SQL data validation
-- Defect documentation and test tracking
-- GitHub Actions workflow configuration
+The local pages are only the test target for this repository's automation. They don't change the Humana work experience described above.
