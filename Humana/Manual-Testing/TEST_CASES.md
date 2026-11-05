@@ -84,18 +84,19 @@ Application navigation works as expected without unexpected errors.
 
 Test Case ID: TC006
 
-Test Scenario: Verify member coverage information
+Test Scenario: Verify sign-in advances to the next account setup step
 
 Preconditions:
-- Approved test data is available.
-- User has access to the applicable member coverage workflow.
+- An authorized test account is available.
+- The account may require additional profile setup.
 
 Test Steps:
-1. Navigate to the member coverage section.
-2. Search using an approved test record.
-3. Review the displayed coverage information.
+1. Open the account sign-in page.
+2. Enter the authorized test account credentials.
+3. Submit the sign-in form.
+4. Review the next page or account setup prompt.
 
 Expected Result:
-The application displays the coverage information associated with the selected test record.
+If the credentials are accepted, the application advances to the next account or profile setup step. This does not verify Medicare eligibility or member coverage.
 
 Note: These are portfolio demonstration test cases. Update the steps and expected results to reflect workflows you actually tested.
