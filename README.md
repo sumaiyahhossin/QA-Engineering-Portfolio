@@ -51,7 +51,7 @@ Independent Portfolio Practice
 - [Postman Collection](Portfolio-Practice/API-Testing/Postman-Echo-API-Tests.postman_collection.json)
 - [Playwright Automation Practice](Portfolio-Practice/Playwright-Demo/README.md)
 
-Learning and Interview Preparation
+Portfolio Build Status\n- [Portfolio Roadmap](PORTFOLIO-ROADMAP.md)\n\nLearning and Interview Preparation
 - [Study Notes](Study-Notes/README.md)
 - [Manual Testing Notes](Study-Notes/Manual-Testing/README.md)
 - [Automation Notes](Study-Notes/Automation-Testing/README.md)
