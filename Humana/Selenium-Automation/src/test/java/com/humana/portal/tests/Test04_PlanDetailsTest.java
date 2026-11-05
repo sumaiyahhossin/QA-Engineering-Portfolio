@@ -10,8 +10,8 @@ import java.time.Duration;
 
 public class Test04_PlanDetailsTest extends TestBase {
 
-    @Test(description = "Verify a member can open plan details from search results")
-    public void testContinuousPlanDetailsVerification() {
+    @Test(description = "Check that plan details open from search results")
+    public void testPlanDetailsOpenFromSearchResults() {
         openFixture("plan-search.html");
 
         driver.findElement(By.id("zipcode-input")).sendKeys("11417");
