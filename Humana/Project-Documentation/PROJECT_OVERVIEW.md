@@ -1,55 +1,40 @@
 Project Overview
 
 Project Name: Healthcare Plan Browsing and Member Coverage
-
 Company: Humana
-
-Role: Quality Assurance Tester
-
-Project Type: Healthcare Application Testing
-
-Testing Environment: QA / Test Environment
+Role: Junior QA Analyst
 
 Project Description
 
-This project involved quality assurance testing of healthcare application workflows related to healthcare plan browsing and member coverage. Testing focused on verifying application functionality, validating user workflows, identifying defects, and supporting reliable software releases.
+This portfolio section organizes QA documentation and automation examples around healthcare plan browsing and related user workflows. It demonstrates how test scenarios, manual cases, Selenium scripts, SQL examples, and defect records can be organized.
 
-Responsibilities
+Testing Areas Represented
 
-- Reviewed requirements and application workflows.
-- Created and executed manual test cases.
-- Performed functional, smoke, and regression testing.
-- Developed and executed automated tests using Java and Selenium WebDriver.
-- Validated application behavior and documented defects.
-- Collaborated with team members to verify fixes and support testing activities.
-
-Testing Areas
-
-- Healthcare plan browsing
-- Member coverage
-- Application functionality
-- Navigation and user workflows
+- Public healthcare plan browsing
+- Plan search and plan details
+- Account sign-in page behavior
+- Required field validation
+- Invalid input handling
+- Application navigation
 - Regression testing
+
+Important Scope Note
+
+The public Medicare plan finder is a public-facing website. Testing its public plan browsing flow does not establish access to a Medicare member account, Medicare eligibility, enrollment, or private member coverage information. The account used for sign-in practice was not fully set up and required additional personal information. This portfolio does not claim that member coverage was accessed or verified.
 
 Tools and Technologies
 
-- Java
-- Selenium WebDriver
-- TestNG
-- Maven
-- XML
-- Jira
-- Zephyr
-- Oracle SQL Developer
-
-Testing Approach
-
-Testing included manual and automated browser testing, scenario validation, defect documentation, and verification of resolved issues.
+- Java, Selenium WebDriver, TestNG, Maven, XML
+- Jira, Zephyr, Oracle SQL Developer
+- Git and GitHub Actions
 
 Portfolio Contents
 
+- Project documentation
 - Manual test cases
 - Selenium automation examples
 - SQL validation examples
-- Sample defect reports
-- Test execution summaries
+- Defect report template
+- Test execution tracking
+
+All public examples are sanitized. Test results are recorded as Not Run or Pending until verified.
