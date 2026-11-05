@@ -6,7 +6,7 @@
 
 ## 1. Purpose
 
-This plan covers the main areas I tested: plan search, plan details, member coverage information, sign-in, forms, and related data checks. It also outlines how I organized manual testing, automation, and defect follow-up.
+This portfolio test plan summarizes the application areas and QA activities represented in the examples: plan search, plan details, member coverage information, sign-in, forms, and related data checks. It outlines a practical approach to manual testing, automation, and defect follow-up.
 
 ## 2. What Was Tested
 
@@ -48,7 +48,7 @@ Java, Selenium WebDriver, TestNG, Maven, IntelliJ IDEA, Oracle SQL Developer, Ji
 
 ## 6. Test Data
 
-Use test accounts and test records approved for the environment being tested. Public examples in this repository use synthetic names, identifiers, ZIP codes, and other values.
+For actual testing, use only accounts and records approved for the environment. All names, identifiers, ZIP codes, and other values shown in this public portfolio are synthetic.
 
 ## 7. Out of Scope
 
