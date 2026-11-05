@@ -1,13 +1,13 @@
 # SQL and Data Validation
 
-This section contains SQL examples for member and eligibility data validation.
+SQL checks help compare application or API results with expected test data.
 
-## Validation Focus
+## Validation Areas
 
-- Check member record status.
-- Review eligibility and coverage date ranges.
-- Compare UI or API values with expected test data.
-- Identify duplicate eligibility records.
-- Check for missing or inconsistent related data.
+- Member record status
+- Eligibility status and coverage dates
+- Missing or inconsistent values
+- Duplicate eligibility records
+- Values displayed in the application compared with expected data
 
-The public examples use generic table and column names. They demonstrate read-only validation checks and do not represent Healthfirst database schemas or production queries.
+The [SQL examples](SQL-QUERIES.md) use generic table and column names with read-only queries. They are examples for a portfolio and do not represent Healthfirst's database schema or production queries.
