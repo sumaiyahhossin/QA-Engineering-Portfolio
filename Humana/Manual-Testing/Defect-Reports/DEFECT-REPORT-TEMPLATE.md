@@ -1,61 +1,53 @@
-# Enterprise QA Defect Report Template
+# Defect Report Template
 
-Use this template to document defects reproduced in an approved test environment. Record the actual build, environment, browser, test data, and evidence from the test run.
+Use this when you need to report an issue you reproduced during testing. Fill in the details from the actual run.
 
-## Defect Details
+## Issue Details
 
-| Field | Value |
+| Field | Details |
 | --- | --- |
-| **Defect ID** | `DEF-HUM-YYYY-NNNN` |
-| **Summary** | [Concise description of the observed failure and its impact] |
-| **Application / Module** | [Application and affected module] |
-| **Environment** | [QA / Staging; browser and version; operating system] |
-| **Build / Page** | [Verified build number and page URL] |
-| **Severity** | [Critical / High / Medium / Low, with user or business impact] |
-| **Priority** | [P1 / P2 / P3 / P4, based on urgency] |
-| **Reported By** | [Role or team] |
-| **Date Reported** | [Actual date the defect was reported] |
+| Defect ID | [Ticket ID] |
+| Summary | [Short description of the issue] |
+| Application / Area | [Affected page or feature] |
+| Environment | [QA or staging, browser, and version] |
+| Build | [Build number, if available] |
+| Severity | [Impact of the issue] |
+| Priority | [How soon it needs to be fixed] |
+| Reported By | [Name or team] |
+| Date | [Date reported] |
 
-## Preconditions
+## Before You Start
 
-1. [Required environment and access]
-2. [Required synthetic test data]
-3. [Browser, operating system, and viewport]
-4. [Any other setup needed to reproduce the issue]
+- [Any setup needed]
+- [Test account or test data needed]
+- [Browser and operating system]
 
 ## Steps to Reproduce
 
-1. [First action]
-2. [Next action]
-3. [Continue with exact steps until the issue occurs]
+1. [First step]
+2. [Next step]
+3. [Step where the issue happens]
 
 ## Expected Result
 
-[Describe the behavior required by the acceptance criteria or documented requirement.]
+[What should have happened?]
 
 ## Actual Result
 
-[Describe only what was observed. Include error messages, console output, network responses, or automation exceptions only when captured and verified.]
+[What happened instead? Include the exact message if one appeared.]
 
-## Attachments & Evidence
+## Evidence
 
-- [Screenshot filename and what it demonstrates]
-- [Browser console or network log, if captured]
-- [Automation output or stack trace, if captured]
+- Screenshot:
+- Log or error message:
+- Automation output:
 
-## Lifecycle & Tracking
+## Follow-Up
 
-| Field | Value |
+| Field | Details |
 | --- | --- |
-| **Status** | [New / Open / In Progress / Resolved / Closed / Reopened] |
-| **Assigned To** | [Team or owner assigned during triage] |
-| **Retest Result** | [Pending / Passed / Failed / Blocked / Not Retested] |
+| Status | [Open / In Progress / Fixed / Closed / Reopened] |
+| Assigned To | [Person or team] |
+| Retest Result | [Passed / Failed / Blocked / Not Retested] |
 
----
-
-## Reporting Notes
-
-- Use synthetic test data only and follow approved testing and data-handling procedures.
-- Do not include PHI, real member details, passwords, access tokens, or confidential internal information.
-- Record actual environment and build details; do not guess selectors, API endpoints, response codes, or error messages.
-- Investigate environment availability, network failures, bot protection, and third-party service issues during triage before classifying an observation as an application defect.
+Use test data approved for the environment. Don't include member details, passwords, or internal information in a public report.
