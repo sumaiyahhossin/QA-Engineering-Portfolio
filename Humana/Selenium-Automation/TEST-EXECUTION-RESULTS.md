@@ -1,93 +1,63 @@
 # Selenium Test Execution Results
 
-**Project Name:** Healthcare Plan Browsing and Public Account Access  
-**Company Ecosystem:** Humana Health Insurance  
-**Role:** Junior QA Analyst  
-**Framework & Tech Stack:** Java 17, Selenium WebDriver 4.27.0, TestNG 7.10.2, Maven, Headless Chrome, GitHub Actions  
-**Execution Environment:** GitHub Actions CI/CD Pipeline  
-**Workflow File:** `staging-regression.yml`
+**Project Focus:** Healthcare plan browsing and public account access  
+**Framework:** Java 17, Selenium WebDriver 4.27.0, TestNG 7.10.2, Maven  
+**CI Workflow:** `.github/workflows/humana-selenium.yml`
 
 ---
 
-## 1. Test Suite Execution Summary
+## 1. Latest GitHub Actions Result
 
-| Test Class | Coverage Area | Execution Type | Status |
-| :--- | :--- | :--- | :--- |
-| `Test01_LoginTest.java` | Sign-in page loading and optional test-account authentication | Automated Regression | Passed |
-| `Test02_InvalidLoginTest.java` | Invalid credentials and blank-field validation | Automated Regression | Passed |
-| `Test03_PlanSearchTest.java` | Public plan finder, ZIP code input, and search results | Automated Regression | Passed |
-| `Test04_PlanDetailsTest.java` | Public plan details navigation and benefit information | Automated Regression | Passed |
+The latest completed workflow run reviewed for this report was **Run #37**, completed on **November 5, 2026**.
 
-**Overall Suite Result:** 4 of 4 test classes passed in the reported execution.
+<badge-placeholder />
 
-**Pass Rate:** 100% only when the corresponding TestNG report confirms that all executed test methods passed, with no failures or skipped tests.
-
----
-
-## 2. GitHub Actions Pipeline Execution
-
-The Selenium automation suite is configured for execution through GitHub Actions.
-
-### Execution Configuration
-
-- **Workflow:** `staging-regression.yml`
-- **Execution Platform:** GitHub Actions
-- **Browser:** Chrome
-- **Browser Mode:** Headless
-- **Build Tool:** Maven
-- **Test Runner:** TestNG
-- **Execution Trigger:** Configured repository events, such as pushes or pull requests
-
-### Browser Configuration
-
-The headless browser execution can use the following Chrome options:
-
-```java
-options.addArguments("--headless");
-options.addArguments("--disable-gpu");
-options.addArguments("--window-size=1920,1080");
-```
-
-### Verification Results
-
-The pipeline execution results are reviewed through the GitHub Actions workflow logs and TestNG test reports.
-
-The review includes:
-- Test execution status
-- Assertion results
-- Browser initialization and navigation
-- Element interaction and explicit wait behavior
-- Failure messages and exception details
-
----
-
-## 3. Execution Notes & Environment Parameters
-
-- **Headless Execution:** Automated browser tests run using headless Chrome in the configured CI environment.
-- **Element Validation:** Explicit waits and Selenium element locators are used to support reliable page interactions and validation.
-- **Test Configuration:** TestNG manages test execution, annotations, and suite configuration.
-- **Environment Variables:** Sensitive test configuration and optional authentication credentials are managed outside the public repository.
-- **Failure Investigation:** Failed tests are reviewed using execution logs and assertion messages to identify potential application or automation issues.
-- **Scope Boundary:** Public plan search tests validate public-facing plan browsing functionality. They do not represent private member eligibility adjudication or backend CMS validation.
-
----
-
-## 4. Test Status Definitions
-
-| Status | Definition |
+| Metric | Result |
 | :--- | :--- |
-| **Passed** | Test completed successfully and all applicable assertions passed. |
-| **Failed** | A test assertion or browser execution step failed. |
-| **Skipped** | Test was intentionally not executed or was skipped by the test framework. |
-| **Blocked** | Test could not proceed because of an environment, network, or dependency issue. |
-| **Not Run** | Test has not been executed in the current test run. |
+| Workflow | Humana Selenium Tests |
+| Run | #37 |
+| Overall status | Failed |
+| Tests run | 9 |
+| Failures | 4 |
+| Errors | 0 |
+| Skipped | 1 |
 
----
+[View GitHub Actions Run #37](https://github.com/sumaiyahhossin/QA-Engineering-Portfolio/actions/runs/42089273646)
 
-## 5. Test Reporting & Maintenance
+## 2. Failures Observed in Run #37
 
-Execution results are reviewed after each automated test run to monitor application behavior and identify regressions.
+| Test | Observed result |
+| :--- | :--- |
+| Blank sign-in submission | Expected required-field validation was not detected |
+| Invalid sign-in | Expected error message was not found |
+| ZIP code entry | The input value did not match the expected ZIP code |
+| Plan search results | Expected results heading was not found before the wait timed out |
 
-Test scripts and execution configurations are maintained as the application workflows and testing requirements change.
+These results describe what the automated run reported. They do not, by themselves, establish whether the cause is an application defect, a changed public page, test data, or an automation issue. Each failure needs investigation before a defect is assigned.
 
-The GitHub Actions workflow and TestNG reports provide visibility into automated test execution and help support regression testing.
+## 3. Execution Review
+
+When reviewing a run, check:
+
+- Maven build result and TestNG summary.
+- Failed test names and assertion messages.
+- Browser version and driver initialization.
+- Element locators and page changes.
+- Test data and any environment-dependent behavior.
+- Whether the test was skipped because required configuration was unavailable.
+
+## 4. Status Definitions
+
+| Status | Meaning |
+| :--- | :--- |
+| **Passed** | Test completed and all applicable assertions passed. |
+| **Failed** | An assertion or execution step did not meet the expected result. |
+| **Skipped** | TestNG did not execute the test method. |
+| **Blocked** | The test could not proceed because of an environment or dependency issue. |
+| **Not Run** | No execution has been recorded for the test. |
+
+## 5. Reporting Notes
+
+Execution status is updated from the actual GitHub Actions and TestNG reports. A passing result should only be recorded when the corresponding run confirms that the tests completed successfully.
+
+This report is a snapshot of the latest run reviewed, not a claim that the suite is currently passing.
