@@ -2,7 +2,7 @@ QA Engineering Portfolio
 
 Welcome to my QA Engineering Portfolio.
 
-This repository brings together selected QA examples and technical skills across healthcare and insurance application testing. It includes project documentation, manual test cases, Selenium automation, API testing practice, SQL validation examples, study notes, and interview preparation.
+This repository brings together selected QA examples and technical skills across healthcare and insurance application testing. It includes project documentation, manual test cases, Selenium automation, API testing practice, and SQL validation examples.
 
 Professional Experience
 
