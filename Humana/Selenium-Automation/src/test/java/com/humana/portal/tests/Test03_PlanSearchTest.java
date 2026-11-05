@@ -32,6 +32,10 @@ public class Test03_PlanSearchTest {
     public void setUp() {
         ChromeOptions options = new ChromeOptions();
 
+        //chrome settings for github actions
+        options.addArguments("--headless=new");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--disable-gpu");
         options.addArguments("--window-size=1920,1080");
         options.addArguments("--disable-blink-features=AutomationControlled");
