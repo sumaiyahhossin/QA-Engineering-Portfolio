@@ -1,6 +1,6 @@
 Test Execution Results
 
-Project Name: Healthcare Plan Browsing and Member Coverage
+Project Name: Healthcare Plan Browsing and Public Account Access
 
 Company: Humana
 
