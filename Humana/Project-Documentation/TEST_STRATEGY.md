@@ -5,14 +5,14 @@
 
 ## Testing Goals
 
-The testing approach represented in this portfolio focuses on plan search, plan information, member-facing workflows, form behavior, and regression coverage.
+The testing approach focuses on plan search, plan information, member-facing workflows, form behavior, and regression coverage.
 
 ## Testing Approach
 
 ### Manual Testing
-- Read the requirements and map out the main user flows.
+- Review requirements and identify the main user flows.
 - Write positive, negative, and boundary test cases.
-- Run the tests and compare actual behavior with the expected result.
+- Run tests and compare actual behavior with expected results.
 - Record failures and retest after fixes.
 
 ### Automation
@@ -21,7 +21,7 @@ The testing approach represented in this portfolio focuses on plan search, plan 
 - Use explicit waits when an element needs time to appear.
 - Run the suite through Maven and review the test report.
 
-The test classes in this repository keep their own locators and browser steps. There isn't a separate Page Object Model layer.
+The public test classes keep their own locators and browser steps; they do not use a separate Page Object Model layer.
 
 ### SQL Checks
 - Query test records when database access is available.
@@ -41,8 +41,8 @@ The test classes in this repository keep their own locators and browser steps. T
 
 ## Defect Tracking
 
-When a test fails, I record the steps, expected result, actual result, and any useful evidence. I check whether the issue is caused by the application, test data, environment, or automation before deciding how to report it.
+When a test fails, record the steps, expected result, actual result, and useful evidence. Check whether the issue is caused by the application, test data, environment, or automation before reporting it.
 
 ## Test Data
 
-The public examples use synthetic test values. These public examples use synthetic values. In an actual work environment, use only test accounts and data approved for that environment.
+The public examples use synthetic test values. In an actual work environment, use only test accounts and data approved for that environment.
