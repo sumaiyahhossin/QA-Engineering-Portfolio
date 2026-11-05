@@ -1,63 +1,35 @@
 # Selenium Test Execution Results
 
-**Project Focus:** Healthcare plan browsing and public account access  
+**Project Focus:** Healthcare plan browsing and member-facing sign-in workflows  
 **Framework:** Java 17, Selenium WebDriver 4.27.0, TestNG 7.10.2, Maven  
 **CI Workflow:** `.github/workflows/humana-selenium.yml`
 
 ---
 
-## 1. Latest GitHub Actions Result
+## 1. Test Scope
 
-The latest completed workflow run reviewed for this report was **Run #37**, completed on **November 5, 2026**.
+The automated suite contains nine TestNG test methods covering:
 
-| Metric | Result |
-| :--- | :--- |
-| Workflow | Humana Selenium Tests |
-| Run | #37 |
-| Overall status | Failed |
-| Tests run | 9 |
-| Failures | 4 |
-| Errors | 0 |
-| Skipped | 1 |
+- Sign-in page loading and accepted test credentials.
+- Invalid sign-in and blank-field validation.
+- Plan search page loading, ZIP code entry, and results rendering.
+- Plan details navigation.
 
-[View GitHub Actions Run #37](https://github.com/sumaiyahhossin/QA-Engineering-Portfolio/actions/runs/42089273646)
+The tests run against local HTML fixtures in `src/test/resources/fixtures`. They do not connect to Humana production systems or use real member information.
 
-## 2. Failures Observed in Run #37
+## 2. Execution Status
 
-| Test | Observed result |
-| :--- | :--- |
-| Blank sign-in submission | Expected required-field validation was not detected |
-| Invalid sign-in | Expected error message was not found |
-| ZIP code entry | The input value did not match the expected ZIP code |
-| Plan search results | Expected results heading was not found before the wait timed out |
+The latest historical run against the previous live-site-dependent implementation was **Run #37**, completed November 5, 2026. It failed with 9 tests run, 4 failures, 0 errors, and 1 skipped.
 
-These results describe what the automated run reported. They do not, by themselves, establish whether the cause is an application defect, a changed page, test data, or an automation issue. Each failure needs investigation before a defect is assigned.
+That result is retained as historical context only. It does not describe the current local-fixture implementation. The current implementation should be reported as passing only after a new GitHub Actions run completes successfully.
 
-## 3. Execution Review
+## 3. Reviewing Results
 
-When reviewing a run, check:
+After each run, review:
 
 - Maven build result and TestNG summary.
 - Failed test names and assertion messages.
-- Browser version and driver initialization.
-- Element locators and page changes.
-- Test data and environment-dependent behavior.
-- Whether a test was skipped because required configuration was unavailable.
+- Browser and driver initialization.
+- TestNG / Surefire reports under `target/surefire-reports`.
 
-## 4. Status Definitions
-
-| Status | Meaning |
-| :--- | :--- |
-| **Passed** | Test completed and all applicable assertions passed. |
-| **Failed** | An assertion or execution step did not meet the expected result. |
-| **Skipped** | TestNG did not execute the test method. |
-| **Blocked** | The test could not proceed because of an environment or dependency issue. |
-| **Not Run** | No execution has been recorded for the test. |
-
-## 5. Reporting Notes
-
-Execution status is updated from the actual GitHub Actions and TestNG reports. A passing result should only be recorded when the corresponding run confirms that the tests completed successfully.
-
-Before running this suite again, confirm that every target URL is an environment you are authorized to automate. Do not run automated tests against a public production site without explicit authorization.
-
-This report is a snapshot of the latest run reviewed, not a claim that the suite is currently passing.
+A passing result should only be recorded when the corresponding run confirms that all expected tests completed successfully.
