@@ -1,6 +1,6 @@
 # Defect Report Template
 
-Use this when you need to report an issue you reproduced during testing. Fill in the details from the actual run.
+Use this template to document an issue reproduced during testing. Fill in the details from the actual run.
 
 ## Issue Details
 
@@ -8,25 +8,30 @@ Use this when you need to report an issue you reproduced during testing. Fill in
 | --- | --- |
 | Defect ID | [Ticket ID] |
 | Summary | [Short description of the issue] |
+| Defect Type | [Functional / UI / Data / API / Performance / Security] |
 | Application / Area | [Affected page or feature] |
 | Environment | [QA or staging, browser, and version] |
 | Build | [Build number, if available] |
 | Severity | [Impact of the issue] |
 | Priority | [How soon it needs to be fixed] |
 | Reported By | [Name or team] |
-| Date | [Date reported] |
+| Date Reported | [Date reported] |
+
+## Preconditions
+
+- [Required user role, permissions, or system state before starting]
+- [Required test account status or background data setup]
 
 ## Before You Start
 
-- [Any setup needed]
-- [Test account or test data needed]
-- [Browser and operating system]
+- [Browser, operating system, and screen resolution]
+- [Specific test data needed (ZIP code, Plan ID, etc.)]
 
 ## Steps to Reproduce
 
 1. [First step]
 2. [Next step]
-3. [Step where the issue happens]
+3. [Step where the issue occurs]
 
 ## Expected Result
 
@@ -34,7 +39,7 @@ Use this when you need to report an issue you reproduced during testing. Fill in
 
 ## Actual Result
 
-[What happened instead? Include the exact message if one appeared.]
+[What happened instead? Include exact error messages or codes if displayed.]
 
 ## Evidence
 
@@ -50,4 +55,6 @@ Use this when you need to report an issue you reproduced during testing. Fill in
 | Assigned To | [Person or team] |
 | Retest Result | [Passed / Failed / Blocked / Not Retested] |
 
-Use test data approved for the environment. Don't include member details, passwords, or internal information in a public report.
+---
+
+*Note: Always use test data approved for the environment. Do not include sensitive member details, passwords, or internal enterprise data in public or shared defect reports.*
