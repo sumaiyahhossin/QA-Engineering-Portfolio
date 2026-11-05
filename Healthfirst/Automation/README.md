@@ -1,27 +1,32 @@
-Automation Testing
+# UI Automation
 
-This section documents the automation approach for member-facing healthcare workflows.
+The automation work described in my experience includes browser testing with Playwright and Cypress. This section outlines the types of repeatable checks covered by the portfolio.
 
-Tools
+## Tools
+
 - Playwright
 - Cypress
 - JavaScript
 - TypeScript
 
-Automation Focus
-- Stable member workflow navigation
-- Eligibility form validation
-- Health plan browsing and selection
-- Error message handling
-- Regression coverage for repeatable workflows
+## Workflows to Automate
 
-Automation Practices
-- Use explicit waits and stable, accessible locators.
-- Keep test data separate from test code.
-- Store credentials in environment variables or approved secret storage.
-- Avoid hardcoded personal or member information.
-- Use assertions that verify user-visible outcomes.
-- Keep tests independent where possible.
-- Review screenshots, traces, and logs for sensitive information before sharing.
+- Member workflow navigation
+- Required field and format validation
+- Eligibility form behavior
+- Health plan browsing
+- Health plan details
+- Error and no-results messages
+- Regression checks for stable workflows
 
-This folder currently contains the approach documentation. Add only scripts you have actually developed and can explain. Do not copy internal employer code or expose private application selectors.
+## Test Design
+
+- Keep each test focused on one behavior.
+- Use stable locators and assert what the user can see.
+- Keep test data separate from test logic.
+- Avoid relying on the order in which tests run.
+- Use environment variables for configuration and credentials.
+- Capture screenshots or traces when they help investigate a failure.
+- Review logs and screenshots before sharing them.
+
+This folder currently documents the automation approach. It does not contain copied employer scripts or connect to Healthfirst systems. Only add runnable examples that have been built and verified for this public portfolio.
