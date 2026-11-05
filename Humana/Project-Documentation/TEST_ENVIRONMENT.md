@@ -1,98 +1,74 @@
-# QA Test Environment & Infrastructure Specification
+# QA Test Environment Overview
 
-**Company / Ecosystem:** Humana Health Insurance  
-**Project Name:** Healthcare Plan Browsing and Member Coverage  
+**Project Focus:** Healthcare plan browsing and public account access  
 **Role:** Junior QA Analyst  
-**Testing Environments:** QA Staging / UAT Staging  
-**Testing Approach:** Manual Functional Testing, Automated Browser Regression, SQL Database Audit  
+**Testing Areas:** Manual functional testing, browser automation, and SQL validation
 
 ---
 
-## Environment Architecture Overview
+## 1. Environment Overview
 
-The QA testing environment was utilized to validate healthcare plan browsing, benefit details presentation, and member authentication functionality prior to production release sign-off.
+Testing activities covered application workflows in QA or staging environments. The environment information in this public document is intentionally general; internal hostnames, private routes, infrastructure identifiers, and connection details are not included.
 
-The environment supported full end-to-end functional verification, smoke testing, regression testing, and integration testing across Agile sprint cycles, hosting both manual execution sessions and automated headless runs via Selenium WebDriver, Java, and TestNG.
+The documented scope includes plan browsing, plan information display, public sign-in behavior, form validation, and selected data checks where authorized access was available.
 
----
+## 2. Application Areas
 
-## Application Scope & Target Modules
+| Application Area | Testing Focus |
+| :--- | :--- |
+| Plan Search | ZIP code entry, search submission, and results display |
+| Plan Details | Plan information, benefit details, and navigation |
+| Public Account Access | Sign-in page loading and form validation |
+| Form Validation | Required fields, invalid input, and error messaging |
+| Data Validation | Review of authorized test records using SQL examples |
 
-| Module / Area | Testing Scope | Target Endpoint / Subsystem |
-| :--- | :--- | :--- |
-| **Healthcare Plan Search** | ZIP code resolution, search results rendering, and regional plan listings | `/medicare/medicare-advantage-plans` |
-| **Plan Details & Benefits** | Plan information cards, cost-sharing matrices, coverage details, and page navigation | `/medicare/plan-details` |
-| **Member Access & Login** | Authentication logic, credential validation, and error banner notifications | `/account/login` |
-| **Form Validation Engine** | Required field enforcement, invalid input handling, and inline error messaging | `/account/registration` |
+## 3. Tools & Technologies
 
----
+| Tool | Purpose |
+| :--- | :--- |
+| Java 17 | Automation programming language |
+| Selenium WebDriver 4.27.0 | Browser automation |
+| TestNG 7.10.2 | Test execution and assertions |
+| Apache Maven | Dependency and build management |
+| Chrome | Browser used for automation |
+| Git / GitHub | Version control |
+| GitHub Actions | Workflow automation |
+| IntelliJ IDEA | Java development |
+| Oracle SQL Developer | SQL query and data validation |
 
-## Technology Stack & Infrastructure Tools
+## 4. Test Data Approach
 
-| Tool / Technology | Version / Configuration | Purpose |
-| :--- | :--- | :--- |
-| **Java Development Kit** | Java 17 | Primary automation programming language |
-| **Selenium WebDriver** | Version 4.27.0 | Dynamic browser automation and DOM execution |
-| **TestNG** | Version 7.10.2 | Test suite runner, annotation management, and assertions |
-| **Apache Maven** | Maven 3.9+ | Project build management and dependency control |
-| **Selenium Manager** | Integrated Driver Management | Automated driver setup and Chrome execution management |
-| **Git & GitHub** | Version Control System | Source code repository and version control management |
-| **GitHub Actions** | CI/CD Pipeline | Automated regression execution on pull requests |
-| **IntelliJ IDEA** | Enterprise Edition | IDE for writing and maintaining Java test scripts |
-| **Oracle SQL Developer** | SQL Query Client | Database verification and back-end schema audits |
+Test scenarios use representative inputs for positive, negative, and boundary conditions.
 
----
+- Valid and invalid ZIP code formats.
+- Blank and incomplete form submissions.
+- Valid and invalid sign-in inputs using authorized test accounts where applicable.
+- Synthetic identifiers in public SQL examples.
 
-## Test Data & Input Validation Strategy
+No real member credentials, personal information, or protected health information (PHI) are included in the public repository.
 
-Testing utilized controlled synthetic datasets to verify system behavior across positive, negative, and boundary test scenarios:
+## 5. Execution Prerequisites
 
-* **Valid Regional Search Data:** Synthetic 5-digit ZIP codes (`11417`) matching CMS service area configurations.
-* **Boundary & Negative Inputs:** Incomplete 3-digit strings (`114`), non-existent postal codes (`00000`), and non-numeric keystroke filtering (`ABCDE`).
-* **Form Field Validation:** Testing empty inputs, missing required fields, and special character sanitization against XSS/SQL injection risks.
-* **Authentication Datasets:** Valid synthetic test credentials alongside intentionally incorrect passwords to verify access denial mechanisms.
+Before running browser automation:
 
----
+1. Confirm the test target is an environment you are authorized to automate.
+2. Confirm the target application and test data are available.
+3. Verify Java and Maven configuration.
+4. Confirm Maven dependencies resolve successfully.
+5. Review the TestNG suite configuration.
+6. Record the actual execution result and investigate failures.
 
-## Test Execution Scope & Quality Assurance Types
+Do not run automated tests against a public production site unless explicit authorization has been provided.
 
-1. **Functional Testing:** Validated core feature behavior against business requirement specifications and UI acceptance criteria.
-2. **Smoke Testing:** Executed core build verification checklists after deployment patches to staging.
-3. **Regression Testing:** Automated and manual execution cycles ensuring recent code merges did not impact established features.
-4. **Integration Testing:** Verified seamless API payload transfers between web frontend forms and backend REST microservices.
-5. **Automation Execution:** Executed browser-based test suites leveraging Selenium WebDriver, Page Object Model (POM), and TestNG.
-6. **Database Verification:** Ran SQL queries against staging database tables to confirm UI data display matched back-end records 100%.
+## 6. Automation & CI Notes
 
----
+The Java test suite uses Selenium WebDriver, TestNG, and Maven. The current implementation keeps browser interactions and locators in the individual test classes; it does not use a separate Page Object Model layer.
 
-## Pre-Execution Checklist & Prerequisites
+The GitHub Actions workflow is configured for manual execution and requires confirmation that the target is an authorized test environment. The workflow should not be run until the test URLs have been reviewed and confirmed as appropriate for automation.
 
-Before executing manual or automated test suites:
+## 7. Privacy & Security
 
-1. Confirm Java 17 JDK and Apache Maven project paths are active in system environment variables.
-2. Verify all project dependencies resolved successfully inside `pom.xml`.
-3. Confirm local browser availability and ensure Selenium WebDriver manager drivers are up to date.
-4. Review synthetic test dataset parameters and baseline expected results.
-5. Inspect target TestNG XML suite runner (`testng.xml`) for correct class and group inclusions.
-6. Verify test execution results post-run and document any failed scenarios directly in Jira.
-
----
-
-## Automation Architecture & CI/CD Workflow
-
-The test automation suite is structured using Maven and TestNG for clean build execution and pipeline orchestration:
-
-* Java-based Page Object Model (POM) classes isolating web element locators and page interactions.
-* TestNG assertions for structural pass/fail verification and reporting.
-* Parameterized test execution via `testng.xml`.
-* Headless execution configured in GitHub Actions (`.github/workflows/`) for automated build verification.
-
----
-
-## Data Privacy & HIPAA Compliance Standards
-
-All test documentation, automated scripts, and test data strictly adhere to HIPAA regulations and CMS testing guidelines:
-
-* All data inputs utilize synthetic, non-PHI datasets.
-* No real member credentials, Personal Identifiable Information (PII), or Protected Health Information (PHI) are exposed or stored in source control.
-* Private internal environment endpoints and credentials are managed via secure environment variables.
+- Internal hostnames, private application routes, API endpoints, database schemas, and connection details are excluded.
+- Credentials and secrets must not be committed to source control.
+- Public examples use synthetic test data and generalized technical details.
+- This document does not claim formal HIPAA or CMS compliance certification.
