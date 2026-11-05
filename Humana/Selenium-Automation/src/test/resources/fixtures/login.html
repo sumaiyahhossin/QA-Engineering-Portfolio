@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Member Sign In</title>
+</head>
+<body>
+    <main>
+        <h1>Member Sign In</h1>
+        <form id="login-form">
+            <label for="username">Username</label>
+            <input id="username" name="username" type="text" required>
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" required>
+            <button class="submit-button" type="submit">Sign in</button>
+        </form>
+        <p id="message" role="status" aria-live="polite"></p>
+    </main>
+    <script>
+        const form = document.getElementById("login-form");
+        const username = document.getElementById("username");
+        const password = document.getElementById("password");
+        const message = document.getElementById("message");
+
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+            if (username.value === "qa.user@example.test" && password.value === "TestPass123!") {
+                message.textContent = "Sign-in successful. Account overview is ready.";
+            } else {
+                message.textContent = "Username and/or password is incorrect";
+            }
+        });
+
+        form.addEventListener("click", function () {
+            if (!username.value.trim()) username.setAttribute("aria-invalid", "true");
+            if (!password.value.trim()) password.setAttribute("aria-invalid", "true");
+        });
+    </script>
+</body>
+</html>
