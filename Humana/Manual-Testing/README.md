@@ -11,7 +11,7 @@ This folder contains manual test cases and an Excel workbook for organizing test
 
 ## Coverage
 
-The test cases cover plan search, plan details, member coverage, enrollment form validation, sign-in, navigation, and QA process activities.
+The test cases cover plan search, plan details, member coverage, enrollment form validation, sign-in, navigation, defect handling, and test execution workflows.
 
 ## Recording Results
 
