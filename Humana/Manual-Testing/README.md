@@ -1,24 +1,24 @@
-# Manual Testing Documentation
+# Manual Testing
 
-## Project Scope: Healthcare Plan Browsing & Member-Facing Workflows
+This folder contains the manual test cases and the Excel workbook I used to organize the testing.
 
-This folder contains manual QA documentation for plan browsing, member coverage scenarios, enrollment form validation, navigation, sign-in behavior, and selected QA workflow checks.
+## Files
 
-## Repository Artifacts
+- TEST_CASES.md — 50 test cases with steps and expected results.
+- Humana_Manual_Test_Cases.xlsx — spreadsheet version of the test cases and execution tracking.
+- TEST_EXECUTION_RESULTS.md — notes on recording and reviewing results.
+- Defect-Reports/ — defect report template.
 
-- **`TEST_CASES.md`** — 50 documented test scenarios with preconditions, steps, test data, and expected results.
-- **`TEST_EXECUTION_RESULTS.md`** — guidance for recording and reviewing actual execution outcomes.
-- **`Humana_Manual_Test_Cases.xlsx`** — spreadsheet version of the manual test cases and tracking information.
-- **`Defect-Reports/`** — reusable defect template and a generalized example.
+## Coverage
 
-## Test Execution Notes
+The test cases cover plan search, plan details, member coverage, enrollment form validation, sign-in, navigation, and QA process activities.
 
-Test case design and test execution are separate activities. A test case should only be marked Passed or Failed after it has been run and its actual result has been compared with the expected result. Keep execution dates, build details, and defect references only when they can be supported by the original records.
+## Recording Results
 
-The manual suite includes both application workflow scenarios and QA process checks. Process checks such as defect tracking, test documentation, and Agile collaboration are not application feature tests.
+Mark a test Passed or Failed after running it and comparing the actual result with the expected result. Use Blocked when something prevents execution, Skipped when the test is intentionally not run, and Not Run when there is no execution result.
 
-## Data Privacy
+The workbook is the execution tracker. Keep dates, statuses, and defect references tied to the actual test run.
 
-- Use synthetic test data in public examples.
-- Do not publish member information, credentials, internal environment addresses, or confidential employer documentation.
-- Member coverage and enrollment scenarios in the documentation do not represent live eligibility decisions, real enrollment transactions, or access to real member records.
+## Test Data
+
+Use the test data assigned for the environment. Values shown in public examples are synthetic; don't put real member details or credentials in the repository.
