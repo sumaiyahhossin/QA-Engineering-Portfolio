@@ -42,4 +42,4 @@ This document lists the main workflows covered by the manual test cases and sele
 
 ## Test Data and Execution
 
-Use the test data approved for the environment. The local Selenium pages in this repository use synthetic values. Detailed steps and expected results are in the manual test case document and the Humana_Manual_Test_Cases.xlsx workbook.
+The manual test cases and the Humana_Manual_Test_Cases.xlsx workbook contain the detailed steps and expected results. The Selenium checks in this repository run against local HTML fixtures with synthetic values.
