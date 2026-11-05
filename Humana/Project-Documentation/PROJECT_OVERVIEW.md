@@ -36,7 +36,7 @@ My QA work included manual test design and execution, browser automation with Ja
 | Manual Testing | Excel, Zephyr |
 | Defect Tracking | Jira |
 | Database | SQL, Oracle SQL Developer |
-| Version Control / CI | Git, GitHub Actions |
+| Version Control | Git |
 | IDE | IntelliJ IDEA |
 
 ## Main Testing Areas
@@ -59,4 +59,6 @@ My QA work included manual test design and execution, browser automation with Ja
 ### Data Checks
 - Used SQL queries to review test records, dates, statuses, and relationships between related records when database access was available.
 
-The folders alongside this document contain portfolio examples of test cases, project notes, Selenium code, and SQL checks related to these testing areas. These materials were prepared for this portfolio and are not internal Humana documents. The public Selenium suite uses local HTML pages and synthetic values, so the browser tests can run independently of any employer system.
+The folders alongside this document contain independent portfolio examples related to these testing areas, including test cases, project documentation, Selenium automation, and SQL checks. These materials were created for this portfolio and are not copies of internal Humana documents or workplace test scripts.
+
+The public Selenium tests run against local HTML pages using synthetic test values. They do not connect to Humana systems or use real member information.
