@@ -1,18 +1,20 @@
 # Manual Test Execution
 
-**Workbook:** Humana_Manual_Test_Cases.xlsx  
-**Execution worksheet:** Test_Execution
+**Workbook:** [Humana_Manual_Test_Cases.xlsx](Humana_Manual_Test_Cases.xlsx)  
+**Execution Worksheet:** `Test_Execution`
 
-The workbook is where the manual test results are tracked. This page explains the status values; it isn't a separate record of test execution.
+The workbook tracks manual test results. This document defines the status values used across test cycles.
 
 | Status | Meaning |
 | --- | --- |
-| Passed | The actual result matched the expected result. |
-| Failed | The actual result did not match the expected result. |
-| Blocked | The test couldn't continue because of an environment, access, or dependency issue. |
-| Skipped | The test was intentionally not run. |
-| Not Run | There is no execution result yet. |
+| **Passed** | The actual result matched the expected result. |
+| **Failed** | The actual result did not match the expected result. |
+| **Blocked** | Execution could not proceed due to an environment, access, or dependency blocker. |
+| **Skipped** | The test case was intentionally bypassed for the test run. |
+| **Not Run** | No execution result has been recorded for the test case during the current cycle. |
 
-For each run, record the test case ID, date, actual result, status, and defect reference if one was created. Add the environment or build details when they're useful and okay to share.
+## Execution Logging Standards
 
-Only publish execution totals after checking the workbook. A written test case isn't proof that the test was run.
+For every test run, record the test case ID, date, actual outcome, final status, and linked defect reference (if applicable). Environment and build details should also be included when relevant to the run.
+
+Execution metrics should reflect actual test runs recorded in the workbook, keeping documented test cases separate from verified test execution.
