@@ -1,8 +1,8 @@
 # QA Engineering Portfolio
 
-Hi, I'm Sumaiyah. This repository contains selected QA documentation and automation from my work testing healthcare and insurance applications.
+Hi, I'm Sumaiyah. This repository contains selected QA documentation and automation examples related to my work testing healthcare and insurance applications.
 
-You'll find project notes, manual test cases, Selenium automation, SQL checks, and the tools I've worked with.
+You'll find project notes, manual test cases, Selenium automation, SQL checks, and examples of the tools I've worked with.
 
 ## Experience
 
@@ -28,8 +28,10 @@ Quality assurance specialist with 3 years of experience in manual and automated 
 - **API:** Postman, REST APIs, JSON
 - **Database:** SQL, Oracle SQL Developer
 - **Frameworks & Build Tools:** TestNG, Maven
-- **Tools:** Jira, Zephyr, HP Quality Center, Bugzilla, IntelliJ IDEA
-- **Version Control & CI:** Git, GitHub Actions, Cypress Cloud
+- **Test Management:** Jira, Zephyr, HP Quality Center, Bugzilla
+- **Development Tools:** IntelliJ IDEA
+- **Version Control & CI:** Git, GitHub Actions
+- **Testing Platforms:** Cypress Cloud
 
 ## Portfolio
 
@@ -56,6 +58,8 @@ Quality assurance specialist with 3 years of experience in manual and automated 
 - [API Testing](Healthfirst/API-Testing/README.md)
 - [SQL Testing](Healthfirst/SQL-Testing/README.md)
 
-## Note
+## Portfolio & Data Notes
 
-The experience sections describe the work I did in each role. The Selenium tests in this repository run against local test pages and use synthetic test values, so the workflow can run from GitHub Actions without connecting to a company system.
+The experience sections describe my work responsibilities in each role. The project documentation, test cases, SQL examples, and Selenium code are independent portfolio examples, not copies of internal company documentation or workplace test scripts.
+
+The public Selenium tests run against local HTML pages using synthetic test values. They do not connect to Humana or Healthfirst systems or use real member information.
