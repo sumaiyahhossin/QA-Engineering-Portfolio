@@ -1,39 +1,37 @@
-Project Overview
+# Project Overview
 
-Project Area: Member-Facing Healthcare Applications
+**Project area:** Member-facing healthcare applications  
+**Company:** Healthfirst  
+**Role:** Quality Assurance
 
-Company: Healthfirst
+## Overview
 
-Role: Quality Assurance
+This section focuses on testing member-facing healthcare workflows, especially eligibility-related processes and health plan selection. The main goal is to check that users can complete supported workflows, receive the right validation messages, and see information that matches the expected test data.
 
-Project Description
+## Areas Covered
 
-This portfolio section focuses on testing member-facing healthcare workflows, including eligibility-based processes and health plan selection. QA verifies that users can move through supported workflows, that the application handles valid and invalid information appropriately, and that displayed information is consistent with approved test data.
-
-Testing Focus
-
-- Member-facing application workflows
-- Eligibility-based workflow validation
+- Member-facing navigation and workflows
+- Eligibility-related processes
 - Health plan browsing and selection
 - Form validation and error handling
-- API response validation
+- API response checks
 - Data validation
 - Regression testing
 
-QA Activities Represented
+## QA Work
 
-- Review requirements and identify test scenarios.
-- Prepare manual test cases and expected results.
-- Perform functional and regression testing.
-- Develop and maintain automation examples using Playwright and Cypress.
-- Validate REST API behavior using Postman.
-- Compare application behavior with approved test data.
-- Document defects and retest fixes with the team.
+The portfolio examples reflect the types of testing activities described in my experience:
 
-Tools and Technologies
+- Reviewing requirements and identifying test scenarios
+- Writing and executing manual test cases
+- Testing positive, negative, and boundary conditions
+- Automating repeatable UI checks with Playwright and Cypress
+- Checking API requests and responses in Postman
+- Validating application data
+- Reporting defects and retesting fixes
 
-- Playwright, Cypress, JavaScript, TypeScript
-- Postman, REST APIs, JSON
-- SQL, Jira, Zephyr, GitHub Actions
+## Tools
 
-This document intentionally avoids internal application names, private URLs, API endpoints, database schemas, member identifiers, and confidential employer information.
+Playwright, Cypress, JavaScript, TypeScript, Postman, REST APIs, JSON, SQL, Jira, and Zephyr.
+
+The files in this folder are independently prepared portfolio examples. They do not contain Healthfirst source code, internal application details, private endpoints, database schemas, or member information.
