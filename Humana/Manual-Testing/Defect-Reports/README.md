@@ -1,14 +1,7 @@
 # Defect Reports
 
-This folder contains a reusable defect report template and a generalized example showing how to document an issue found during QA testing.
+This folder contains the format I use to document an issue found during testing.
 
-## Files
+- DEFECT-REPORT-TEMPLATE.md — fields for the issue summary, environment, steps, expected and actual results, evidence, and retest status.
 
-- [DEFECT-REPORT-TEMPLATE.md](./DEFECT-REPORT-TEMPLATE.md) — reusable format for issue details, environment, reproduction steps, expected and actual results, evidence, and status.
-- [PLAN-SEARCH-TIMEOUT-EXAMPLE.md](./PLAN-SEARCH-TIMEOUT-EXAMPLE.md) — generalized example of documenting a plan search results timeout.
-
-## Documentation Notes
-
-A useful defect report should describe the affected workflow, provide repeatable steps, compare expected and actual behavior, and include relevant evidence. A timeout or failed assertion should be investigated before it is classified as an application defect.
-
-Public examples use generalized details. Internal ticket references, private URLs, credentials, member information, and confidential technical evidence should not be published.
+A good report should make it easy for someone else to reproduce the issue. Include what you did, what you expected, and what actually happened. Add screenshots or logs only when they can be shared.
