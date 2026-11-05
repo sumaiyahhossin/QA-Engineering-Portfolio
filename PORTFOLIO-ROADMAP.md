@@ -18,8 +18,6 @@ Completed Portfolio Sections
 - [x] Healthfirst automation, API testing, and SQL documentation
 - [x] Independent Postman Echo API practice collection
 - [x] Independent Playwright demo project with login, logout, and invalid-login scenarios
-- [x] Study notes for manual testing, automation, API testing, SQL, Agile, and QA concepts
-- [x] Interview preparation notes
 
 Automation Status
 
@@ -34,7 +32,6 @@ Final Review Still Needed
 - [ ] Confirm the latest Humana Selenium Actions result and update the execution report.
 - [ ] Run the Postman Echo collection in Postman and record the actual result.
 - [ ] Add only sanitized screenshots or reports that do not contain personal or confidential information.
-- [ ] Confirm every interview example reflects work you personally performed.
 
 Accuracy and Privacy
 
