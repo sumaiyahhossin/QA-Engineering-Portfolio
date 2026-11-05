@@ -1,25 +1,18 @@
-# Selenium Test Results
+# Selenium Test Execution Results
 
-**Workflow:** Humana Selenium Tests  
-**Run:** [GitHub Actions #50](https://github.com/sumaiyahhossin/QA-Engineering-Portfolio/actions/runs/42093938034)  
-**Date:** November 5, 2026
+The Selenium suite runs against local HTML pages in `src/test/resources/fixtures`. It does not connect to Humana systems or use real member information.
 
-## Latest Run
+## Recording a Test Run
 
-| Result | Count |
-| --- | ---: |
-| Tests run | 9 |
-| Passed | 9 |
-| Failed | 0 |
-| Errors | 0 |
-| Skipped | 0 |
+After a completed local or GitHub Actions run, record:
 
-**Build result:** Success
+- Execution date
+- Run type (local or GitHub Actions)
+- Workflow run link, if applicable
+- Total tests, passed, failed, skipped, and errors
+- Build result
+- Relevant failure details
 
-The workflow completed successfully using the local HTML pages in src/test/resources/fixtures. The tests covered sign-in, invalid sign-in, blank-field validation, ZIP code search, results display, and plan details.
+Use the Maven Surefire reports under `target/surefire-reports` to confirm local test counts and outcomes. For GitHub Actions, use the summary and logs from the specific completed workflow run.
 
-## Notes
-
-The run log includes Selenium warnings that its CDP support doesn't match the Chrome version installed on the GitHub runner. The tests don't use Chrome DevTools features, and the warning did not affect this run.
-
-For the next run, check the Actions summary and Maven report under target/surefire-reports. Update this page only when a new run finishes.
+Only add execution counts and a run link after checking the corresponding report. Keep results from separate runs clearly identified.
