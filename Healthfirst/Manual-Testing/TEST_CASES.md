@@ -1,65 +1,107 @@
-Manual Test Cases
+# Manual Test Cases
 
-Project Area: Member-Facing Healthcare Workflows
+**Project area:** Member-facing healthcare workflows
 
-TC001 – Verify member workflow navigation
-Preconditions: Approved test environment and authorized test access.
-Steps:
-1. Sign in using an approved test account.
+## HF-TC-001: Verify member workflow navigation
+
+**Preconditions:** Access to the test environment and an approved test account.
+
+**Steps**
+1. Sign in with the approved test account.
 2. Open the member-facing application.
-3. Navigate between available workflow sections.
+3. Navigate through the available workflow sections.
 4. Return to the starting section.
-Expected Result: Navigation completes without unexpected errors and the correct sections are displayed.
 
-TC002 – Verify eligibility workflow with valid test data
-Preconditions: Approved valid test data and access to the eligibility workflow.
-Steps:
+**Expected result:** Each selected section opens and navigation completes without an unexpected error.
+
+## HF-TC-002: Verify eligibility with valid test data
+
+**Preconditions:** Valid, approved test data is available.
+
+**Steps**
 1. Open the eligibility workflow.
-2. Enter approved test information.
+2. Enter the approved test information.
 3. Submit the request.
-4. Review the displayed result.
-Expected Result: The application displays the expected eligibility result based on approved test data.
+4. Review the result.
 
-TC003 – Verify required field validation
-Steps:
+**Expected result:** The workflow displays the expected eligibility result for the test record.
+
+## HF-TC-003: Verify required field validation
+
+**Steps**
 1. Open the applicable form.
 2. Leave a required field empty.
 3. Submit the form.
-Expected Result: The application displays the documented validation message.
 
-TC004 – Verify invalid input handling
-Steps:
-1. Enter a value in an invalid format.
-2. Submit the form.
-Expected Result: The application handles the invalid value according to documented validation rules.
+**Expected result:** The missing field is identified and the expected validation message appears.
 
-TC005 – Verify health plan browsing
-Steps:
-1. Open plan browsing.
+## HF-TC-004: Verify invalid input handling
+
+**Steps**
+1. Open the applicable form.
+2. Enter a value in an invalid format.
+3. Submit the form.
+
+**Expected result:** The application handles the value according to the documented validation rules.
+
+## HF-TC-005: Verify health plan search results
+
+**Steps**
+1. Open the plan browsing section.
 2. Enter approved search criteria.
 3. Submit the search.
-4. Review available plans.
-Expected Result: Displayed plans match the search criteria and documented eligibility rules.
+4. Review the results.
 
-TC006 – Verify health plan selection
-Steps:
-1. Select an available plan.
-2. Review plan information.
-3. Continue to the next supported step, if available.
-Expected Result: The selected plan is identified correctly and its details are displayed.
+**Expected result:** The displayed plans match the selected criteria and applicable rules.
 
-TC007 – Verify API error handling in the UI
-Steps:
-1. Trigger a workflow that uses the service.
-2. Use an approved test condition for a documented error response.
-3. Review the application behavior.
-Expected Result: The application displays an appropriate message and does not show misleading data.
+## HF-TC-006: Verify health plan details
 
-TC008 – Verify displayed information against approved test data
-Steps:
+**Steps**
+1. Select a plan from the results.
+2. Open its details.
+3. Review the displayed plan information.
+
+**Expected result:** The selected plan is identified correctly and its details are displayed.
+
+## HF-TC-007: Verify API error handling in the application
+
+**Preconditions:** An approved test condition is available for a documented service error.
+
+**Steps**
+1. Open the workflow that uses the service.
+2. Trigger the approved error condition.
+3. Review the application response.
+
+**Expected result:** The application displays an appropriate message and does not show misleading information.
+
+## HF-TC-008: Verify displayed data
+
+**Preconditions:** Expected values for an approved test record are available.
+
+**Steps**
 1. Open the relevant member workflow.
-2. Search using an approved test record.
-3. Compare displayed values with expected values.
-Expected Result: Displayed information matches approved expected data.
+2. Find the test record.
+3. Compare the displayed values with the expected values.
 
-Note: These are portfolio demonstration test cases. Adjust them to the actual requirements you are authorized to test.
+**Expected result:** The displayed information matches the expected test data.
+
+## HF-TC-009: Verify behavior when no plans match the search
+
+**Steps**
+1. Open plan browsing.
+2. Enter approved criteria that return no matching plans.
+3. Submit the search.
+
+**Expected result:** The application displays the appropriate no-results message and does not show unrelated plans.
+
+## HF-TC-010: Verify regression after a change
+
+**Steps**
+1. Identify the workflow affected by the change.
+2. Run the relevant test case.
+3. Run related member and plan checks.
+4. Review the results.
+
+**Expected result:** The updated workflow works as expected and related functionality remains unaffected.
+
+These are portfolio test cases, not copies of internal Healthfirst test cases. Confirm exact requirements and expected results before using them in an actual test environment.
