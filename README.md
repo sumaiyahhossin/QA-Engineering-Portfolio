@@ -1,35 +1,48 @@
-QA Engineering Portfolio
+# QA Engineering Portfolio
 
 Welcome to my QA Engineering Portfolio.
 
-This repository brings together selected QA examples and technical skills across healthcare and insurance application testing. It includes project documentation, manual test cases, Selenium automation, and SQL validation examples.
+This repository brings together selected QA documentation, testing examples, and technical skills developed through my experience testing healthcare and insurance applications. It includes project documentation, manual test cases, Selenium automation, API testing documentation, and SQL validation examples.
 
-Professional Experience
+---
 
-Humana
-October 2023 – March 2025
+## Professional Experience
 
-Healthcare application testing experience involving plan browsing, plan details, member-facing workflows, manual testing, and Java Selenium automation.
+### Humana
+**October 2023 – March 2025**
 
-Healthfirst
-May 2025 – Present
+Worked on healthcare application testing involving health plan browsing, plan details, member-facing workflows, and functional testing. Experience included manual testing, Java Selenium automation, defect tracking, and database validation.
 
-Healthcare application testing experience involving member-facing workflows, eligibility-based processes, health plan selection, automation, API testing with Postman, and data validation.
+### Healthfirst
+**May 2025 – Present**
 
-Technical Skills
+Working on healthcare application testing involving member-facing workflows, eligibility-based processes, and health plan selection. Experience includes manual and automated testing, API testing with Postman, and data validation.
 
-- Automation: Selenium WebDriver, Playwright, Cypress
-- Programming: Java, JavaScript, TypeScript
-- Testing: Functional, Regression, Smoke, Integration, End-to-End, UAT, Cross-Browser
-- API Testing: Postman, REST APIs, JSON
-- Database Testing: SQL, Oracle SQL Developer
-- Frameworks: TestNG, Maven
-- Tools: Jira, Zephyr, HP Quality Center, Bugzilla, IntelliJ IDEA
-- Version Control and CI/CD: Git, GitHub Actions, Cypress Cloud
+---
 
-Portfolio Sections
+## Professional Summary
 
-Humana
+Quality assurance specialist with 3 years of experience in manual and automated testing of healthcare and insurance applications. Skilled in test design, eligibility-based workflows, defect analysis, and reliable software releases.
+
+---
+
+## Technical Skills
+
+- **Automation:** Selenium WebDriver, Playwright, Cypress
+- **Programming:** Java, JavaScript, TypeScript
+- **Testing Types:** Functional, Regression, Smoke, Integration, End-to-End, UAT, Cross-Browser
+- **API Testing:** Postman, REST APIs, JSON
+- **Database Testing:** SQL, Oracle SQL Developer
+- **Frameworks & Build Tools:** TestNG, Maven
+- **Tools:** Jira, Zephyr, HP Quality Center, Bugzilla, IntelliJ IDEA
+- **Version Control & CI/CD:** Git, GitHub Actions, Cypress Cloud
+
+---
+
+## Portfolio Sections
+
+### Humana Project Suite
+
 - [Project Overview](Humana/Project-Documentation/PROJECT_OVERVIEW.md)
 - [Test Plan](Humana/Project-Documentation/TEST_PLAN.md)
 - [Test Strategy](Humana/Project-Documentation/TEST_STRATEGY.md)
@@ -41,7 +54,8 @@ Humana
 - [Selenium Execution Results](Humana/Selenium-Automation/TEST-EXECUTION-RESULTS.md)
 - [SQL Testing](Humana/SQL-Testing/README.md)
 
-Healthfirst
+### Healthfirst Project Suite
+
 - [Project Overview](Healthfirst/Project-Documentation/PROJECT_OVERVIEW.md)
 - [Test Plan](Healthfirst/Project-Documentation/TEST_PLAN.md)
 - [Test Strategy](Healthfirst/Project-Documentation/TEST_STRATEGY.md)
@@ -52,17 +66,16 @@ Healthfirst
 - [API Testing](Healthfirst/API-Testing/README.md)
 - [SQL Testing](Healthfirst/SQL-Testing/README.md)
 
-Portfolio Build Status
-- [Portfolio Roadmap](PORTFOLIO-ROADMAP.md)
+### Portfolio Build Status
 
-Professional Summary
+- [QA Portfolio Build Checklist](QA_PORTFOLIO_BUILD_CHECKLIST.md)
 
-Quality assurance specialist with 3 years of experience in manual and automated testing of healthcare and insurance applications. Skilled in test design, eligibility-based workflows, defect analysis, and reliable software releases.
+---
 
-Portfolio Notes
+## Portfolio Notes & Compliance
 
-- This repository contains selected examples that demonstrate QA methods and technical skills.
-- No confidential employer documents, production credentials, private member information, or internal application details should be included.
-- Test execution results are marked Not Run, Pending, or Skipped unless actual execution has been verified.
-- Employer-related sections summarize the user's experience.
-- Public Humana plan browsing is not the same as Medicare eligibility, enrollment, or access to private member coverage.
+- This repository contains selected examples demonstrating QA methods, testing workflows, and technical skills.
+- No confidential employer documents, production credentials, private member information, or internal application details are intentionally included.
+- Test execution results are marked as Not Run, Pending, or Skipped unless actual execution has been verified.
+- Humana and Healthfirst sections summarize professional experience and related QA work. Generalized examples are used where necessary to protect confidential information.
+- Public Humana plan-browsing scenarios are separate from Medicare eligibility determinations, enrollment processing, and access to private member coverage.
