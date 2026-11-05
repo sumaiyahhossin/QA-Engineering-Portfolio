@@ -6,7 +6,7 @@
 
 ## 1. Purpose
 
-This portfolio test plan summarizes the application areas and QA activities represented in the examples: plan search, plan details, member coverage information, sign-in, forms, and related data checks. It outlines a practical approach to manual testing, automation, and defect follow-up.
+This test plan summarizes the application areas and QA activities represented in the portfolio examples: plan search, plan details, member coverage information, sign-in, forms, and related data checks. It outlines an approach to manual testing, automation, and defect follow-up.
 
 ## 2. What Was Tested
 
@@ -34,7 +34,7 @@ This portfolio test plan summarizes the application areas and QA activities repr
 
 ## 4. Tools
 
-Java, Selenium WebDriver, TestNG, Maven, IntelliJ IDEA, Oracle SQL Developer, Jira, Zephyr, Excel, Git, and GitHub Actions.
+Java, Selenium WebDriver, TestNG, Maven, IntelliJ IDEA, Oracle SQL Developer, Jira, Zephyr, Excel, and Git.
 
 ## 5. Test Process
 
@@ -52,4 +52,8 @@ For actual testing, use only accounts and records approved for the environment. 
 
 ## 7. Out of Scope
 
-The test cases in this portfolio cover application behavior. They do not perform live enrollment submissions, process claims, make payments, or change production records.
+The portfolio examples cover application behavior. They do not perform live enrollment submissions, process claims, make payments, or change production records.
+
+## Portfolio Automation
+
+The public Selenium examples use local HTML test pages and synthetic values. GitHub Actions runs this portfolio test suite; it is not listed as a Humana workplace tool.
