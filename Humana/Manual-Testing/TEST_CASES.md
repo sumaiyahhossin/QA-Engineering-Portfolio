@@ -1,117 +1,317 @@
-# Manual Test Suite: Healthcare Plan Browsing & Member Access
+# Manual Test Cases: Healthcare Plan Browsing & Member Access
 
 **Project Name:** Healthcare Plan Browsing and Public Account Access
 
-**Target System:** Humana Public Web Portal — Medicare Advantage plan browsing
+**Total:** 50 test cases | **Execution Type:** Manual
 
----
+Test case details below match the `Test_Cases` worksheet in `Humana_Manual_Test_Cases.xlsx`.
 
-## Test Case Index
+## Plan Browsing
 
-| Test Case ID | Test Scenario | Module | Priority | Type |
-| --- | --- | --- | --- | --- |
-| **TC-HUM-001** | Medicare Advantage Plan Browsing by ZIP Code | Public Plan Search | P1 | Functional |
-| **TC-HUM-002** | Plan Benefits and Cost-Sharing Details | Plan Details | P2 | Functional |
-| **TC-HUM-003** | Required Field Validation on ZIP Code Finder | Form Validation | P1 | Negative |
-| **TC-HUM-004** | Invalid ZIP Code Format Handling | Input Validation | P2 | Boundary |
-| **TC-HUM-005** | Portal Navigation and Search State | Application Navigation | P3 | Usability |
-| **TC-HUM-006** | Sign-In and Profile Setup Progression | Account Access | P1 | Functional |
+### TC-BROWSE-001: Verify health-plan listing loads correctly by entering zip code
+**REQ-PLAN-01 · High priority · Plan Browsing**
+- **Setup:** User on member portal landing page. | **Data:** Synthetic Zip Code
+- **Steps:** Enter valid service area zip code.; Submit search query.; Verify available insurance plans render.
+- **Expected:** Insurance plan records render with accurate monthly premiums and coverage levels.
 
----
+### TC-BROWSE-002: Verify side-by-side comparison of two health plans
+**REQ-PLAN-02 · High priority · Plan Comparison**
+- **Setup:** At least two plans selected in comparison tray. | **Data:** Synthetic Plan Records
+- **Steps:** Select Plan A and Plan B.; Open comparison view.; Compare deductibles and copays.
+- **Expected:** Side-by-side comparison matrix clearly highlights cost-sharing differences.
 
-## TC-HUM-001: Medicare Advantage Plan Browsing by ZIP Code
+### TC-BROWSE-003: Validate search filter by plan category (HMO vs PPO)
+**REQ-PLAN-03 · Medium priority · Plan Browsing**
+- **Setup:** Plan listing page loaded. | **Data:** Filter: HMO
+- **Steps:** Select HMO filter.; Review returned search results.
+- **Expected:** All displayed plan cards match the selected HMO category.
 
-**Test Scenario:** Verify that a visitor can search for Medicare Advantage plans using a ZIP code and view the available regional plan results.
+### TC-BROWSE-004: Verify empty state message on invalid plan search
+**REQ-PLAN-04 · Low priority · Plan Browsing**
+- **Setup:** Plan search bar active. | **Data:** Invalid Search Term
+- **Steps:** Enter invalid search text.; Submit search.
+- **Expected:** Clear no-results state message is displayed without crashing the page.
 
-**Preconditions:**
-- The public Medicare Advantage plan browsing page is accessible.
-- A valid five-digit ZIP code is available for testing.
+### TC-BROWSE-005: Verify plan detail page navigation from listing
+**REQ-PLAN-05 · High priority · Plan Details**
+- **Setup:** Plan search results displayed. | **Data:** Synthetic Plan Record
+- **Steps:** Click on a specific plan title.; Review loaded detail page.
+- **Expected:** Detail page opens and displays comprehensive benefit details for the selected plan.
 
-| Step # | Action | Test Data / UI Element | Expected Result |
-| --- | --- | --- | --- |
-| 1 | Open the Medicare Advantage plan browsing page. | Public plan browsing page | The page loads and the ZIP code search field is displayed. |
-| 2 | Locate the ZIP code field. | ZIP code input | The field is visible and enabled. |
-| 3 | Enter a ZIP code and submit the search. | ZIP code: `11417`; search button | The form accepts the five-digit ZIP code and starts the plan search. |
-| 4 | Review the search results. | Plan search results area | Available regional Medicare Advantage plan results are displayed, including plan information provided by the page. |
+### TC-BROWSE-006: Verify Summary of Benefits PDF download link
+**REQ-PLAN-06 · Medium priority · Plan Details**
+- **Setup:** Plan detail page open. | **Data:** Synthetic Plan ID
+- **Steps:** Click 'Download Summary of Benefits'.; Check browser response.
+- **Expected:** Valid PDF document downloads successfully containing plan terms.
 
----
+### TC-BROWSE-007: Verify pagination controls on large plan search result sets
+**REQ-PLAN-07 · Medium priority · Plan Browsing**
+- **Setup:** Search results exceed single-page view limit. | **Data:** Multi-page dataset
+- **Steps:** Click 'Next' page button.; Review records on page 2.
+- **Expected:** Next result set displays accurately and previous button reactivates.
 
-## TC-HUM-002: Plan Benefits and Cost-Sharing Details
+### TC-BROWSE-008: Verify browser back navigation restores previous search state
+**REQ-PLAN-08 · Low priority · Plan Navigation**
+- **Setup:** User navigated from search list to plan details. | **Data:** Browser navigation state
+- **Steps:** Click browser 'Back' button.
+- **Expected:** Previous search results and scroll position are restored correctly.
 
-**Test Scenario:** Verify that a visitor can open a plan's details and review the benefit and cost-sharing information presented.
+### TC-BROWSE-009: Validate search input field clears when 'Reset Filters' is clicked
+**REQ-PLAN-09 · Low priority · Plan Browsing**
+- **Setup:** Active search filters applied. | **Data:** Active filter state
+- **Steps:** Click 'Reset Filters' button.
+- **Expected:** Search input clears and default plan catalog is restored.
 
-**Preconditions:**
-- A plan search has been completed.
-- At least one plan is available in the results.
+### TC-BROWSE-010: Verify responsive layout on mobile viewport simulation
+**REQ-PLAN-10 · Medium priority · UI / Responsive**
+- **Setup:** Mobile emulation tool active. | **Data:** Viewport: Mobile emulation
+- **Steps:** Resize browser viewport to mobile dimensions.; Inspect plan listing.
+- **Expected:** UI elements stack vertically without overlapping text or broken buttons.
 
-| Step # | Action | Test Data / UI Element | Expected Result |
-| --- | --- | --- | --- |
-| 1 | Locate a plan in the search results. | Plan result card | The plan summary and available plan information are displayed. |
-| 2 | Open the plan details. | View plan details link or button | The selected plan's details are displayed. |
-| 3 | Locate the benefits and cost-sharing information. | Benefits section or tab, if available | The page displays the benefit and cost information available for the selected plan. |
-| 4 | Review the displayed coverage categories and amounts. | Plan benefit details | The information is readable and associated with the selected plan. |
+## Member Coverage
 
----
+### TC-COV-011: Verify active coverage status display for synthetic member
+**REQ-COV-01 · High priority · Member Coverage**
+- **Setup:** Member logged into secure portal. | **Data:** Synthetic Member ID
+- **Steps:** Navigate to Coverage section.; Review status indicator.
+- **Expected:** Coverage status displays 'Active' with correct effective date.
 
-## TC-HUM-003: Required Field Validation on ZIP Code Finder
+### TC-COV-012: Validate coverage effective and termination date formatting
+**REQ-COV-02 · High priority · Member Coverage**
+- **Setup:** Member coverage details open. | **Data:** Synthetic Coverage Record
+- **Steps:** Inspect coverage period dates.
+- **Expected:** Dates render in standard format matching backend database records.
 
-**Test Scenario:** Verify that the plan finder prevents a search when the ZIP code field is empty and provides validation feedback.
+### TC-COV-013: Verify member-to-plan association accuracy
+**REQ-COV-03 · High priority · Member Coverage**
+- **Setup:** Member profile loaded. | **Data:** Synthetic Member & Plan
+- **Steps:** Check assigned plan ID on coverage summary.
+- **Expected:** Assigned plan ID matches active policy enrollment record.
 
-**Preconditions:**
-- The public Medicare Advantage plan browsing page is open.
-- The ZIP code field is empty.
+### TC-COV-014: Verify error state handling for member without active coverage record
+**REQ-COV-04 · Medium priority · Error Handling**
+- **Setup:** Synthetic test member with no coverage assigned. | **Data:** Unassigned Member Record
+- **Steps:** Navigate to coverage page.
+- **Expected:** System displays graceful no-coverage message without exposing stack trace.
 
-| Step # | Action | Test Data / UI Element | Expected Result |
-| --- | --- | --- | --- |
-| 1 | Locate the ZIP code field and leave it empty. | ZIP code input | The field remains empty. |
-| 2 | Submit the search without entering a ZIP code. | Search button | The form prevents an empty search and provides validation feedback. |
-| 3 | Review the field's validation state. | ZIP code field and validation message | The validation message identifies the missing ZIP code and the field is indicated as invalid. |
+### TC-COV-015: Cross-check UI coverage details against backend database via SQL
+**REQ-COV-05 · High priority · Backend / SQL**
+- **Setup:** SQL tool connected to test database. | **Data:** Test Database Schema
+- **Steps:** Run query to retrieve member policy details.; Compare UI fields with SQL output.
+- **Expected:** UI display fields match backend database records 100%.
 
----
+### TC-COV-016: Verify dependent coverage visibility under primary subscriber policy
+**REQ-COV-06 · Medium priority · Member Coverage**
+- **Setup:** Family policy member record. | **Data:** Synthetic Family Record
+- **Steps:** Access coverage page.; Review dependent list.
+- **Expected:** All active dependents listed with correct relationship attributes.
 
-## TC-HUM-004: Invalid ZIP Code Format Handling
+### TC-COV-017: Validate inactive coverage status display on expired policy
+**REQ-COV-07 · High priority · Member Coverage**
+- **Setup:** Synthetic expired policy member. | **Data:** Synthetic Expired Record
+- **Steps:** View coverage details.
+- **Expected:** Status clearly shows 'Terminated' with historical end date.
 
-**Test Scenario:** Verify that the plan finder handles incomplete and non-numeric ZIP code input.
+### TC-COV-018: Verify primary care physician (PCP) assignment display
+**REQ-COV-08 · Medium priority · Member Coverage**
+- **Setup:** HMO member profile. | **Data:** Synthetic HMO Member
+- **Steps:** Inspect PCP card details.
+- **Expected:** Assigned doctor name, clinic address, and phone number display correctly.
 
-**Preconditions:**
-- The public plan finder is open and ready for input.
+### TC-COV-019: Verify coverage page load performance under standard network latency
+**REQ-COV-09 · Low priority · Performance Smoke**
+- **Setup:** Staging environment active. | **Data:** Staging Environment
+- **Steps:** Refresh coverage page and observe load response.
+- **Expected:** Page loads fully within acceptable user expectation threshold.
 
-| Step # | Action | Test Data / UI Element | Expected Result |
-| --- | --- | --- | --- |
-| 1 | Enter an incomplete ZIP code and submit. | `114` | The form displays validation feedback requiring a valid five-digit ZIP code. |
-| 2 | Attempt to enter alphabetic characters. | `ABCDE` | Non-numeric input is rejected or validation feedback is displayed. |
-| 3 | Correct the field with a valid five-digit ZIP code and submit. | `11417` | The form accepts the valid format and proceeds with the plan search. |
+### TC-COV-020: Verify post-deployment sanity check on member coverage portal
+**REQ-COV-10 · High priority · Sanity / Smoke**
+- **Setup:** Production staging release deployed. | **Data:** Sanity Release Build
+- **Steps:** Execute smoke test checklist covering login and coverage view.
+- **Expected:** Core elements load successfully with zero critical defects.
 
----
+## Enrollment
 
-## TC-HUM-005: Portal Navigation and Search State
+### TC-ENROLL-021: Submit insurance enrollment form with valid required fields
+**REQ-ENR-01 · High priority · Enrollment Forms**
+- **Setup:** Enrollment form open. | **Data:** Synthetic Applicant Data
+- **Steps:** Complete all required fields with synthetic test data.; Click Submit.
+- **Expected:** Form accepts submission and displays confirmation screen with reference ID.
 
-**Test Scenario:** Verify navigation between public Medicare information pages and plan search results.
+### TC-ENROLL-022: Validate required field validation message on blank form submission
+**REQ-ENR-02 · High priority · Form Validation**
+- **Setup:** Enrollment form open. | **Data:** Blank Name Field
+- **Steps:** Leave required name field blank.; Click Submit.
+- **Expected:** Inline validation error message prompts user to complete required field.
 
-**Preconditions:**
-- The visitor has opened the public plan browsing page.
-- A plan search has been completed.
+### TC-ENROLL-023: Validate email format validation check on enrollment form
+**REQ-ENR-03 · Medium priority · Form Validation**
+- **Setup:** Enrollment form open. | **Data:** Invalid Email String
+- **Steps:** Enter invalid email format.; Submit form.
+- **Expected:** System displays invalid email format error message and blocks submission.
 
-| Step # | Action | Test Data / UI Element | Expected Result |
-| --- | --- | --- | --- |
-| 1 | Navigate to another public Medicare information section using the site navigation. | Visible navigation link | The selected page loads successfully. |
-| 2 | Use the browser Back button. | Browser navigation | The browser returns to the previous page. |
-| 3 | Return to the plan search results. | Visible back or results navigation, if available | The plan results page loads. Previously entered search information is retained when supported by the application. |
+### TC-ENROLL-024: Validate phone number format restriction on contact field
+**REQ-ENR-04 · Medium priority · Form Validation**
+- **Setup:** Enrollment form open. | **Data:** Invalid Phone Input
+- **Steps:** Enter unaccepted characters in phone field.
+- **Expected:** Field restricts input or flags validation error.
 
----
+### TC-ENROLL-025: Verify enrollment review step accurately reflects entered data
+**REQ-ENR-05 · High priority · Enrollment Review**
+- **Setup:** Form completed up to review step. | **Data:** Synthetic Form Data
+- **Steps:** Navigate to review screen.; Compare input values with displayed summary.
+- **Expected:** All entered demographic and plan choices display accurately before final confirmation.
 
-## TC-HUM-006: Sign-In and Profile Setup Progression
+### TC-ENROLL-026: Verify cancel action discards unsaved enrollment draft
+**REQ-ENR-06 · Low priority · Enrollment Navigation**
+- **Setup:** Enrollment form partially filled. | **Data:** Partially Filled Form
+- **Steps:** Click Cancel button.; Confirm prompt.
+- **Expected:** Form data resets and browser redirects without saving partial draft.
 
-**Test Scenario:** Verify that accepted test credentials advance the sign-in flow to the next account or profile setup step without accessing member coverage information.
+### TC-ENROLL-027: Prevent duplicate enrollment submission on rapid double-click
+**REQ-ENR-07 · High priority · Enrollment Security**
+- **Setup:** Valid enrollment form ready. | **Data:** Double-click Event
+- **Steps:** Rapidly double-click submit button.
+- **Expected:** System disables button after first click, preventing duplicate transaction records.
 
-**Preconditions:**
-- The account sign-in page is accessible.
-- Authorized test credentials are available and stored securely outside the repository.
+### TC-ENROLL-028: Verify database records match submitted enrollment form data via SQL
+**REQ-ENR-08 · High priority · Backend / SQL**
+- **Setup:** SQL query tool open. | **Data:** Test Database Table
+- **Steps:** Query submission table for latest record.; Verify columns.
+- **Expected:** Database row stores exact values submitted through web form.
 
-| Step # | Action | Test Data / UI Element | Expected Result |
-| --- | --- | --- | --- |
-| 1 | Open the account sign-in page. | Sign-in page | The username and password fields are displayed. |
-| 2 | Enter the authorized test username. | Securely supplied test username | The username field accepts the test value. |
-| 3 | Enter the authorized test password. | Securely supplied test password | The password is masked in the field. |
-| 4 | Submit the sign-in form. | Sign In button | The form submits over the secure sign-in connection. |
-| 5 | Review the next page or prompt. | Account or profile setup step | If the credentials are accepted, the application advances to the next account or profile setup step. This test does not verify Medicare eligibility, enrollment, or member coverage. |
+### TC-ENROLL-029: Verify accessibility tab-index ordering across enrollment form fields
+**REQ-ENR-09 · Low priority · Accessibility**
+- **Setup:** Enrollment form loaded. | **Data:** Keyboard Navigation
+- **Steps:** Press Tab key sequentially through form inputs.
+- **Expected:** Focus moves logically from top to bottom through all input fields.
+
+### TC-ENROLL-030: Verify post-deployment smoke test passes on enrollment submission form
+**REQ-ENR-10 · High priority · Sanity / Smoke**
+- **Setup:** Staging environment post-deployment. | **Data:** Smoke Checklist
+- **Steps:** Run manual smoke checklist verifying form submission response.
+- **Expected:** System returns 200 OK status on test payload submission.
+
+## Navigation & Security
+
+### TC-NAV-031: Verify user login with valid credentials
+**REQ-NAV-01 · High priority · Authentication**
+- **Setup:** Login page open. | **Data:** Valid Test Credentials
+- **Steps:** Enter valid test username and password.; Click Login.
+- **Expected:** User authenticates successfully and lands on member dashboard.
+
+### TC-NAV-032: Verify login failure with incorrect password
+**REQ-NAV-02 · High priority · Authentication**
+- **Setup:** Login page open. | **Data:** Incorrect Password
+- **Steps:** Enter valid username and incorrect password.; Click Login.
+- **Expected:** System displays invalid credentials error message and denies access.
+
+### TC-NAV-033: Verify logout session termination and redirection
+**REQ-NAV-03 · High priority · Session Management**
+- **Setup:** User logged into portal. | **Data:** Active User Session
+- **Steps:** Click Logout button.; Attempt to use browser Back button.
+- **Expected:** Session terminates securely and user cannot access protected pages without re-authenticating.
+
+### TC-NAV-034: Verify session timeout behavior after period of inactivity
+**REQ-NAV-04 · High priority · Session Management**
+- **Setup:** User logged in. | **Data:** Timed-out Session
+- **Steps:** Trigger simulated session timeout or inactivity threshold.
+- **Expected:** User redirected to login screen with session expired notification.
+
+### TC-NAV-035: Verify unauthorized access restriction to protected member routes
+**REQ-NAV-05 · High priority · Security / Authorization**
+- **Setup:** Logged out state. | **Data:** Protected URL Route
+- **Steps:** Enter direct URL for secure dashboard route.
+- **Expected:** System redirects unauthenticated user to login portal.
+
+### TC-NAV-036: Verify primary navigation menu links route correctly
+**REQ-NAV-06 · Medium priority · UI Navigation**
+- **Setup:** User logged in on dashboard. | **Data:** Navigation Menu
+- **Steps:** Click each header navigation link.
+- **Expected:** Each link opens its designated target page successfully.
+
+### TC-NAV-037: Verify browser refresh maintains active authenticated session state
+**REQ-NAV-07 · Medium priority · Session Management**
+- **Setup:** User viewing secure policy page. | **Data:** Active Authenticated Session
+- **Steps:** Refresh browser window.
+- **Expected:** Page reloads and user remains logged in without session loss.
+
+### TC-NAV-038: Verify password complexity rule validation on account registration
+**REQ-NAV-08 · Medium priority · Form Validation**
+- **Setup:** Registration page open. | **Data:** Simple Password Input
+- **Steps:** Enter simple password.
+- **Expected:** System displays error requiring minimum length and character mix.
+
+### TC-NAV-039: Verify SQL Injection prevention on login username input field
+**REQ-NAV-09 · High priority · Security Testing**
+- **Setup:** Login page open. | **Data:** SQL Injection Payload
+- **Steps:** Input SQL injection string.
+- **Expected:** Input sanitized; login rejected safely without exposing database errors.
+
+### TC-NAV-040: Verify manual test case documentation and status update in test management tool
+**REQ-NAV-10 · High priority · Reporting**
+- **Setup:** Test management tool open. | **Data:** Test Repository
+- **Steps:** Update test run status and add execution notes.
+- **Expected:** Execution records save accurately with timestamp and tester attribution.
+
+## Agile & Jira QA
+
+### TC-JIRA-041: Verify user story acceptance criteria review during sprint grooming
+**REQ-JIRA-01 · High priority · Agile / Grooming**
+- **Setup:** Backlog refinement meeting active. | **Data:** User Story Item
+- **Steps:** Review user story acceptance criteria for testability.; Confirm edge cases with product owner.
+- **Expected:** Acceptance criteria validated and marked ready for sprint estimation.
+
+### TC-JIRA-042: Verify defect logging in tracking tool with reproduction steps and severity
+**REQ-JIRA-02 · High priority · Defect Management**
+- **Setup:** Bug identified during exploratory test session. | **Data:** Defect Ticket
+- **Steps:** Create bug ticket.; Populate Summary, Steps, Expected vs Actual, and Severity.
+- **Expected:** Defect logged successfully in tracking backlog with correct priority label.
+
+### TC-JIRA-043: Verify defect status update and retesting workflow
+**REQ-JIRA-03 · High priority · Defect Management**
+- **Setup:** Developer marked bug as 'Fixed'. | **Data:** Bug Workflow
+- **Steps:** Pull fix in staging environment.; Retest scenario.; Update ticket status to 'Closed' or 'Reopened'.
+- **Expected:** Bug lifecycle tracked accurately through workflow columns.
+
+### TC-JIRA-044: Verify daily QA progress reporting during Agile standup
+**REQ-JIRA-04 · Medium priority · Agile Communication**
+- **Setup:** Daily standup meeting. | **Data:** Daily Standup Notes
+- **Steps:** Report completed test execution count, active blockers, and daily metrics to team.
+- **Expected:** Team aligned on sprint testing velocity and open release risks.
+
+### TC-JIRA-045: Verify regression test execution following bug fix patch deployment
+**REQ-JIRA-05 · High priority · Regression Testing**
+- **Setup:** Patch deployed to staging. | **Data:** Patch Release Build
+- **Steps:** Execute targeted manual regression test cases around fixed module.
+- **Expected:** Targeted tests pass, confirming fix did not introduce regression issues.
+
+### TC-JIRA-046: Verify test repository organization and module structuring
+**REQ-JIRA-06 · Medium priority · Test Management**
+- **Setup:** Test management plugin open. | **Data:** Test Repository
+- **Steps:** Create and organize test cases under structured folders by module.
+- **Expected:** Test cases structured cleanly for audit and execution tracking.
+
+### TC-JIRA-047: Verify database query execution during data investigation
+**REQ-JIRA-07 · High priority · Backend Verification**
+- **Setup:** SQL query tool open. | **Data:** Database Schema
+- **Steps:** Investigate discrepancy between UI and DB by running backend select queries.
+- **Expected:** Root cause identified via data comparison.
+
+### TC-JIRA-048: Verify version control commit workflow and code review collaboration
+**REQ-JIRA-08 · High priority · Version Control**
+- **Setup:** Version control active. | **Data:** Version Control
+- **Steps:** Review code updates and manage local branch commits.
+- **Expected:** Version control history maintained cleanly.
+
+### TC-JIRA-049: Verify participation in sprint retrospective meeting
+**REQ-JIRA-09 · Low priority · Agile / Retro**
+- **Setup:** Sprint end review. | **Data:** Sprint Retro Notes
+- **Steps:** Discuss what went well, what could improve, and action items for next sprint.
+- **Expected:** Retrospective feedback logged and process improvements adopted.
+
+### TC-JIRA-050: Verify production sanity test execution and sign-off post-release
+**REQ-JIRA-10 · High priority · Production Sanity**
+- **Setup:** Production release deployment completed. | **Data:** Production Release Build
+- **Steps:** Run approved sanity checklist verifying core plan browsing and coverage features.
+- **Expected:** Sign-off provided to engineering leads confirming production stability.
