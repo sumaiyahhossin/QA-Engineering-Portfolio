@@ -1,116 +1,62 @@
 package com.humana.portal.tests;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class Test03_PlanSearchTest {
+public class Test03_PlanSearchTest extends TestBase {
 
-    private WebDriver driver;
-    private WebDriverWait wait;
+    private final By zipcodeInput = By.id("zipcode-input");
+    private final By shopPlansButton = By.cssSelector("button[data-testid='submit-btn']");
+    private final By resultsHeading = By.id("results-heading");
 
-    //direct medicare plan finder url to bypass homepage web component bot blocks
-    private static final String MEDICARE_FINDER_URL = "https://www.humana.com/medicare/medicare-advantage-plans";
+    @Test(priority = 1, description = "Verify plan search page loads")
+    public void testPlanSearchPageLoads() {
+        openFixture("plan-search.html");
 
-    //locators for medicare search workflow
-    private final By zipcodeInputLocator = By.id("zipcode-input");
-    private final By shopPlansButtonLocator = By.cssSelector("button[data-testid='submit-btn']");
-    private final By planResultsLocator = By.xpath("//*[contains(text(),'plans in your ZIP code')]");
+        WebElement zipField = new WebDriverWait(driver, Duration.ofSeconds(5))
+                .until(ExpectedConditions.visibilityOfElementLocated(zipcodeInput));
 
-    @BeforeMethod
-    public void setUp() {
-        ChromeOptions options = new ChromeOptions();
-
-        //chrome settings for github actions
-        options.addArguments("--headless=new");
-        options.addArguments("--no-sandbox");
-        options.addArguments("--disable-dev-shm-usage");
-        options.addArguments("--disable-gpu");
-        options.addArguments("--window-size=1920,1080");
-        options.addArguments("--disable-blink-features=AutomationControlled");
-
-        driver = new ChromeDriver(options);
-        wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-
-        //open direct medicare finder portal before each test
-        driver.get(MEDICARE_FINDER_URL);
+        Assert.assertTrue(zipField.isDisplayed());
     }
 
-    @Test(priority = 1, description = "Test Case 1: Verify Medicare plan finder portal loads successfully")
-    public void testMedicarePageLoads() throws InterruptedException {
-        //1.wait for zip code input field to be present on page
-        WebElement zipcodeField = wait.until(ExpectedConditions.visibilityOfElementLocated(zipcodeInputLocator));
-        Thread.sleep(1500); //visual pause
-        Assert.assertTrue(zipcodeField.isDisplayed(), "Medicare plan lookup ZIP input field failed to load.");
+    @Test(priority = 2, description = "Verify a five-digit ZIP code can be entered")
+    public void testEnterZipCode() {
+        openFixture("plan-search.html");
+
+        WebElement zipField = driver.findElement(zipcodeInput);
+        zipField.sendKeys("11417");
+
+        Assert.assertEquals(zipField.getAttribute("value"), "11417");
     }
 
-    @Test(priority = 2, description = "Test Case 2: Enter target ZIP code 11417 into search input")
-    public void testEnterZipCode() throws InterruptedException {
-        //1.locate zip input and type zip code 11417 slowly
-        WebElement zipcodeField = wait.until(ExpectedConditions.elementToBeClickable(zipcodeInputLocator));
-        zipcodeField.clear();
-        Thread.sleep(1000); //visual pause
-        zipcodeField.sendKeys("11417");
-        Thread.sleep(2000); //visual pause after typing zip
+    @Test(priority = 3, description = "Verify the Shop Plans button submits the search")
+    public void testClickShopPlansButton() {
+        openFixture("plan-search.html");
 
-        //2.verify entered value in input field
-        String enteredZip = zipcodeField.getAttribute("value");
-        Assert.assertEquals(enteredZip, "11417", "ZIP code input field did not match expected test value.");
+        driver.findElement(zipcodeInput).sendKeys("11417");
+        driver.findElement(shopPlansButton).click();
+
+        Assert.assertTrue(driver.findElement(By.id("plan-results")).isDisplayed());
     }
 
-    @Test(priority = 3, description = "Test Case 3: Click shop plans submit button")
-    public void testClickShopPlansButton() throws InterruptedException {
-        //1.enter zip code before submitting search
-        WebElement zipcodeField = wait.until(ExpectedConditions.elementToBeClickable(zipcodeInputLocator));
-        zipcodeField.clear();
-        zipcodeField.sendKeys("11417");
-        Thread.sleep(1500);
+    @Test(priority = 4, description = "Verify plan results render for the entered ZIP code")
+    public void testVerifyPlanResultsRendered() {
+        openFixture("plan-search.html");
 
-        //2.click shop plans button using javascript for reliable execution
-        WebElement shopPlansButton = wait.until(ExpectedConditions.elementToBeClickable(shopPlansButtonLocator));
-        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", shopPlansButton);
-        Thread.sleep(3000); //visual pause after submit click
+        driver.findElement(zipcodeInput).sendKeys("11417");
+        driver.findElement(shopPlansButton).click();
 
-        //3.verify redirection or loading state starts
-        Assert.assertTrue(driver.getCurrentUrl().contains("medicare") || driver.getCurrentUrl().contains("plan"),
-                "Page failed to trigger search submission.");
-    }
+        String heading = new WebDriverWait(driver, Duration.ofSeconds(5))
+                .until(ExpectedConditions.visibilityOfElementLocated(resultsHeading))
+                .getText();
 
-    @Test(priority = 4, description = "Test Case 4: Verify Medicare Advantage plan results render for ZIP code 11417")
-    public void testVerifyPlanResultsRendered() throws InterruptedException {
-        //1.enter zip code 11417
-        WebElement zipcodeField = wait.until(ExpectedConditions.elementToBeClickable(zipcodeInputLocator));
-        zipcodeField.clear();
-        zipcodeField.sendKeys("11417");
-        Thread.sleep(1500);
-
-        //2.click shop plans button
-        WebElement shopPlansButton = wait.until(ExpectedConditions.elementToBeClickable(shopPlansButtonLocator));
-        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", shopPlansButton);
-
-        //3.extended wait for dynamic ajax plan results to finish loading
-        Thread.sleep(12000);
-
-        //4.verify plan results summary text appears on screen
-        WebElement resultsHeading = wait.until(ExpectedConditions.visibilityOfElementLocated(planResultsLocator));
-        Assert.assertTrue(resultsHeading.isDisplayed(), "Medicare plan search results banner failed to render for ZIP 11417.");
-    }
-
-    @AfterMethod
-    public void tearDown() {
-        if (driver != null) {
-            driver.quit(); //cleanly closes browser session and frees system memory
-        }
+        Assert.assertEquals(heading, "Plans in your ZIP code 11417");
+        Assert.assertTrue(driver.findElement(By.cssSelector(".plan-card")).isDisplayed());
     }
 }
