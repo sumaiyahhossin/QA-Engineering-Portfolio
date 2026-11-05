@@ -2,7 +2,7 @@
 
 Hi, I'm Sumaiyah. This repository contains selected QA documentation and automation examples related to my work testing healthcare and insurance applications.
 
-You'll find project notes, manual test cases, Selenium automation, SQL checks, and examples of the tools I've worked with.
+You'll find project notes, manual test cases, Selenium automation, API testing examples, SQL checks, and test documentation.
 
 ## Experience
 
@@ -36,6 +36,7 @@ Quality assurance specialist with 3 years of experience in manual and automated 
 ## Portfolio
 
 ### Humana
+
 - [Project Overview](Humana/Project-Documentation/PROJECT_OVERVIEW.md)
 - [Test Plan](Humana/Project-Documentation/TEST_PLAN.md)
 - [Test Strategy](Humana/Project-Documentation/TEST_STRATEGY.md)
@@ -48,18 +49,23 @@ Quality assurance specialist with 3 years of experience in manual and automated 
 - [SQL Testing](Humana/SQL-Testing/README.md)
 
 ### Healthfirst
+
 - [Project Overview](Healthfirst/Project-Documentation/PROJECT_OVERVIEW.md)
 - [Test Plan](Healthfirst/Project-Documentation/TEST_PLAN.md)
 - [Test Strategy](Healthfirst/Project-Documentation/TEST_STRATEGY.md)
 - [Test Environment](Healthfirst/Project-Documentation/TEST_ENVIRONMENT.md)
 - [Test Scenarios](Healthfirst/Project-Documentation/TEST_SCENARIOS.md)
-- [Manual Testing](Healthfirst/Manual-Testing/README.md)
-- [Automation Approach](Healthfirst/Automation/README.md)
+- [Manual Test Cases](Healthfirst/Manual-Testing/TEST_CASES.md)
+- [Test Execution Tracking](Healthfirst/Manual-Testing/TEST_EXECUTION_RESULTS.md)
+- [Defect Reports](Healthfirst/Manual-Testing/Defect-Reports/README.md)
+- [UI Automation](Healthfirst/Automation/README.md)
 - [API Testing](Healthfirst/API-Testing/README.md)
+- [API Test Cases](Healthfirst/API-Testing/API-TEST-CASES.md)
 - [SQL Testing](Healthfirst/SQL-Testing/README.md)
+- [SQL Examples](Healthfirst/SQL-Testing/SQL-QUERIES.md)
 
-## Portfolio & Data Notes
+## Portfolio Notes
 
-The experience sections describe my work responsibilities in each role. The project documentation, test cases, SQL examples, and Selenium code are independent portfolio examples, not copies of internal company documentation or workplace test scripts.
+The experience sections describe my work responsibilities. The project documentation, test cases, API and SQL examples, and code in this repository are independently prepared portfolio materials, not copies of internal company documentation or workplace test scripts.
 
-The public Selenium tests run against local HTML pages using synthetic test values. They do not connect to Humana or Healthfirst systems or use real member information.
+Public examples use synthetic test values and generic application details. They do not connect to Humana or Healthfirst systems or include real member information.
