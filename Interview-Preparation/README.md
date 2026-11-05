@@ -4,9 +4,9 @@ Use these prompts to practice clear answers based on your actual experience. Kee
 
 Tell Me About Yourself
 
-I have approximately three years of experience testing healthcare and insurance applications. My experience includes manual and automated testing, working with test cases, validating application workflows, and reporting defects. I have used tools including Selenium WebDriver with Java and TestNG, as well as Playwright, Cypress, Postman, SQL, Jira, and Zephyr. I enjoy understanding how a feature should work, checking different scenarios, and helping the team release reliable software.
+I have approximately three years of experience testing healthcare and insurance applications. My experience includes manual and automated testing, working with test cases, validating application workflows, and reporting defects. I have used tools including Selenium WebDriver with Java and TestNG, as well as Playwright, Cypress, Postman, SQL, Jira, and Zephyr. I first became interested in QA through a no-code website experience, where I started paying attention to how pages and forms behaved. I enjoy understanding how a feature should work, checking different scenarios, and helping the team release reliable software.
 
-How Do You Approach Testing a New Feature?
+What Got You Interested in QA?\n\nI had an early experience working with a no-code website builder, and it got me interested in how websites behave and how to check that everything works the way it should. That curiosity led me toward software testing and then into QA work with healthcare and insurance applications.\n\nHow Do You Approach Testing a New Feature?
 
 I start by reviewing the requirements and acceptance criteria. Then I identify positive, negative, and boundary scenarios, prepare approved test data, and write test cases with clear expected results. I execute the tests, document defects with reproduction steps, retest fixes, and run regression tests on related areas.
 
