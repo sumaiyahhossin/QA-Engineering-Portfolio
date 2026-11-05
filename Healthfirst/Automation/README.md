@@ -1,43 +1,21 @@
 # UI Automation
 
-The automation work described in my experience includes browser testing with Playwright and Cypress. This section is organized by framework so the test code and supporting files can be kept separate.
+This folder contains the runnable Cypress portfolio project and its supporting demo application.
 
-## Frameworks
+## Cypress
 
-- [Playwright](./Playwright/README.md)
-- [Cypress](./Cypress/README.md)
+- [Cypress project and setup instructions](Cypress/README.md)
+- [Cypress test plan](Cypress/TEST_PLAN.md)
 
-## Folder Structure
+The Cypress project includes a local fictional healthcare member portal, UI and API test coverage, reusable fixtures, and a GitHub Actions workflow. It uses synthetic data and does not connect to Healthfirst or any employer system.
 
-```text
-Automation/
-├── Playwright/
-│   ├── tests/
-│   ├── pages/
-│   └── fixtures/
-└── Cypress/
-    ├── e2e/
-    ├── support/
-    └── fixtures/
-```
+## Coverage
 
-## Workflows Covered
+- Member portal navigation
+- Health plan search and plan details
+- Eligibility checks
+- Enrollment form validation
+- API responses
+- Error handling and unexpected responses
 
-- Member workflow navigation
-- Required field and format validation
-- Eligibility form behavior
-- Health plan browsing
-- Health plan details
-- Error and no-results messages
-- Regression checks for stable workflows
-
-## Test Design
-
-- Keep each test focused on one behavior.
-- Use stable locators and assert what the user can see.
-- Keep test data separate from test logic.
-- Avoid relying on the order in which tests run.
-- Use environment variables for configuration and credentials.
-- Capture screenshots or traces when they help investigate a failure.
-
-The folders are set up for the public portfolio examples. They do not contain copied employer scripts or connect to Healthfirst systems. The framework folders currently contain organization notes, not runnable test specs; runnable examples still need to be added and verified.
+The project can be run locally by following the setup instructions in the Cypress README.

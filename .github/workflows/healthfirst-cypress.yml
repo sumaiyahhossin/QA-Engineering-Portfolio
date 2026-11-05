@@ -1,14 +1,24 @@
-name: Cypress
+name: Healthfirst Cypress Tests
 
 on:
   push:
     branches: [main, master]
+    paths:
+      - "Healthfirst/Automation/Cypress/**"
+      - ".github/workflows/healthfirst-cypress.yml"
   pull_request:
     branches: [main, master]
+    paths:
+      - "Healthfirst/Automation/Cypress/**"
+      - ".github/workflows/healthfirst-cypress.yml"
 
 jobs:
   e2e:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Healthfirst/Automation/Cypress
+
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -18,6 +28,7 @@ jobs:
         with:
           node-version: 22
           cache: npm
+          cache-dependency-path: Healthfirst/Automation/Cypress/package-lock.json
 
       - name: Install dependencies
         run: npm ci
@@ -44,6 +55,6 @@ jobs:
         with:
           name: cypress-artifacts
           path: |
-            cypress/screenshots
-            cypress/videos
+            Healthfirst/Automation/Cypress/cypress/screenshots
+            Healthfirst/Automation/Cypress/cypress/videos
           if-no-files-found: ignore

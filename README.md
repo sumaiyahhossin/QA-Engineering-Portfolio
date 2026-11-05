@@ -1,20 +1,23 @@
 # QA Engineering Portfolio
 
-Hi, I'm Sumaiyah. This repository contains selected QA documentation and automation examples related to my work testing healthcare and insurance applications.
+Hi, I'm Sumaiyah. This repository contains selected QA documentation and independent testing examples based on healthcare and insurance workflows.
 
-You'll find project notes, manual test cases, Selenium automation, API testing examples, SQL checks, and test documentation.
+The portfolio is organized into two sections:
+
+- **Humana** – manual testing, Selenium automation, SQL examples, and project documentation.
+- **Healthfirst** – manual testing, API and SQL examples, project documentation, and a runnable Cypress demo project.
 
 ## Experience
 
 ### Humana
 **Junior QA Analyst | October 2023 – March 2025**
 
-Tested healthcare plan browsing and member-facing workflows. My work included writing and running manual test cases, automating selected checks with Java and Selenium, reviewing data with SQL, and tracking issues with Jira and Zephyr.
+Tested healthcare plan browsing and member-facing workflows. Work included manual test cases, selected Java and Selenium automation, SQL data review, and issue tracking with Jira and Zephyr.
 
 ### Healthfirst
 **May 2025 – Present**
 
-Working on member-facing healthcare workflows, including eligibility-related processes and health plan selection. My work includes manual and automated testing, API checks with Postman, and data validation.
+Work includes testing member-facing healthcare workflows, eligibility-related processes, and health plan selection, along with manual and automated testing, API checks, and data validation.
 
 ## About Me
 
@@ -43,6 +46,8 @@ Quality assurance specialist with 3 years of experience in manual and automated 
 - [Test Environment](Humana/Project-Documentation/TEST_ENVIRONMENT.md)
 - [Test Scenarios](Humana/Project-Documentation/TEST_SCENARIOS.md)
 - [Manual Testing](Humana/Manual-Testing/README.md)
+- [Manual Test Cases](Humana/Manual-Testing/TEST_CASES.md)
+- [Execution Results](Humana/Manual-Testing/TEST_EXECUTION_RESULTS.md)
 - [Defect Report Template](Humana/Manual-Testing/Defect-Reports/README.md)
 - [Selenium Automation](Humana/Selenium-Automation/README.md)
 - [Selenium Results](Humana/Selenium-Automation/TEST-EXECUTION-RESULTS.md)
@@ -55,10 +60,12 @@ Quality assurance specialist with 3 years of experience in manual and automated 
 - [Test Strategy](Healthfirst/Project-Documentation/TEST_STRATEGY.md)
 - [Test Environment](Healthfirst/Project-Documentation/TEST_ENVIRONMENT.md)
 - [Test Scenarios](Healthfirst/Project-Documentation/TEST_SCENARIOS.md)
+- [Manual Testing](Healthfirst/Manual-Testing/README.md)
 - [Manual Test Cases](Healthfirst/Manual-Testing/TEST_CASES.md)
-- [Test Execution Tracking](Healthfirst/Manual-Testing/TEST_EXECUTION_RESULTS.md)
-- [Defect Reports](Healthfirst/Manual-Testing/Defect-Reports/README.md)
-- [UI Automation](Healthfirst/Automation/README.md)
+- [Execution Results](Healthfirst/Manual-Testing/TEST_EXECUTION_RESULTS.md)
+- [Defect Report Template](Healthfirst/Manual-Testing/Defect-Reports/README.md)
+- [Cypress Automation Demo](Healthfirst/Automation/Cypress/README.md)
+- [Cypress Test Plan](Healthfirst/Automation/Cypress/TEST_PLAN.md)
 - [API Testing](Healthfirst/API-Testing/README.md)
 - [API Test Cases](Healthfirst/API-Testing/API-TEST-CASES.md)
 - [SQL Testing](Healthfirst/SQL-Testing/README.md)
@@ -66,6 +73,6 @@ Quality assurance specialist with 3 years of experience in manual and automated 
 
 ## Portfolio Notes
 
-The experience sections describe my work responsibilities. The project documentation, test cases, API and SQL examples, and code in this repository are independently prepared portfolio materials, not copies of internal company documentation or workplace test scripts.
+The experience sections describe my work responsibilities. The documentation, test cases, code, and examples in this repository are independently prepared portfolio materials, not copies of internal company documentation or workplace test scripts.
 
-Public examples use synthetic test values and generic application details. They do not connect to Humana or Healthfirst systems or include real member information.
+The Harbor Health application in the Cypress section is a fictional demo. Public examples use synthetic test values and do not connect to Humana or Healthfirst systems or include real member information.

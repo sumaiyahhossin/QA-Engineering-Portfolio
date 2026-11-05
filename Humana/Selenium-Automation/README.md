@@ -1,43 +1,43 @@
 # Selenium Automation
 
 **Language:** Java 17  
-**Tools:** Selenium WebDriver 4.27.0, TestNG 7.10.2, Maven, Chrome, GitHub Actions
+**Automation:** Selenium WebDriver 4.27.0  
+**Test Framework:** TestNG 7.10.2  
+**Build Tool:** Maven
 
-## Overview
+This project contains Java Selenium tests for selected sign-in, plan search, and plan details workflows. TestNG handles execution and assertions, and Maven manages project dependencies.
 
-I used Java and Selenium WebDriver to automate selected browser checks around sign-in, form validation, plan search, and plan details.
+## Test Scripts
 
-The tests are organized into four TestNG classes. Common browser setup and cleanup are in TestBase.java; each test class contains the steps and locators for its workflow.
-
-For this public repository, the browser tests use the local pages in src/test/resources/fixtures and synthetic test values. This lets the suite run from GitHub Actions without needing an employer login or a live site.
-
-## Test Classes
-
-| Class | Checks |
+| Class | Coverage |
 | --- | --- |
-| Test01_LoginTest.java | Sign-in page and accepted test credentials |
-| Test02_InvalidLoginTest.java | Invalid sign-in and blank-field validation |
-| Test03_PlanSearchTest.java | Plan search, ZIP code entry, and results |
-| Test04_PlanDetailsTest.java | Opening and checking plan details |
+| `Test01_LoginTest.java` | Sign-in page and valid test credentials |
+| `Test02_InvalidLoginTest.java` | Invalid sign-in and blank-field validation |
+| `Test03_PlanSearchTest.java` | ZIP code entry and plan search results |
+| `Test04_PlanDetailsTest.java` | Opening plan details from search results |
 
-The Java test files are available here:
+Common browser setup and cleanup are handled in `TestBase.java`. Each test class contains the locators and steps for its workflow.
 
-- [TestBase.java](src/test/java/com/humana/portal/tests/TestBase.java)
-- [Test01_LoginTest.java](src/test/java/com/humana/portal/tests/Test01_LoginTest.java)
-- [Test02_InvalidLoginTest.java](src/test/java/com/humana/portal/tests/Test02_InvalidLoginTest.java)
-- [Test03_PlanSearchTest.java](src/test/java/com/humana/portal/tests/Test03_PlanSearchTest.java)
-- [Test04_PlanDetailsTest.java](src/test/java/com/humana/portal/tests/Test04_PlanDetailsTest.java)
+## Running the Tests
 
-There are nine TestNG test methods in total.
+The public test suite runs against local HTML pages stored in `src/test/resources/fixtures`. It does not connect to Humana systems or require an employer QA account.
 
-## Run Locally
+### Prerequisites
 
-From this folder:
+- Java Development Kit (JDK) 17
+- Apache Maven
+- Google Chrome
 
-    mvn clean test
+### Run
 
-Java 17 and Chrome are required. Maven downloads the project dependencies. No external test account or environment URL is needed.
+From this directory:
 
-## Test Reports
+```bash
+mvn clean test
+```
 
-After a run, Maven and TestNG reports are available under target/surefire-reports. Check the test summary and any failure details before recording the result.
+Maven runs the TestNG suite configured in `testng.xml`. Test results are written to the Maven Surefire reports under `target/surefire-reports`.
+
+## Test Data
+
+The local pages use synthetic test values. Do not add real member information, credentials, internal URLs, or confidential employer details to the repository.
