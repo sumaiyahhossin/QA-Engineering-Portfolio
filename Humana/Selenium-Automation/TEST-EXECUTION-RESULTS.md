@@ -1,35 +1,25 @@
-# Selenium Test Execution Results
+# Selenium Test Results
 
-**Project Focus:** Healthcare plan browsing and member-facing sign-in workflows  
-**Framework:** Java 17, Selenium WebDriver 4.27.0, TestNG 7.10.2, Maven  
-**CI Workflow:** `.github/workflows/humana-selenium.yml`
+**Workflow:** Humana Selenium Tests  
+**Run:** [GitHub Actions #44](https://github.com/sumaiyahhossin/QA-Engineering-Portfolio/actions/runs/42092137266)  
+**Date:** November 5, 2026
 
----
+## Latest Run
 
-## 1. Test Scope
+| Result | Count |
+| --- | ---: |
+| Tests run | 9 |
+| Passed | 9 |
+| Failed | 0 |
+| Errors | 0 |
+| Skipped | 0 |
 
-The automated suite contains nine TestNG test methods covering:
+**Build result:** Success
 
-- Sign-in page loading and accepted test credentials.
-- Invalid sign-in and blank-field validation.
-- Plan search page loading, ZIP code entry, and results rendering.
-- Plan details navigation.
+The workflow completed successfully using the local HTML pages in src/test/resources/fixtures. The tests covered sign-in, invalid sign-in, blank-field validation, ZIP code search, results display, and plan details.
 
-The tests run against local HTML fixtures in `src/test/resources/fixtures`. They do not connect to Humana production systems or use real member information.
+## Notes
 
-## 2. Execution Status
+The run log includes Selenium warnings that its CDP support doesn't match the Chrome version installed on the GitHub runner. The tests don't use Chrome DevTools features, and the warning did not affect this run.
 
-The latest historical run against the previous live-site-dependent implementation was **Run #37**, completed November 5, 2026. It failed with 9 tests run, 4 failures, 0 errors, and 1 skipped.
-
-That result is retained as historical context only. It does not describe the current local-fixture implementation. The current implementation should be reported as passing only after a new GitHub Actions run completes successfully.
-
-## 3. Reviewing Results
-
-After each run, review:
-
-- Maven build result and TestNG summary.
-- Failed test names and assertion messages.
-- Browser and driver initialization.
-- TestNG / Surefire reports under `target/surefire-reports`.
-
-A passing result should only be recorded when the corresponding run confirms that all expected tests completed successfully.
+For the next run, check the Actions summary and Maven report under target/surefire-reports. Update this page only when a new run finishes.
