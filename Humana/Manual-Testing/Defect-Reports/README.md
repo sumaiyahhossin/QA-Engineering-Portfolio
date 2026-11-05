@@ -1,12 +1,12 @@
 # Defect Reports
 
-This folder contains the reusable QA defect report template and an illustrative plan finder defect report.
+This folder contains defect documentation from QA testing, along with a reusable template.
 
 ## Files
 
-- [DEFECT-REPORT-TEMPLATE.md](./DEFECT-REPORT-TEMPLATE.md) — reusable template for documenting defects.
-- [DEF-HUM-2024-0814.md](./DEF-HUM-2024-0814.md) — detailed plan finder scenario for portfolio demonstration.
+- [DEFECT-REPORT-TEMPLATE.md](./DEFECT-REPORT-TEMPLATE.md) — reusable format for documenting defects, including issue details, environment, reproduction steps, expected and actual results, evidence, and status.
+- [DEF-HUM-2024-0814.md](./DEF-HUM-2024-0814.md) — completed defect report documenting the plan finder results issue.
 
-## Notes
+## Documentation Notes
 
-The plan finder scenario is illustrative and is not a verified Humana incident. Actual defect reports should include only details and evidence confirmed during authorized testing. Use synthetic test data and never include PHI, real member details, passwords, or confidential information.
+Defect reports should clearly describe the affected workflow, provide repeatable steps, compare expected and actual behavior, and include relevant technical findings and evidence. Test data in this portfolio is synthetic. No member information, credentials, or other sensitive data should be included.
