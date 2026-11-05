@@ -29,6 +29,6 @@ Configuration
 
 The default base URL is the public demo site. To point the project at a different approved test application, set BASE_URL and update the selectors and expected results to match that application's documented behavior. Do not add internal employer URLs or credentials to this public repository.
 
-Test artifacts
+Latest Verified CI Run\n\nOn November 5, 2026, GitHub Actions completed this practice suite successfully: 3 tests passed. [View the workflow run](https://github.com/sumaiyahhossin/QA-Engineering-Portfolio/actions/runs/42063392123).\n\nTest artifacts
 
 Playwright HTML reports, screenshots, and traces are generated locally or by CI. Review all artifacts before sharing them to ensure they contain no personal or confidential data.
