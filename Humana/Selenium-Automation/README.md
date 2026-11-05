@@ -20,6 +20,14 @@ For this public repository, the browser tests use the local pages in src/test/re
 | Test03_PlanSearchTest.java | Plan search, ZIP code entry, and results |
 | Test04_PlanDetailsTest.java | Opening and checking plan details |
 
+The Java test files are available here:
+
+- [TestBase.java](src/test/java/com/humana/portal/tests/TestBase.java)
+- [Test01_LoginTest.java](src/test/java/com/humana/portal/tests/Test01_LoginTest.java)
+- [Test02_InvalidLoginTest.java](src/test/java/com/humana/portal/tests/Test02_InvalidLoginTest.java)
+- [Test03_PlanSearchTest.java](src/test/java/com/humana/portal/tests/Test03_PlanSearchTest.java)
+- [Test04_PlanDetailsTest.java](src/test/java/com/humana/portal/tests/Test04_PlanDetailsTest.java)
+
 There are nine TestNG test methods in total.
 
 ## Run Locally
