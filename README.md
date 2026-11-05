@@ -1,8 +1,8 @@
 # QA Engineering Portfolio
 
-Hi, I'm Sumaiyah. This is where I keep selected QA work and examples from testing healthcare and insurance applications.
+Hi, I'm Sumaiyah. This repository contains selected QA documentation and automation from my work testing healthcare and insurance applications.
 
-You'll find project notes, manual test cases, Selenium automation, SQL checks, and testing tools I've worked with.
+You'll find project notes, manual test cases, Selenium automation, SQL checks, and the tools I've worked with.
 
 ## Experience
 
@@ -58,4 +58,4 @@ Quality assurance specialist with 3 years of experience in manual and automated 
 
 ## Note
 
-The experience sections describe the work I did in each role. The public repository contains the documentation and code I can share. Test values in the public examples are synthetic, and the Selenium workflow runs against local test pages so it can be run from GitHub Actions.
+The experience sections describe the work I did in each role. The Selenium tests in this repository run against local test pages and use synthetic test values, so the workflow can run from GitHub Actions without connecting to a company system.
