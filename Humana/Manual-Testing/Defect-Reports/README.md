@@ -1,6 +1,6 @@
 # Enterprise QA Defect Report Template
 
-Use this template to document defects that have been reproduced in an approved test environment. Record the actual build, environment, browser, test data, and evidence from the test run. Do not enter assumed API responses, selectors, timestamps, or logs.
+Use this template to document defects reproduced in an approved test environment. Record the actual build, environment, browser, test data, and evidence from the test run.
 
 ## Defect Report Template
 
@@ -55,64 +55,68 @@ Describe only what was observed during the test run. Include the exact error mes
 
 ---
 
-## Illustrative Portfolio Scenario — Plan Finder Results Do Not Load
+## Enterprise QA Defect Report — Plan Finder Results Do Not Load
 
-> **Sample only:** The scenario below demonstrates how a defect report could be written. It is not a verified Humana production or staging incident and must not be represented as a defect observed during employment. Replace the example details with evidence from an authorized test run before treating it as an actual defect report.
+> **Portfolio sample — not a verified Humana incident:** This detailed scenario is included to demonstrate defect-report structure and QA terminology. The date, release, environment metadata, selectors, endpoint, response code, exception, and attachment names below have not been independently verified. Do not present them as an issue you personally reproduced or reported during your Humana employment unless you have the corresponding authorized test records and evidence.
 
-| Field | Illustrative Value |
+### Defect Report: `DEF-HUM-2024-0814`
+
+| Field | Value |
 | --- | --- |
 | **Defect ID** | `DEF-HUM-2024-0814` |
-| **Summary** | Plan finder results fail to render after a valid ZIP code is submitted |
-| **Application / Module** | Humana Public Portal / Plan Finder |
-| **Environment** | Example QA / Staging setup — browser, version, OS, and build require verification |
-| **Build / Page** | Public plan finder page — verify the exact URL and release/build before reporting |
-| **Severity** | High (S2) — example classification if the primary plan-search workflow is blocked |
-| **Priority** | High (P2) — example classification subject to team triage |
+| **Summary** | Plan finder results fail to render and hit timeout exception following valid ZIP code (`11417`) submission |
+| **Application / Module** | Humana Public Portal / Medicare Advantage Plan Comparison Wizard |
+| **Environment** | QA / Staging Environment (Chrome v124.0 / macOS arm64) — illustrative metadata; verify before use |
+| **Build / Page** | [Humana Medicare Advantage Plans](https://www.humana.com/medicare/medicare-advantage-plans) (Release `v2024.3.1`) — verify the page and release/build |
+| **Severity** | **High (S2)** — example classification if the core user journey is blocked |
+| **Priority** | **High (P2)** — example classification subject to team triage |
 | **Reported By** | Junior QA Analyst |
 | **Date Reported** | November 14, 2024 — illustrative date only |
 
 ### Preconditions
 
-1. The authorized QA or staging environment is available.
-2. A synthetic test ZIP code, such as `11417`, is prepared.
-3. The browser and viewport are configured and recorded.
-4. No real member information or production credentials are used.
+1. QA Staging environment is operational and accessible.
+2. Synthetic test data is prepared: valid Queens, NY ZIP code (`11417`).
+3. Browser viewport is configured to standard desktop resolution (`1920x1080`).
 
 ### Steps to Reproduce
 
-1. Navigate to the approved plan finder page.
-2. Verify that the page and plan-search controls render.
-3. Enter the synthetic ZIP code `11417`.
-4. Submit the ZIP code using the page's search control.
-5. Continue through the available plan-selection steps, if those steps are present in the tested workflow.
-6. Submit the plan search and observe whether results are displayed.
+1. Navigate to the Medicare Advantage Plan Comparison portal (`/medicare/medicare-advantage-plans`).
+2. Verify that the **"Let us help you choose a plan"** guidance wizard header renders completely.
+3. Locate the postal code input field (the supplied selectors `#ZIP code` / `input[autocomplete='postal-code']` must be validated against the actual page) and enter synthetic ZIP `11417`.
+4. Click the **"Get Started"** button (the supplied selector `button[data-search-button]` must be validated against the actual page).
+5. Progress to the plan selection step and select **"Medicare Advantage (Part C)"**, if this option is present in the tested flow.
+6. Click the **"View Plan Match"** submit button, if present, and observe the response.
 
 ### Expected Result
 
-The application accepts the valid test ZIP code, processes the search, and displays the available plan results or a clear message explaining why results cannot be shown. Any response-time threshold should come from a documented requirement.
+The plan-matching workflow processes the request within the documented response-time threshold and navigates to the results view with the heading **"Your plan matches"**, displaying the applicable regional Medicare Advantage cards. The stated threshold of less than 3.0 seconds should be used only if supported by a documented requirement or service-level objective.
 
 ### Actual Result
 
-**Example observation only — not verified:** The results area remains in a loading state and the expected results do not appear. If reproduced, capture the browser state and inspect the console and network activity to determine whether the cause is an application error, service response, environment issue, or external network failure.
+**Illustrative observation — not verified:** Following submission of ZIP `11417` and the plan-match request, the results area remains in a loading state and the results container does not render.
 
-Do not state that a specific `TimeoutException`, HTTP 504 response, API endpoint, or shadow-DOM component caused the issue unless the corresponding automation output or network trace was actually captured.
+The following technical details are examples only and must be included as actual findings only if captured during an authorized test run:
+
+- An explicit wait (`WebDriverWait` 20s) throws a `TimeoutException`.
+- DOM inspection identifies an issue involving `nc-dropdown-menu` or `plan-card-results`.
+- Network inspection records an HTTP 504 Gateway Timeout for `POST /api/v2/plan-match`.
+
+Confirm the request URL, response, DOM structure, and exception from the browser or automation evidence before attributing the behavior to the application or backend service.
 
 ### Attachments & Evidence
 
-Example evidence names for a real test run (not existing attachments):
+Example filenames only — these files are not included in this repository unless separately added:
 
-- `ERR_SCREENSHOT_DEF0814_ZIP11417.png` — screenshot of the observed results state.
-- `console_network_trace.log` — browser console and network evidence, if captured.
-- `Selenium_TimeoutException_Trace.txt` — automation output, only if that exception occurred.
+- `ERR_SCREENSHOT_DEF0814_ZIP11417.png` — screenshot showing the results state.
+- `console_network_trace.log` — DevTools console and network evidence.
+- `Selenium_TimeoutException_Trace.txt` — automated stack trace, if the exception was captured.
 
 ### Lifecycle & Tracking
 
-- **Status:** Not Run / Pending Verification
-- **Assigned To:** To be determined during triage
-- **Retest Result:** Not Retested
+- **Status:** `Open / Under Investigation` — illustrative status; use the actual tracker status.
+- **Assigned To:** Medicare Portal Engineering Team (Frontend / API Services) — illustrative assignment; verify the actual owner.
+- **Retest Result:** `Pending Fix Deployment` — illustrative retest state; update after an actual fix and retest.
 
----
+> **Note on Environmental Factors & Compliance:** Use synthetic test data only and follow the organization's approved testing and data-handling procedures. Do not include PHI, real member details, passwords, access tokens, or confidential internal information in portfolio artifacts. During triage, investigate anti-automation controls, network timeouts, external CDN latency, and environment availability before classifying an observation as an application defect.
 
-## Test Data & Compliance Notes
-
-Use synthetic test data only and follow the organization's approved testing and data-handling procedures. Do not include PHI, real member details, passwords, access tokens, or confidential internal information in portfolio artifacts. During triage, investigate environment availability, network failures, bot protection, and third-party service issues before classifying an observation as an application defect.
