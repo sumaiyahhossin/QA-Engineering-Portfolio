@@ -1,35 +1,18 @@
-Test Scenarios
+# Test Scenarios
 
-Project Area: Member-Facing Healthcare Workflows
+**Project area:** Member-facing healthcare workflows
 
-Scenario 1: Verify member workflow navigation
-Expected Result: The user can move between supported sections without unexpected errors.
+| ID | Scenario | Expected result |
+|---|---|---|
+| HF-001 | Navigate between member workflow sections | The requested section opens and the user can return without an unexpected error. |
+| HF-002 | Submit eligibility information with valid test data | The workflow displays the expected result for the test record. |
+| HF-003 | Submit the eligibility form with a required field missing | The missing field is identified and the appropriate validation message appears. |
+| HF-004 | Enter eligibility information in an invalid format | The value is rejected or handled according to the documented validation rules. |
+| HF-005 | Browse health plans using search criteria | The results reflect the selected criteria. |
+| HF-006 | Open a health plan from the results | The selected plan's details are displayed. |
+| HF-007 | Submit a valid API request | The response matches the documented status and response structure. |
+| HF-008 | Submit an API request with missing or invalid information | The API returns the documented validation response. |
+| HF-009 | Compare displayed information with expected test data | The values match the expected data for the test record. |
+| HF-010 | Retest member and plan workflows after a change | The affected workflow and related regression checks continue to work. |
 
-Scenario 2: Verify eligibility workflow with approved valid data
-Expected Result: The application processes the test record and displays the expected eligibility result.
-
-Scenario 3: Verify eligibility workflow with missing required information
-Expected Result: The application identifies missing information and provides appropriate validation.
-
-Scenario 4: Verify eligibility workflow with invalid input
-Expected Result: The application handles invalid input according to documented validation rules.
-
-Scenario 5: Verify health plan browsing
-Expected Result: Available plans are displayed according to selected criteria.
-
-Scenario 6: Verify health plan selection
-Expected Result: The selected plan and related information are displayed correctly.
-
-Scenario 7: Verify API success response
-Expected Result: The API returns the documented success status and expected response structure.
-
-Scenario 8: Verify API validation error
-Expected Result: Invalid requests return the documented error status and useful error information.
-
-Scenario 9: Verify displayed data against approved test data
-Expected Result: Relevant values match the approved expected data.
-
-Scenario 10: Verify regression after a change
-Expected Result: Existing member and plan workflows continue to work after the update.
-
-These are portfolio scenarios. Confirm exact business rules and acceptance criteria against authorized project documentation before execution.
+These are portfolio scenarios. Exact business rules and expected results should be confirmed against the requirements for the system being tested.
