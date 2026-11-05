@@ -1,34 +1,30 @@
-Test Environment
+# Test Environment
 
-Project Area: Member-Facing Healthcare Workflows
+**Project Area:** Member-Facing Healthcare Workflows
 
-Use only an approved QA, staging, or other authorized non-production environment for employer-related testing.
+## Tools Represented
 
-Tools Represented
 - Playwright
 - Cypress
 - JavaScript / TypeScript
 - Postman
-- Approved SQL client
+- SQL client
 - Jira
 - Zephyr
 - GitHub Actions
 
-Test Data
+## Test Data
 
-Use approved test records covering valid, invalid, missing, and boundary-value scenarios. Do not use real member data in portfolio examples.
+The portfolio examples use synthetic test records covering valid, invalid, missing, and boundary-value scenarios. No real member data is included.
 
-Before Execution
-- Confirm the correct environment and build.
-- Confirm that the application is accessible.
-- Verify that approved test data is available.
-- Confirm API access and environment variables where needed.
-- Check that no production credentials or personal data are being used.
+## Environment Coverage
 
-Environment Issues
+The testing approach covers QA and staging workflows, including application access, API validation, and data checks. Environment and build details are recorded as part of test execution.
 
-Record the date, affected workflow, environment, observed behavior, and impact. Do not place internal URLs, tokens, screenshots containing private information, or confidential application details in this public repository.
+## Environment Issues
 
-Portfolio Scope
+Environment issues are documented with the date, affected workflow, environment, observed behavior, and impact. Public portfolio materials do not include internal URLs, tokens, screenshots containing private information, or confidential application details.
 
-The public examples in this repository are generic demonstrations. They are not connected to Healthfirst's internal application or API environment.
+## Portfolio Scope
+
+The public examples are generic demonstrations. They are not connected to Healthfirst's internal application or API environment.
