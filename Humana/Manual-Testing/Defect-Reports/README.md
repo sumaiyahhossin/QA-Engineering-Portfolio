@@ -5,7 +5,7 @@ This folder contains a reusable defect report template and a generalized example
 ## Files
 
 - [DEFECT-REPORT-TEMPLATE.md](./DEFECT-REPORT-TEMPLATE.md) — reusable format for issue details, environment, reproduction steps, expected and actual results, evidence, and status.
-- [DEF-HUM-2024-0814.md](./DEF-HUM-2024-0814.md) — anonymized plan search results timeout example.
+- [PLAN-SEARCH-TIMEOUT-EXAMPLE.md](./PLAN-SEARCH-TIMEOUT-EXAMPLE.md) — generalized example of documenting a plan search results timeout.
 
 ## Documentation Notes
 
