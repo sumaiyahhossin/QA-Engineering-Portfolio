@@ -9,7 +9,7 @@
 
 This folder contains Java Selenium tests for selected sign-in, plan search, and plan details workflows. TestNG handles test execution and assertions, and Maven manages the project dependencies and test run.
 
-The test classes contain their own locators and browser steps. The project does not use a separate Page Object Model layer.
+Common browser setup and cleanup are handled in `TestBase.java`. Each test class contains the locators and steps for its workflow.
 
 ## Test Scripts
 
