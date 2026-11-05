@@ -1,26 +1,22 @@
-## Manual Testing Strategy & Documentation
+# Manual Testing Documentation
 
-### Project Scope: Healthcare Plan Browsing & Public Account Access
+## Project Scope: Healthcare Plan Browsing & Public Account Access
 
-This module contains end-to-end manual QA documentation validating public Medicare Advantage plan browsing, plan benefit details, dynamic form validation, cross-browser navigation, and member sign-in error handling.
+This folder contains manual QA documentation for selected healthcare plan browsing and public account workflows. Scenarios cover plan search, plan details, form validation, navigation, and sign-in behavior.
 
-### Repository Artifacts
+## Repository Artifacts
 
-* **`TEST_CASES.md`** – Comprehensive test scenarios detailing preconditions, execution steps, synthetic test data, and expected results.
-* **`TEST_EXECUTION_RESULTS.md`** – Execution tracking matrix recording pass/fail rates, execution logs, and linked defect IDs.
-* **`Humana_Manual_Test_Cases.xlsx`** – Enterprise-formatted spreadsheet version of manual test suites for cross-team reporting.
-* **`Defect-Reports/`** – Standardized Jira-style defect documentation and lifecycle tracking templates.
+- **`TEST_CASES.md`** — manual test scenarios with preconditions, steps, test data, and expected results.
+- **`TEST_EXECUTION_RESULTS.md`** — execution tracking and recorded outcomes.
+- **`Humana_Manual_Test_Cases.xlsx`** — spreadsheet version of the manual test cases and tracking information.
+- **`Defect-Reports/`** — reusable defect template and a generalized example.
 
----
+## Test Execution Notes
 
-### Test Execution & Quality Standards
+Test case design and test execution are separate activities. A test case should only be marked Passed or Failed after it has been run and its actual result has been compared with the expected result. Keep execution dates, build details, and defect references only when they can be supported by the original records.
 
-* **Environment Verification:** Every execution cycle logs environment metadata (Staging/QA), build release version, browser/OS configurations, and synthetic test data references.
-* **Result Integrity:** Test status (`PASS` / `FAIL` / `BLOCKED`) is assigned strictly following verification of actual DOM state and network responses against baseline requirements.
+## Data Privacy
 
----
-
-### Compliance & Data Privacy Guidelines
-
-* **Data Sanitization:** All manual test scenarios utilize zero-PHI, non-confidential synthetic test datasets (e.g., standard regional ZIP codes like `11417`) complying with CMS testing guidelines.
-* **Scope Boundary:** Public plan browsing flows validate client-facing search and plan presentation engines; they do not trigger live Medicare eligibility verification, member enrollment systems, or private coverage data access.
+- Use synthetic test data in public examples.
+- Do not publish member information, credentials, internal environment addresses, or confidential employer documentation.
+- Public plan browsing scenarios do not represent private Medicare eligibility checks, enrollment processing, or access to member coverage records.
