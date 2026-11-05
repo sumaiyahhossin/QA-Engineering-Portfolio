@@ -1,29 +1,17 @@
-# SQL Database Validation
+# SQL Testing
 
-This section contains SQL examples used to demonstrate common QA data-validation techniques for healthcare and insurance workflows.
+This folder contains SQL checks for data validation work related to member and coverage workflows.
 
-The related [SQL validation scripts](SQL-QUERIES.md) use generalized table names and synthetic test identifiers. They are intended to demonstrate query structure and expected validation checks, not to document an employer's internal database design.
+## Queries Included
 
-## Validation Areas
+- Find a member test record and check its status.
+- Review coverage records and their effective dates.
+- Look for duplicate active coverage records.
+- Find coverage dates that don't make sense.
+- Join member and coverage records to check how they relate.
 
-- **Member Record Review:** Retrieve a test member record and review its status.
-- **Coverage Review:** Retrieve coverage records and inspect their effective dates and status.
-- **Duplicate Checks:** Identify multiple active records for the same member and plan combination.
-- **Date Validation:** Find records where a coverage end date is earlier than its start date.
-- **Relationship Checks:** Join member and coverage records to review related data.
+## Tools and SQL
 
-## Tools & SQL Concepts
+The examples use Oracle SQL syntax and cover SELECT, WHERE, INNER JOIN, GROUP BY, HAVING, COUNT, NULL checks, and date comparisons.
 
-| Area | Examples |
-| :--- | :--- |
-| Query Tool | Oracle SQL Developer |
-| SQL Operations | SELECT, WHERE, INNER JOIN |
-| Aggregation | GROUP BY, HAVING, COUNT |
-| Data Checks | NULL checks and date comparisons |
-
-## Public Data & Privacy
-
-- Table names in the examples are generalized.
-- Test identifiers are synthetic.
-- No real member data, protected health information (PHI), credentials, connection strings, private hostnames, or internal schema names are included.
-- The examples do not claim to reproduce the employer's production or staging database structure.
+The table and column names in the public queries are generalized, and the IDs are synthetic. Use the schema and test data approved for the environment when doing actual database testing.
