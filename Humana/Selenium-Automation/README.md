@@ -1,50 +1,35 @@
-# Selenium Automation Suite
+# Selenium Automation
 
-**Project Focus:** Healthcare plan browsing and member-facing sign-in workflows  
 **Language:** Java 17  
 **Tools:** Selenium WebDriver 4.27.0, TestNG 7.10.2, Maven, Chrome, GitHub Actions
 
----
+## Overview
 
-## 1. Overview
+I used Java and Selenium WebDriver to automate selected browser checks around sign-in, form validation, plan search, and plan details.
 
-This automation suite demonstrates browser-testing workflows relevant to the healthcare QA work documented in the Humana experience section: sign-in, required-field validation, plan search, and plan-details navigation.
+The tests are organized into four TestNG classes. Common browser setup and cleanup are in TestBase.java; each test class contains the steps and locators for its workflow.
 
-The Java tests use TestNG annotations and assertions. Shared browser setup and cleanup are handled in `TestBase.java`; each test class contains the workflow-specific locators and checks.
+For this public repository, the browser tests use the local pages in src/test/resources/fixtures and synthetic test values. This lets the suite run from GitHub Actions without needing an employer login or a live site.
 
-The public repository does not connect to Humana systems or contain internal application code, private environments, credentials, or member data. The browser tests run against local HTML fixtures stored in `src/test/resources/fixtures`, so execution is repeatable and does not send automated traffic to a live healthcare website.
+## Test Classes
 
-## 2. Test Classes
+| Class | Checks |
+| --- | --- |
+| Test01_LoginTest.java | Sign-in page and accepted test credentials |
+| Test02_InvalidLoginTest.java | Invalid sign-in and blank-field validation |
+| Test03_PlanSearchTest.java | Plan search, ZIP code entry, and results |
+| Test04_PlanDetailsTest.java | Opening and checking plan details |
 
-| Test Class | Coverage |
-| :--- | :--- |
-| `Test01_LoginTest.java` | Sign-in page loading and accepted test credentials |
-| `Test02_InvalidLoginTest.java` | Invalid sign-in input and blank-field validation |
-| `Test03_PlanSearchTest.java` | Plan search page, ZIP code input, and results |
-| `Test04_PlanDetailsTest.java` | Plan details navigation and displayed information |
+There are nine TestNG test methods in total.
 
-## 3. Tools & Configuration
+## Run Locally
 
-| Item | Version / Configuration |
-| :--- | :--- |
-| Java | 17 |
-| Selenium WebDriver | 4.27.0 |
-| TestNG | 7.10.2 |
-| Maven | Project build and dependency management |
-| Browser | Chrome / Headless Chrome |
-| Test Suite | `testng.xml` |
-| CI | GitHub Actions |
+From this folder:
 
-## 4. Running the Tests
+    mvn clean test
 
-From this directory, run:
+Java 17 and Chrome are required. Maven downloads the project dependencies. No external test account or environment URL is needed.
 
-```bash
-mvn clean test
-```
+## Test Reports
 
-The Maven Surefire configuration loads the TestNG suite from `testng.xml`. Chrome is required. No external test account, employer URL, or secret is needed.
-
-## 5. Reviewing Results
-
-After execution, review the Maven output and TestNG / Surefire reports under `target/surefire-reports`. Investigate failed assertions before deciding whether the issue is in the test, test data, browser behavior, or application under test.
+After a run, Maven and TestNG reports are available under target/surefire-reports. Check the test summary and any failure details before recording the result.
