@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Humana Selenium Test Suite">
+
+    <test name="Humana Portal Tests">
+        <packages>
+            <package name="com.humana.portal.tests"/>
+        </packages>
+    </test>
+
+</suite>
