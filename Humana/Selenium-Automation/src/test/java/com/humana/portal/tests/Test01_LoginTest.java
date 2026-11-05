@@ -16,7 +16,7 @@ public class Test01_LoginTest extends TestBase {
     private final By signInButton = By.cssSelector("button[type='submit']");
     private final By statusMessage = By.id("message");
 
-    @Test(priority = 1, description = "Verify the member sign-in page loads")
+    @Test(priority = 1, description = "Check that the sign-in page loads")
     public void testLoginPageLoads() {
         openFixture("login.html");
 
@@ -27,8 +27,8 @@ public class Test01_LoginTest extends TestBase {
         Assert.assertTrue(driver.findElement(passwordInput).isDisplayed());
     }
 
-    @Test(priority = 2, description = "Verify accepted test credentials advance to the account overview")
-    public void testAcceptedCredentialsAdvanceToNextStep() {
+    @Test(priority = 2, description = "Check sign-in with valid test credentials")
+    public void testValidLoginShowsSuccessMessage() {
         openFixture("login.html");
 
         driver.findElement(usernameInput).sendKeys("qa.user@example.test");
@@ -40,6 +40,6 @@ public class Test01_LoginTest extends TestBase {
                 .getText();
 
         Assert.assertTrue(message.contains("Sign-in successful"),
-                "Accepted test credentials should advance to the account overview.");
+                "A success message should appear after valid test credentials are submitted.");
     }
 }
