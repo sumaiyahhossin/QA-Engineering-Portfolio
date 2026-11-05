@@ -1,69 +1,44 @@
 Test Environment
 
-Project Name: Healthcare Plan Browsing and Member Coverage
-
+Project Name: Healthcare Plan Browsing and Public Account Access
 Company: Humana
 
-1. Environment Overview
+Environment Overview
 
-Testing is performed in a QA / Test Environment to validate application functionality before changes are released to production.
+The Selenium examples in this public repository navigate public Humana web pages. They are not connected to an internal QA environment.
 
-2. Application Under Test
+Application Areas
+- Public healthcare plan browsing
+- Public plan search
+- Public plan information
+- Account sign-in page behavior
 
-Healthcare application workflows related to:
-
-- Healthcare plan browsing
-- Plan details
-- Member coverage
-- Application navigation
-- User workflow functionality
-
-3. Testing Tools
-
-- Selenium WebDriver
-- Java
-- TestNG
+Tools
+- Java 17
+- Selenium WebDriver 4.27.0
+- TestNG 7.10.2
 - Maven
-- Jira
-- Zephyr
-- Oracle SQL Developer
+- Chrome / ChromeDriver through Selenium Manager
+- GitHub Actions
 
-4. Browser Testing
+Test Data
+- ZIP code used by the current public plan-search examples: 11417
+- Invalid login test data: intentionally incorrect password
+- Optional account test credentials: HUMANA_TEST_USERNAME and HUMANA_TEST_PASSWORD environment variables
 
-Browser testing focuses on verifying application functionality, navigation, page behavior, and form interactions across supported browsers.
+Do not put active passwords, personal information, member IDs, or private account data in source control. Use only an account you are authorized to access. The account used for sign-in practice is not fully set up and may require additional profile information.
 
-5. Test Data
+Scope Limitations
 
-Test data should include:
+The public plan finder does not provide proof of Medicare eligibility or member coverage. The sign-in tests should only verify the public sign-in flow and the next page or setup step reached by the test account. Do not submit personal details or enroll in a plan as part of this portfolio.
 
-- Valid test records
-- Invalid test records
-- Missing required fields
-- Boundary-value scenarios
-- Different healthcare plan selections
-- Member coverage scenarios
+Before Execution
+- Confirm the public page is available.
+- Check that current page selectors still match the website.
+- Confirm Java and Maven are installed.
+- Confirm optional environment variables are configured.
+- Avoid protected account data.
 
-Only approved test data should be used. No real member personal information should be included in public portfolio materials.
+External Dependencies
 
-6. Environment Requirements
-
-- Access to the QA / Test Environment
-- Valid test credentials
-- Approved test data
-- Supported browser
-- Required testing tools
-- Application build available for testing
-
-7. Environment Validation
-
-Before test execution:
-
-- Confirm application access.
-- Verify that the correct environment is being used.
-- Confirm that test data is available.
-- Verify that required application workflows can be accessed.
-- Document any environment-related issues.
-
-8. Environment Issues
-
-Environment-related issues should be documented with the issue description, affected functionality, date identified, and supporting evidence.
+Tests use a live public website. Results can be affected by site changes, bot protection, network conditions, consent banners, and temporary outages. These are not necessarily application defects.
