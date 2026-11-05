@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Healthcare Plan Search</title>
+</head>
+<body>
+    <main>
+        <h1>Find healthcare plans</h1>
+        <form id="plan-search-form">
+            <label for="zipcode-input">ZIP code</label>
+            <input id="zipcode-input" name="zipcode" type="text" inputmode="numeric"
+                   pattern="[0-9]{5}" maxlength="5" required>
+            <button data-testid="submit-btn" type="submit">Shop plans</button>
+        </form>
+        <section id="plan-results" hidden>
+            <h2 id="results-heading"></h2>
+            <article class="plan-card">
+                <h3>Choice Plan</h3>
+                <p>Example monthly premium and coverage summary.</p>
+                <button id="view-details" type="button">View plan details</button>
+            </article>
+        </section>
+        <section id="plan-details" hidden>
+            <h2>Plan details</h2>
+            <p>Plan highlights</p>
+            <p>Monthly premium: $0 example value</p>
+            <p>Primary care copay: Example coverage information</p>
+        </section>
+    </main>
+    <script>
+        const form = document.getElementById("plan-search-form");
+        const zip = document.getElementById("zipcode-input");
+        const results = document.getElementById("plan-results");
+        const heading = document.getElementById("results-heading");
+        const details = document.getElementById("plan-details");
+
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+            heading.textContent = "Plans in your ZIP code " + zip.value;
+            results.hidden = false;
+            details.hidden = true;
+        });
+
+        document.getElementById("view-details").addEventListener("click", function () {
+            details.hidden = false;
+        });
+    </script>
+</body>
+</html>
