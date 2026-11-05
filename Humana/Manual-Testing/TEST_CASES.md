@@ -1,10 +1,10 @@
 # Manual Test Cases: Healthcare Plan Browsing & Member Access
 
-**Project Name:** Healthcare Plan Browsing and Public Account Access
-
-**Total:** 50 test cases | **Execution Type:** Manual
-
+**Project Name:** Healthcare Plan Browsing and Public Account Access  
+**Total:** 50 test cases | **Execution Type:** Manual  
 Test case details below match the `Test_Cases` worksheet in `Humana_Manual_Test_Cases.xlsx`.
+
+---
 
 ## Plan Browsing
 
@@ -68,6 +68,8 @@ Test case details below match the `Test_Cases` worksheet in `Humana_Manual_Test_
 - **Steps:** Resize browser viewport to mobile dimensions.; Inspect plan listing.
 - **Expected:** UI elements stack vertically without overlapping text or broken buttons.
 
+---
+
 ## Member Coverage
 
 ### TC-COV-011: Verify active coverage status display for synthetic member
@@ -129,6 +131,8 @@ Test case details below match the `Test_Cases` worksheet in `Humana_Manual_Test_
 - **Setup:** Production staging release deployed. | **Data:** Sanity Release Build
 - **Steps:** Execute smoke test checklist covering login and coverage view.
 - **Expected:** Core elements load successfully with zero critical defects.
+
+---
 
 ## Enrollment
 
@@ -192,6 +196,8 @@ Test case details below match the `Test_Cases` worksheet in `Humana_Manual_Test_
 - **Steps:** Run manual smoke checklist verifying form submission response.
 - **Expected:** System returns 200 OK status on test payload submission.
 
+---
+
 ## Navigation & Security
 
 ### TC-NAV-031: Verify user login with valid credentials
@@ -253,6 +259,8 @@ Test case details below match the `Test_Cases` worksheet in `Humana_Manual_Test_
 - **Setup:** Test management tool open. | **Data:** Test Repository
 - **Steps:** Update test run status and add execution notes.
 - **Expected:** Execution records save accurately with timestamp and tester attribution.
+
+---
 
 ## Agile & Jira QA
 
