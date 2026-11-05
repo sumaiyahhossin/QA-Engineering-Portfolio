@@ -22,10 +22,10 @@ Use this template to document an issue reproduced during testing. Fill in the de
 - [Required user role, permissions, or system state before starting]
 - [Required test account status or background data setup]
 
-## Before You Start
+## Environment Details
 
-- [Browser, operating system, and screen resolution]
-- [Specific test data needed (ZIP code, Plan ID, etc.)]
+- Browser, operating system, and screen resolution:
+- Test data used:
 
 ## Steps to Reproduce
 
@@ -57,4 +57,4 @@ Use this template to document an issue reproduced during testing. Fill in the de
 
 ---
 
-*Note: Always use test data approved for the environment. Do not include sensitive member details, passwords, or internal enterprise data in public or shared defect reports.*
+The public portfolio examples use synthetic test data and do not contain sensitive member details, passwords, or internal enterprise data.
