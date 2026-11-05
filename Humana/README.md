@@ -35,6 +35,10 @@ Java, Selenium WebDriver, TestNG, Maven, SQL, Oracle SQL Developer, Jira, Zephyr
 | Selenium Automation | Java test classes, local test pages, Maven, and TestNG |
 | SQL Testing | SQL checks for member and coverage data |
 
+## Public Portfolio Examples
+
+The documentation and sample test assets in this folder are prepared for this portfolio. They are not copied from Humana's internal systems or documents. The examples use synthetic values and are intended to show the types of QA work and workflows I can document.
+
 ## Automation in This Repository
 
 The Java suite covers sign-in, form validation, plan search, and plan details. In this repository, it runs against local HTML pages with synthetic test values. That keeps the tests easy to run and avoids depending on a company system or a live website.
