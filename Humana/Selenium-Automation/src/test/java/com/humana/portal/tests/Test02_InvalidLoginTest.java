@@ -34,9 +34,13 @@ public class Test02_InvalidLoginTest {
     @BeforeMethod
     public void setUp() {
         ChromeOptions options = new ChromeOptions();
+
+        //chrome settings for github actions
+        options.addArguments("--headless=new");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--disable-gpu");
         options.addArguments("--window-size=1920,1080");
-        options.addArguments("--disable-blink-features=AutomationControlled");
 
         driver = new ChromeDriver(options);
         wait = new WebDriverWait(driver, Duration.ofSeconds(15));
@@ -47,6 +51,7 @@ public class Test02_InvalidLoginTest {
 
     @Test(priority = 1, description = "Test Case 1: Verify invalid login displays incorrect username or password message")
     public void testInvalidLoginShowsIncorrectMessage() throws InterruptedException {
+
         //1.typing username into input field
         WebElement usernameField = wait.until(ExpectedConditions.elementToBeClickable(usernameInputLocator));
         usernameField.clear();
@@ -69,11 +74,12 @@ public class Test02_InvalidLoginTest {
         String pageText = bodyElement.getText();
 
         Assert.assertTrue(pageText.contains("Username and/or password is incorrect"),
-                "Expected error message 'Username and/s or password is incorrect' was not found on the page.");
+                "Expected error message 'Username and/or password is incorrect' was not found on the page.");
     }
 
     @Test(priority = 2, description = "Test Case 2: Verify blank submission triggers form validation")
     public void testBlankSubmissionTriggersValidation() throws InterruptedException {
+
         //1.clicking sign-in button without entering username or password
         WebElement loginButton = wait.until(ExpectedConditions.presenceOfElementLocated(loginButtonLocator));
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", loginButton);
@@ -82,7 +88,9 @@ public class Test02_InvalidLoginTest {
         //2.verifying username field indicates invalid required state
         WebElement usernameField = driver.findElement(usernameInputLocator);
         String ariaInvalid = usernameField.getAttribute("aria-invalid");
-        Assert.assertEquals(ariaInvalid, "true", "Form submitted successfully without triggering required field validation.");
+
+        Assert.assertEquals(ariaInvalid, "true",
+                "Form submitted successfully without triggering required field validation.");
     }
 
     @AfterMethod
