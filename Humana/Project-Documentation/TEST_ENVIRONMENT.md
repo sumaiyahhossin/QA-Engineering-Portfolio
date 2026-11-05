@@ -16,7 +16,7 @@
 
 ## Tools
 
-Java 17, Selenium WebDriver, TestNG, Maven, Chrome, IntelliJ IDEA, Oracle SQL Developer, Jira, Zephyr, Git, GitHub, and GitHub Actions.
+Java 17, Selenium WebDriver, TestNG, Maven, Chrome, IntelliJ IDEA, Oracle SQL Developer, Jira, Zephyr, Git, and Excel.
 
 ## Test Data
 
@@ -24,10 +24,12 @@ For actual testing, use only accounts and records approved for the environment. 
 
 ## Running the Public Selenium Tests
 
-The Selenium tests in this repository run against the HTML pages under Selenium-Automation/src/test/resources/fixtures. They don't need a Humana login or access to an employer environment.
+The Selenium tests in this repository run against the HTML pages under `Selenium-Automation/src/test/resources/fixtures`. They do not need a Humana login or access to an employer environment.
 
-From the Selenium-Automation folder, run:
+From the `Selenium-Automation` folder, run:
 
-    mvn clean test
+```bash
+mvn clean test
+```
 
-The GitHub Actions workflow runs the same Maven command on pushes and pull requests that change the Selenium project.
+The GitHub Actions workflow runs the same Maven command on pushes and pull requests that change the Selenium project. GitHub Actions is part of this public portfolio setup.
