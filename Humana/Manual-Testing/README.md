@@ -6,8 +6,8 @@ This folder contains manual test cases and an Excel workbook for organizing test
 
 - [TEST_CASES.md](TEST_CASES.md) — 50 test cases with steps and expected results.
 - [Humana_Manual_Test_Cases.xlsx](Humana_Manual_Test_Cases.xlsx) — Spreadsheet version of the test cases with execution tracking.
-- [TEST_EXECUTION_RESULTS.md](TEST_EXECUTION_RESULTS.md) — Notes on recording and reviewing test results.
-- [Defect-Reports/](Defect-Reports/README.md) — Defect report template and tracking guidelines.
+- [TEST_EXECUTION_RESULTS.md](TEST_EXECUTION_RESULTS.md) — Status definitions and execution tracking details.
+- [Defect-Reports/](Defect-Reports/README.md) — Defect report template.
 
 ## Coverage
 
@@ -15,10 +15,10 @@ The test cases cover plan search, plan details, member coverage, enrollment form
 
 ## Recording Results
 
-Mark a test as Passed or Failed after execution by comparing the actual result with the expected result. Use Blocked when something prevents execution, Skipped when a test is intentionally not run, and Not Run when no execution result is available.
+Test results are recorded as Passed, Failed, Blocked, Skipped, or Not Run. Each status reflects the outcome of the corresponding test run.
 
-The workbook is used to track execution. Keep dates, statuses, and defect references tied to the actual test run.
+The workbook includes fields for execution dates, build and environment details, actual results, and defect references.
 
 ## Test Data
 
-Use test data approved for the environment. Values shown in public examples are synthetic. Do not include real member information or credentials in the repository.
+The public examples use synthetic values and contain no real member information or credentials.
