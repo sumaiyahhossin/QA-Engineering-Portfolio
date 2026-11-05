@@ -1,26 +1,26 @@
-# Manual Testing
-
-## Manual Testing Strategy & Documentation
+## 📋 Manual Testing Strategy & Documentation
 
 ### Project Scope: Healthcare Plan Browsing & Public Account Access
 
-This module contains manual QA documentation for public Medicare Advantage plan browsing, plan benefit details, form validation, cross-browser navigation, and public account sign-in error handling.
+This module contains end-to-end manual QA documentation validating public Medicare Advantage plan browsing, plan benefit details, dynamic form validation, cross-browser navigation, and member sign-in error handling.
 
-### Repository Artifacts
+### 📂 Repository Artifacts
 
-- **[TEST_CASES.md](./TEST_CASES.md)** — Manual test scenarios with preconditions, execution steps, test data, and expected results.
-- **[TEST_EXECUTION_RESULTS.md](./TEST_EXECUTION_RESULTS.md)** — Execution tracking for documented test cases, including actual results and linked defect IDs where applicable.
-- **[Humana_Manual_Test_Cases.xlsx](./Humana_Manual_Test_Cases.xlsx)** — Spreadsheet version of the manual test cases for reviewing and tracking test coverage.
-- **[Defect-Reports/](./Defect-Reports/)** — Defect documentation and a reusable report template.
+* **`TEST_CASES.md`** – Comprehensive test scenarios detailing preconditions, execution steps, synthetic test data, and expected results.
+* **`TEST_EXECUTION_RESULTS.md`** – Execution tracking matrix recording pass/fail rates, execution logs, and linked defect IDs.
+* **`Humana_Manual_Test_Cases.xlsx`** – Enterprise-formatted spreadsheet version of manual test suites for cross-team reporting.
+* **`Defect-Reports/`** – Standardized Jira-style defect documentation and lifecycle tracking templates.
 
-### Test Execution & Quality Standards
+---
 
-- **Environment verification:** Record the test environment, build or page version when available, browser and operating system, test data reference, and execution date.
-- **Result integrity:** Mark a test **PASS**, **FAIL**, or **BLOCKED** only after checking the actual result against the expected behavior. Record **NOT RUN** or **PENDING** when execution or verification has not been completed.
-- **Defect tracking:** Document reproducible failures with clear steps, expected and actual results, relevant technical findings, and evidence when available.
+### ⚙️ Test Execution & Quality Standards
 
-### Data Privacy & Scope Boundaries
+* **Environment Verification:** Every execution cycle logs environment metadata (Staging/QA), build release version, browser/OS configurations, and synthetic test data references.
+* **Result Integrity:** Test status (`PASS` / `FAIL` / `BLOCKED`) is assigned strictly following verification of actual DOM state and network responses against baseline requirements.
 
-- Use non-sensitive test data for public portfolio examples. Do not publish member personal information, private account details, passwords, or other confidential information.
-- ZIP codes such as **11417** may be used as public search inputs where appropriate; a ZIP code alone does not establish Medicare eligibility or coverage.
-- Public plan browsing and sign-in error-handling tests are limited to the publicly accessible workflows being tested. They do not verify live Medicare eligibility, member enrollment, or private coverage information.
+---
+
+### 🛡️ Compliance & Data Privacy Guidelines
+
+* **Data Sanitization:** All manual test scenarios utilize zero-PHI, non-confidential synthetic test datasets (e.g., standard regional ZIP codes like `11417`) complying with CMS testing guidelines.
+* **Scope Boundary:** Public plan browsing flows validate client-facing search and plan presentation engines; they do not trigger live Medicare eligibility verification, member enrollment systems, or private coverage data access.
