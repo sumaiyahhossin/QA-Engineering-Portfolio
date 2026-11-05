@@ -1,15 +1,27 @@
 # UI Automation
 
-The automation work described in my experience includes browser testing with Playwright and Cypress. This section outlines the types of repeatable checks covered by the portfolio.
+The automation work described in my experience includes browser testing with Playwright and Cypress. This section is organized by framework so the test code and supporting files can be kept separate.
 
-## Tools
+## Frameworks
 
-- Playwright
-- Cypress
-- JavaScript
-- TypeScript
+- [Playwright](./Playwright/README.md)
+- [Cypress](./Cypress/README.md)
 
-## Workflows to Automate
+## Folder Structure
+
+```text
+Automation/
+├── Playwright/
+│   ├── tests/
+│   ├── pages/
+│   └── fixtures/
+└── Cypress/
+    ├── e2e/
+    ├── support/
+    └── fixtures/
+```
+
+## Workflows Covered
 
 - Member workflow navigation
 - Required field and format validation
@@ -27,6 +39,5 @@ The automation work described in my experience includes browser testing with Pla
 - Avoid relying on the order in which tests run.
 - Use environment variables for configuration and credentials.
 - Capture screenshots or traces when they help investigate a failure.
-- Review logs and screenshots before sharing them.
 
-This folder currently documents the automation approach. It does not contain copied employer scripts or connect to Healthfirst systems. Only add runnable examples that have been built and verified for this public portfolio.
+The folders are set up for the public portfolio examples. They do not contain copied employer scripts or connect to Healthfirst systems. The framework folders currently contain organization notes, not runnable test specs; runnable examples still need to be added and verified.
