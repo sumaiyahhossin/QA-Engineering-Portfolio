@@ -12,7 +12,7 @@ The test cases are organized to correspond to the `Test_Cases` worksheet in `Hum
 **REQ-PLAN-01 · High priority · Plan Browsing**
 - **Setup:** User on member portal landing page. | **Data:** Synthetic Zip Code
 - **Steps:** Enter valid service area zip code.; Submit search query.; Verify available insurance plans render.
-- **Expected:** Plan results are displayed for the submitted ZIP code, with the plan names and information visible on each result.
+- **Expected:** Insurance plan records render with accurate monthly premiums and coverage levels.
 
 ### TC-BROWSE-002: Verify side-by-side comparison of two health plans
 **REQ-PLAN-02 · High priority · Plan Comparison**
@@ -100,7 +100,7 @@ The test cases are organized to correspond to the `Test_Cases` worksheet in `Hum
 **REQ-COV-05 · High priority · Backend / SQL**
 - **Setup:** SQL tool connected to test database. | **Data:** Test Database Schema
 - **Steps:** Run query to retrieve member policy details.; Compare UI fields with SQL output.
-- **Expected:** The selected UI fields match the corresponding values in the test database record.
+- **Expected:** UI display fields match backend database records 100%.
 
 ### TC-COV-016: Verify dependent coverage visibility under primary subscriber policy
 **REQ-COV-06 · Medium priority · Member Coverage**
@@ -130,7 +130,7 @@ The test cases are organized to correspond to the `Test_Cases` worksheet in `Hum
 **REQ-COV-10 · High priority · Sanity / Smoke**
 - **Setup:** Production staging release deployed. | **Data:** Sanity Release Build
 - **Steps:** Execute smoke test checklist covering login and coverage view.
-- **Expected:** The planned smoke checks complete, and any failures are recorded for follow-up.
+- **Expected:** Core elements load successfully with zero critical defects.
 
 ---
 
@@ -194,7 +194,7 @@ The test cases are organized to correspond to the `Test_Cases` worksheet in `Hum
 **REQ-ENR-10 · High priority · Sanity / Smoke**
 - **Setup:** Staging environment post-deployment. | **Data:** Smoke Checklist
 - **Steps:** Run manual smoke checklist verifying form submission response.
-- **Expected:** The form responds according to the documented submission behavior, and any returned confirmation or validation message is displayed.
+- **Expected:** System returns 200 OK status on test payload submission.
 
 ---
 
@@ -322,4 +322,4 @@ The test cases are organized to correspond to the `Test_Cases` worksheet in `Hum
 **REQ-JIRA-10 · High priority · Production Sanity**
 - **Setup:** Production release deployment completed. | **Data:** Production Release Build
 - **Steps:** Run approved sanity checklist verifying core plan browsing and coverage features.
-- **Expected:** Results are recorded and any release-blocking issues are raised through the team's agreed process.
+- **Expected:** Sign-off provided to engineering leads confirming production stability.
