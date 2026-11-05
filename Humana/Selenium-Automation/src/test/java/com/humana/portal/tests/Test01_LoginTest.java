@@ -8,6 +8,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.SkipException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -52,13 +53,21 @@ public class Test01_LoginTest {
 
     @Test(priority = 2, description = "Test Case 2: Verify successful login with provided credentials")
     public void testSuccessfulMemberLogin() {
+        String username = System.getenv("HUMANA_TEST_USERNAME");
+        String password = System.getenv("HUMANA_TEST_PASSWORD");
+
+        //login credentials are kept outside the public repository
+        if (username == null || username.isBlank() || password == null || password.isBlank()) {
+            throw new SkipException("Set HUMANA_TEST_USERNAME and HUMANA_TEST_PASSWORD to run this test.");
+        }
+
         WebElement usernameField = wait.until(ExpectedConditions.elementToBeClickable(usernameInputLocator));
         usernameField.clear();
-        usernameField.sendKeys("sumaiyahhossin");
+        usernameField.sendKeys(username);
 
         WebElement passwordField = wait.until(ExpectedConditions.elementToBeClickable(passwordInputLocator));
         passwordField.clear();
-        passwordField.sendKeys("Bangladesh123");
+        passwordField.sendKeys(password);
 
         WebElement loginButton = wait.until(ExpectedConditions.elementToBeClickable(loginButtonLocator));
         loginButton.click();
