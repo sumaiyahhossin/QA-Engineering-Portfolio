@@ -1,4 +1,4 @@
-# Test Environment Notes
+# Test Environment
 
 **Project:** Healthcare plan browsing and member workflows  
 **Role:** Junior QA Analyst
@@ -20,13 +20,13 @@ Java 17, Selenium WebDriver, TestNG, Maven, Chrome, IntelliJ IDEA, Oracle SQL De
 
 ## Test Data
 
-For actual testing, use only accounts and records approved for the environment. The public SQL examples and local browser pages in this repository use synthetic values, including test member IDs and ZIP codes. No live member information or employer credentials are included.
+The public SQL examples and local browser pages in this repository use synthetic values, including test member IDs and ZIP codes. The portfolio does not contain live member information or employer credentials.
 
-## Running the Public Selenium Tests
+## Public Selenium Test Setup
 
-The Selenium tests in this repository run against the HTML pages under `Selenium-Automation/src/test/resources/fixtures`. They do not need a Humana login or access to an employer environment.
+The Selenium tests run against the HTML pages under `Selenium-Automation/src/test/resources/fixtures`. They do not require a Humana login or access to an employer environment.
 
-From the `Selenium-Automation` folder, run:
+Run the tests from the `Selenium-Automation` folder:
 
 ```bash
 mvn clean test
