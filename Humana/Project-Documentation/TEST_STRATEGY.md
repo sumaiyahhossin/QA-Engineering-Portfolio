@@ -21,8 +21,6 @@ The testing approach focuses on plan search, plan information, member-facing wor
 - Use explicit waits when an element needs time to appear.
 - Run the suite through Maven and review the test report.
 
-The public test classes keep their own locators and browser steps; they do not use a separate Page Object Model layer.
-
 ### SQL Checks
 - Query test records when database access is available.
 - Check member and coverage status and date fields.
