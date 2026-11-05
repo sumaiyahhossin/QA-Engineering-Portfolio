@@ -1,52 +1,62 @@
-Test Plan
+# Test Plan
 
-Project Area: Member-Facing Healthcare Workflows
+**Project area:** Member-facing healthcare workflows
 
-1. Objective
-Verify that member-facing healthcare workflows behave as expected, especially eligibility-based processes and health plan selection.
+## 1. Objective
 
-2. Scope
+Check that member-facing workflows work as expected, with particular attention to eligibility-related processes and health plan selection.
+
+## 2. Scope
+
 - Member workflow navigation
 - Eligibility-related input and results
 - Health plan browsing and selection
-- Required field validation
-- API response and error handling
-- Data consistency checks
+- Required field and format validation
+- API responses and error handling
+- Application data checks
 - Regression testing
 
-3. Testing Types
-- Functional, smoke, regression, and integration testing
-- API and UI testing
-- Negative and boundary testing
+## 3. Testing Types
+
+- Functional and smoke testing
+- Regression and integration testing
+- UI and API testing
+- Positive, negative, and boundary testing
 - Data validation
 
-4. Test Approach
-- Review requirements and acceptance criteria.
-- Identify positive, negative, and boundary scenarios.
-- Prepare approved test data.
-- Execute manual test cases.
-- Automate stable, repeatable scenarios where appropriate.
-- Validate API status codes, response structure, and business rules.
-- Compare displayed values with approved test data.
-- Record defects and retest fixes.
+## 4. Test Approach
 
-5. Entry Criteria
-- Requirements are available.
-- Test environment and approved test data are accessible.
-- Application build is ready for testing.
+1. Review the requirement and acceptance criteria.
+2. Identify the main user flow and possible failure points.
+3. Prepare valid, invalid, and incomplete test data.
+4. Execute the manual test cases.
+5. Automate repeatable UI checks where appropriate.
+6. Use Postman to check API status codes, response fields, and error handling.
+7. Compare displayed information with expected test data.
+8. Record defects and retest fixes.
 
-6. Exit Criteria
-- Planned tests have been executed or their status documented.
-- Defects have been reviewed and prioritized.
-- Critical issues have been resolved or formally tracked.
-- Test results are documented.
+## 5. Entry Criteria
 
-7. Deliverables
-- Test scenarios and cases
-- Execution records
-- Automation examples
+- Requirements and expected behavior are available.
+- The test environment is accessible.
+- Approved test data is available.
+- The build is ready for testing.
+
+## 6. Exit Criteria
+
+- Planned tests have been run or have a documented status.
+- Failed tests have a defect or clear explanation.
+- Fixes have been retested.
+- Relevant regression checks are complete.
+- Results are recorded.
+
+## 7. Deliverables
+
+- Test scenarios and manual test cases
+- Test execution records
+- UI automation examples
 - API test cases
-- Data validation examples
+- SQL validation examples
 - Defect reports
 
-This is a portfolio test plan, not an internal company test plan.
+This is a portfolio test plan, not an internal Healthfirst document.
