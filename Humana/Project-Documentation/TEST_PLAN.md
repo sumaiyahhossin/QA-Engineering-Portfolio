@@ -1,161 +1,55 @@
-# QA Test Plan
+# Test Plan
 
-**Project Focus:** Healthcare plan browsing and member-facing workflows  
+**Project:** Healthcare plan browsing and member workflows  
 **Role:** Junior QA Analyst  
-**Methodology:** Agile / Scrum  
-**Document Version:** 1.0
+**Methodology:** Agile / Scrum
 
----
+## 1. Purpose
 
-## 1. Objective & Scope
+This plan covers the main areas I tested: plan search, plan details, member coverage information, sign-in, forms, and related data checks. It also outlines how I organized manual testing, automation, and defect follow-up.
 
-The purpose of this Test Plan is to define the testing approach, scope, objectives, and execution process for validating healthcare plan browsing and selected member-facing workflows.
+## 2. What Was Tested
 
-The documented scope includes plan search, plan details, member coverage scenarios, form validation, navigation, and sign-in behavior. Testing activities include manual test case development, functional verification, regression testing, selected automated browser testing, defect documentation, and database validation where applicable.
+- Plan search and ZIP code entry.
+- Search submission and results.
+- Plan listings, details, and coverage information.
+- Member coverage status and date scenarios.
+- Enrollment form fields and validation.
+- Sign-in and required-field behavior.
+- Page navigation and related user workflows.
+- Data checks using SQL when database access was available.
 
-The goal is to identify defects, verify expected application behavior, and support reliable application functionality.
+## 3. Testing Types
 
----
+| Type | How I Used It |
+| --- | --- |
+| Functional | Checked that features worked as expected. |
+| Smoke | Checked key workflows after a build or update. |
+| Regression | Rechecked existing features after changes. |
+| Integration | Checked related parts of a workflow. |
+| Negative | Tried invalid, missing, or unexpected input. |
+| Boundary | Checked field limits and edge cases. |
+| UI | Checked fields, messages, page content, and navigation. |
+| Database | Used SQL to review test records and related data. |
 
-## 2. In-Scope vs. Out-of-Scope Coverage
+## 4. Tools
 
-### In-Scope Functional Modules
+Java, Selenium WebDriver, TestNG, Maven, IntelliJ IDEA, Oracle SQL Developer, Jira, Zephyr, Excel, Git, and GitHub Actions.
 
-- Healthcare plan browsing and search functionality.
-- ZIP code input and validation.
-- Plan search submission and results display.
-- Healthcare plan listings and information.
-- Plan details and coverage information.
-- Member coverage display and related validation scenarios using synthetic test data.
-- Enrollment form field validation and review scenarios using test data.
-- Navigation between application pages.
-- Sign-in functionality and form validation.
-- Automated browser testing of selected workflows.
+## 5. Test Process
 
-### Out-of-Scope Activities
+1. Review the requirement and expected behavior.
+2. Write test cases and identify the data needed.
+3. Run the manual tests and record what happened.
+4. Automate repeatable checks where it makes sense.
+5. Log issues with steps, expected results, and actual results.
+6. Retest fixes and run regression checks.
+7. Review the results with the team.
 
-- Actual Medicare eligibility determinations.
-- Live enrollment transactions or submission of real applications.
-- Insurance claim processing.
-- Financial transactions and premium payments.
-- Access to real member personal information or protected health information (PHI).
-- Production database modifications.
-- Live member account provisioning.
+## 6. Test Data
 
----
+Use test accounts and test records approved for the environment being tested. Public examples in this repository use synthetic names, identifiers, ZIP codes, and other values.
 
-## 3. Testing Types & Methodologies
+## 7. Out of Scope
 
-| Testing Type | Description | Execution Method |
-| :--- | :--- | :--- |
-| **Functional Testing** | Verify application features against expected behavior | Manual & Automated |
-| **Smoke Testing** | Verify critical functionality after application updates | Manual |
-| **Regression Testing** | Recheck existing functionality after changes | Manual & Automated |
-| **Integration Testing** | Validate interactions between application components where applicable | Manual |
-| **Negative Testing** | Verify behavior with invalid or unexpected inputs | Manual & Automated |
-| **Boundary Testing** | Test input limits and validation conditions | Manual |
-| **UI Testing** | Verify page layouts, elements, and navigation | Manual |
-| **Database Testing** | Validate relevant data using SQL queries where authorized | SQL |
-
----
-
-## 4. Test Environment & Tools
-
-Testing activities are organized around authorized QA or staging environments used for application verification. Public portfolio examples use generalized environment descriptions and synthetic test data.
-
-| Tool / Technology | Purpose |
-| :--- | :--- |
-| **Java 17** | Automation programming language |
-| **Selenium WebDriver 4.27.0** | Browser automation |
-| **TestNG 7.10.2** | Test execution and assertions |
-| **Apache Maven** | Dependency and build management |
-| **IntelliJ IDEA** | Automation development |
-| **Oracle SQL Developer** | Database queries and validation |
-| **Jira** | Defect tracking |
-| **Zephyr** | Test case management |
-| **Excel** | Manual test case documentation |
-| **Git / GitHub** | Version control |
-| **GitHub Actions** | Workflow execution |
-
----
-
-## 5. Test Execution Strategy & Workflow
-
-1. **Requirements Review:** Review requirements and understand expected functionality.
-2. **Test Case Design:** Create manual scenarios with steps, expected results, and test data.
-3. **Test Data Preparation:** Prepare appropriate test inputs for valid, invalid, and boundary scenarios.
-4. **Manual Test Execution:** Execute test cases and document actual results.
-5. **Automation Development:** Create Selenium WebDriver scripts using Java and TestNG for selected browser workflows.
-6. **Defect Reporting:** Document identified issues with reproduction steps, expected results, actual results, and supporting evidence.
-7. **Retesting:** Recheck application functionality after fixes are made available.
-8. **Regression Testing:** Execute relevant scenarios to verify existing functionality after changes.
-
----
-
-## 6. Entry Criteria
-
-Testing can begin when:
-
-- Application functionality is available in an authorized test environment.
-- Requirements and expected behavior are understood.
-- Manual test cases have been prepared.
-- Required test data is available.
-- Java and Maven configurations are set up.
-- Selenium WebDriver and TestNG dependencies are configured.
-- The test environment and browser are accessible.
-
----
-
-## 7. Exit Criteria
-
-Testing activities are considered complete for the planned scope when:
-
-- Planned test cases have been executed.
-- Actual results have been documented.
-- Failed test cases have been investigated.
-- Identified defects have been documented and tracked.
-- Resolved defects have been retested where applicable.
-- Relevant regression scenarios have been executed.
-- Outstanding issues have been communicated to the appropriate team members.
-
----
-
-## 8. Defect Management
-
-Defects identified during testing are documented and tracked using the team's defect management process. Each report should include:
-
-- Defect summary and description.
-- Affected functionality.
-- Testing environment.
-- Preconditions and reproduction steps.
-- Expected and actual results.
-- Severity and priority.
-- Supporting evidence where available.
-- Current status and retest outcome.
-
----
-
-## 9. QA Deliverables & Project Artifacts
-
-| Deliverable | Description |
-| :--- | :--- |
-| **`PROJECT_OVERVIEW.md`** | Project background, objectives, and scope |
-| **`TEST_PLAN.md`** | Testing scope, strategy, methodologies, and execution criteria |
-| **`TEST_ENVIRONMENT.md`** | General test environment overview and tools |
-| **`TEST_SCENARIOS.md`** | Functional test scenarios |
-| **`TEST_CASES.md`** | Manual test case documentation |
-| **`Humana_Manual_Test_Cases.xlsx`** | Manual test case tracking workbook |
-| **Selenium Automation** | Java-based automated test scripts |
-| **`pom.xml`** | Maven project configuration |
-| **`testng.xml`** | TestNG suite configuration |
-
----
-
-## 10. Quality Objectives
-
-- Verify that planned application workflows behave as expected.
-- Identify and document functional issues.
-- Maintain organized and traceable test documentation.
-- Support regression testing through repeatable automation.
-- Verify application behavior across positive and negative scenarios.
-- Communicate test results and outstanding issues clearly.
+The test cases in this portfolio cover application behavior. They do not perform live enrollment submissions, process claims, make payments, or change production records.
