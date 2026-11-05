@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Harbor Health | Member Portal</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" data-cy="brand-home" aria-label="Harbor Health home">
+        <span class="brand-mark" aria-hidden="true">H</span>
+        <span>Harbor <strong>Health</strong></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#home" data-cy="nav-home">Home</a>
+        <a href="#plans" data-cy="nav-plans">Find a plan</a>
+        <a href="#eligibility" data-cy="nav-eligibility">Check eligibility</a>
+        <a href="#enrollment" data-cy="nav-enrollment">Enrollment</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="view hero" data-view="home" data-cy="home-view">
+        <div class="hero-copy">
+          <p class="eyebrow">Health coverage, made clearer</p>
+          <h1>Care that fits<br>your life.</h1>
+          <p>Explore coverage options, check member eligibility, and take the next step with confidence.</p>
+          <a class="button button-primary" href="#plans" data-cy="home-plan-link">Explore plans</a>
+        </div>
+        <div class="hero-card">
+          <p class="eyebrow">A good place to start</p>
+          <h2>Find coverage for your needs.</h2>
+          <p>Compare plan costs and benefits for eligible New York ZIP codes.</p>
+          <div class="coverage-note"><span aria-hidden="true">✓</span> Individual and family plan options</div>
+        </div>
+      </section>
+
+      <section class="view content-view" data-view="plans" data-cy="plans-view" hidden>
+        <div class="section-heading">
+          <p class="eyebrow">Explore your options</p>
+          <h1>Find a health plan</h1>
+          <p>Enter a New York ZIP code to see plans available in your area.</p>
+        </div>
+        <form class="search-form" data-cy="plan-search-form" novalidate>
+          <label for="plan-zip">ZIP code</label>
+          <div class="form-row">
+            <input id="plan-zip" data-cy="plan-zip" inputmode="numeric" autocomplete="postal-code" maxlength="5" placeholder="e.g. 10001">
+            <button class="button button-primary" type="submit" data-cy="plan-search-submit">Search plans</button>
+          </div>
+          <p class="field-error" data-cy="plan-search-error" role="alert" hidden></p>
+        </form>
+        <div class="results" data-cy="plan-results" aria-live="polite"></div>
+        <section class="comparison" data-cy="comparison" hidden>
+          <h2>Compare plans</h2>
+          <div data-cy="comparison-table"></div>
+        </section>
+      </section>
+
+      <section class="view content-view" data-view="eligibility" data-cy="eligibility-view" hidden>
+        <div class="section-heading">
+          <p class="eyebrow">Member services</p>
+          <h1>Check eligibility</h1>
+          <p>Use a synthetic member ID to review coverage status and dates.</p>
+        </div>
+        <form class="search-form" data-cy="eligibility-form" novalidate>
+          <label for="member-id">Member ID</label>
+          <div class="form-row">
+            <input id="member-id" data-cy="member-id" autocomplete="off" placeholder="e.g. MBR100001">
+            <button class="button button-primary" type="submit" data-cy="eligibility-submit">Check status</button>
+          </div>
+          <p class="field-error" data-cy="eligibility-error" role="alert" hidden></p>
+        </form>
+        <div class="results" data-cy="eligibility-results" aria-live="polite"></div>
+      </section>
+
+      <section class="view content-view" data-view="enrollment" data-cy="enrollment-view" hidden>
+        <div class="section-heading">
+          <p class="eyebrow">Take the next step</p>
+          <h1>Request enrollment</h1>
+          <p>This demonstration submits a sample request only; it does not create real coverage.</p>
+        </div>
+        <form class="enrollment-form" data-cy="enrollment-form" novalidate>
+          <label for="full-name">Full name</label>
+          <input id="full-name" data-cy="enrollment-name" autocomplete="name" required>
+          <label for="email">Email address</label>
+          <input id="email" data-cy="enrollment-email" type="email" autocomplete="email" required>
+          <label for="enrollment-zip">ZIP code</label>
+          <input id="enrollment-zip" data-cy="enrollment-zip" inputmode="numeric" maxlength="5" autocomplete="postal-code" required>
+          <label for="plan-choice">Plan</label>
+          <select id="plan-choice" data-cy="enrollment-plan" required>
+            <option value="">Select a plan</option>
+          </select>
+          <label class="checkbox-label">
+            <input type="checkbox" data-cy="enrollment-consent" required>
+            I confirm this is a request for a synthetic demonstration.
+          </label>
+          <p class="field-error" data-cy="enrollment-error" role="alert" hidden></p>
+          <button class="button button-primary" type="submit" data-cy="enrollment-submit">Submit request</button>
+        </form>
+        <div class="results" data-cy="enrollment-confirmation" aria-live="polite"></div>
+      </section>
+
+      <section class="view content-view not-found" data-view="not-found" data-cy="not-found-view" hidden>
+        <p class="eyebrow">Page not found</p>
+        <h1>We couldn't find that section.</h1>
+        <p>Choose a section from the navigation to continue.</p>
+        <a class="button button-primary" href="#home">Return home</a>
+      </section>
+    </main>
+
+    <footer>
+      <span>Harbor Health is a fictional portfolio demonstration.</span>
+      <span>All members and plan data are synthetic.</span>
+    </footer>
+  </body>
+</html>

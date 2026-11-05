@@ -1,0 +1,38 @@
+[
+  {
+    "id": "essential-silver",
+    "name": "Essential Silver",
+    "type": "HMO",
+    "monthlyPremium": 245,
+    "deductible": 1500,
+    "outOfPocketMaximum": 6500,
+    "primaryCare": 25,
+    "specialist": 55,
+    "prescription": "Tiered prescription coverage",
+    "summary": "Everyday coverage with predictable copays and a local provider network."
+  },
+  {
+    "id": "choice-gold",
+    "name": "Choice Gold",
+    "type": "PPO",
+    "monthlyPremium": 389,
+    "deductible": 750,
+    "outOfPocketMaximum": 5000,
+    "primaryCare": 20,
+    "specialist": 40,
+    "prescription": "Preferred and standard drug tiers",
+    "summary": "More provider flexibility with lower in-network costs for frequent care."
+  },
+  {
+    "id": "value-bronze",
+    "name": "Value Bronze",
+    "type": "HMO",
+    "monthlyPremium": 178,
+    "deductible": 3500,
+    "outOfPocketMaximum": 8700,
+    "primaryCare": 40,
+    "specialist": 75,
+    "prescription": "Generic drug coverage",
+    "summary": "A lower monthly premium with protection for unexpected healthcare costs."
+  }
+]

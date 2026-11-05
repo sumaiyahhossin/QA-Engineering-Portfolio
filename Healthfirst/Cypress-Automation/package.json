@@ -1,0 +1,24 @@
+{
+  "name": "healthfirst-cypress",
+  "version": "1.0.0",
+  "description": "Cypress automation testing for a fictional healthcare member portal",
+  "main": "app/server.js",
+  "scripts": {
+    "start": "node app/server.js",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "test": "cypress run"
+  },
+  "keywords": [
+    "cypress",
+    "qa",
+    "test-automation",
+    "healthcare"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "cypress": "^16.2.1"
+  }
+}

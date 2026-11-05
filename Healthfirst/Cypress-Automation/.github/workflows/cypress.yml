@@ -1,0 +1,49 @@
+name: Cypress
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  e2e:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Start member portal
+        run: |
+          npm start > /tmp/member-portal.log 2>&1 &
+          echo $! > /tmp/member-portal.pid
+          for attempt in {1..30}; do
+            if curl --fail --silent http://127.0.0.1:4173/api/health; then
+              exit 0
+            fi
+            sleep 2
+          done
+          cat /tmp/member-portal.log
+          exit 1
+
+      - name: Run Cypress
+        run: npm test
+
+      - name: Upload Cypress artifacts on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cypress-artifacts
+          path: |
+            cypress/screenshots
+            cypress/videos
+          if-no-files-found: ignore
