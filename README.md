@@ -32,6 +32,9 @@ Portfolio Sections
 Humana
 - [Project Overview](Humana/Project-Documentation/PROJECT_OVERVIEW.md)
 - [Test Plan](Humana/Project-Documentation/TEST_PLAN.md)
+- [Test Strategy](Humana/Project-Documentation/TEST_STRATEGY.md)
+- [Test Environment](Humana/Project-Documentation/TEST_ENVIRONMENT.md)
+- [Test Scenarios](Humana/Project-Documentation/TEST_SCENARIOS.md)
 - [Manual Testing](Humana/Manual-Testing/README.md)
 - [Defect Reports](Humana/Manual-Testing/Defect-Reports/README.md)
 - [Selenium Automation](Humana/Selenium-Automation/README.md)
@@ -41,6 +44,9 @@ Humana
 Healthfirst
 - [Project Overview](Healthfirst/Project-Documentation/PROJECT_OVERVIEW.md)
 - [Test Plan](Healthfirst/Project-Documentation/TEST_PLAN.md)
+- [Test Strategy](Healthfirst/Project-Documentation/TEST_STRATEGY.md)
+- [Test Environment](Healthfirst/Project-Documentation/TEST_ENVIRONMENT.md)
+- [Test Scenarios](Healthfirst/Project-Documentation/TEST_SCENARIOS.md)
 - [Manual Testing](Healthfirst/Manual-Testing/README.md)
 - [Automation Approach](Healthfirst/Automation/README.md)
 - [API Testing](Healthfirst/API-Testing/README.md)
