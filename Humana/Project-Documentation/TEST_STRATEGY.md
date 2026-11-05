@@ -1,38 +1,36 @@
 # Quality Assurance Test Strategy
 
-**Company / Project:** Humana Health Insurance  
-**Project Name:** Healthcare Plan Browsing and Member Coverage  
+**Project Focus:** Healthcare plan browsing and public account access  
 **Role:** Junior QA Analyst  
-**Methodology:** Agile / Scrum  
-**Document Version:** 1.0  
+**Methodology:** Agile / Scrum
 
 ---
 
 ## 1. Testing Objectives
 
-The primary objective of the testing strategy is to verify the functionality, reliability, and usability of the healthcare plan browsing and member access application.
+The objective of this strategy is to verify key healthcare application workflows, identify defects, and support reliable application behavior.
 
 Testing objectives include:
 
-- Verify healthcare plan browsing and search functionality.
+- Verify plan browsing and search functionality.
 - Validate ZIP code input, search results, and plan information.
-- Verify plan details and coverage information.
-- Test member login functionality and form validation.
-- Identify, document, and track application defects.
-- Verify that application changes do not negatively affect existing functionality.
-- Improve testing efficiency through automated regression testing.
+- Check plan details and page navigation.
+- Test public sign-in behavior and form validation.
+- Document defects with clear reproduction steps.
+- Perform regression checks after relevant changes.
+- Use automation to support repeatable browser testing.
 
 ---
 
 ## 2. Testing Levels
 
-| Testing Level | Scope & Description |
+| Testing Level | Scope |
 | :--- | :--- |
-| **Functional Testing** | Verify individual application features and workflows against expected behavior. |
-| **Integration Testing** | Verify interactions between related application components and workflows. |
-| **System Testing** | Validate complete user workflows across healthcare plan browsing and member access functionality. |
-| **Regression Testing** | Verify that application changes do not break existing functionality. |
-| **Smoke Testing** | Check critical application functionality following new builds or updates. |
+| **Functional Testing** | Verify individual features against expected behavior. |
+| **Integration Testing** | Check interactions between related application components where applicable. |
+| **System Testing** | Validate complete user workflows within the available test scope. |
+| **Regression Testing** | Recheck existing functionality after changes. |
+| **Smoke Testing** | Check critical functionality after an update or deployment. |
 
 ---
 
@@ -40,114 +38,94 @@ Testing objectives include:
 
 | Testing Type | Description |
 | :--- | :--- |
-| **Positive Testing** | Verify standard application workflows using valid inputs. |
-| **Negative Testing** | Verify application behavior when invalid or unexpected inputs are submitted. |
-| **Boundary Testing** | Test input limits, field requirements, and edge cases. |
-| **UI Testing** | Verify page layouts, form elements, navigation, and displayed information. |
-| **Cross-Browser Testing** | Check application behavior across supported browsers where applicable. |
-| **Functional Testing** | Verify that application features behave according to expected requirements. |
+| **Positive Testing** | Verify workflows using valid inputs. |
+| **Negative Testing** | Check behavior when invalid or unexpected inputs are submitted. |
+| **Boundary Testing** | Test input limits, required fields, and edge cases. |
+| **UI Testing** | Verify page elements, form behavior, navigation, and displayed information. |
+| **Cross-Browser Testing** | Check behavior across supported browsers where applicable. |
+| **Functional Testing** | Confirm features behave according to documented expectations. |
 
 ---
 
 ## 4. Manual Testing Strategy
 
-Manual testing focuses on validating application functionality through structured test scenarios and test cases.
+Manual testing activities include:
 
-Activities include:
+- Reviewing requirements and application workflows.
+- Identifying positive, negative, and boundary scenarios.
+- Preparing and maintaining test cases.
+- Using appropriate test data.
+- Executing test cases and recording actual results.
+- Comparing actual results with expected results.
+- Reporting defects with clear steps and evidence.
+- Retesting fixes and performing regression checks.
 
-- Reviewing requirements and understanding application workflows.
-- Identifying positive, negative, and boundary test scenarios.
-- Developing and maintaining manual test cases.
-- Preparing sample test data.
-- Executing test cases and documenting actual results.
-- Comparing actual results against expected results.
-- Reporting defects and documenting supporting evidence.
-- Retesting resolved defects and performing regression checks.
-
-Manual test cases are maintained in the project documentation and Excel workbook (`Humana_Manual_Test_Cases.xlsx`).
+Manual test cases are documented in the project files and Excel workbook.
 
 ---
 
 ## 5. Automation Testing Strategy
 
-Automation testing focuses on repeatable application workflows using Java, Selenium WebDriver, and TestNG.
+Automation focuses on repeatable browser workflows using Java, Selenium WebDriver, and TestNG.
 
-Automation activities include:
+Activities include:
 
-- Initializing browser sessions using Selenium WebDriver.
-- Identifying and interacting with web elements.
-- Organizing test scripts using the Page Object Model where implemented.
-- Automating login and healthcare plan browsing scenarios.
-- Validating application behavior using TestNG assertions.
-- Handling browser synchronization and element waits.
-- Organizing test execution through TestNG XML configuration.
-- Managing dependencies using Maven.
-- Running configured automated tests through GitHub Actions.
+- Initializing browser sessions with Selenium WebDriver.
+- Locating and interacting with page elements.
+- Using TestNG annotations and assertions.
+- Applying explicit waits for page synchronization.
+- Organizing tests in a TestNG XML suite.
+- Managing dependencies and builds with Maven.
+- Reviewing automated execution results through Maven and GitHub Actions.
 
-Automation is used to support regression testing and reduce repetitive manual execution.
+The current public implementation keeps locators and browser interactions in the individual test classes. A separate Page Object Model layer is not currently implemented.
 
 ---
 
-## 6. Defect Management Strategy
+## 6. Defect Management
 
-Defects identified during testing are documented and tracked using Jira. Each defect report should include:
+Defects should be documented with:
 
-- Defect summary.
-- Affected application functionality.
-- Testing environment.
-- Preconditions.
-- Steps to reproduce.
-- Expected result.
-- Actual result.
-- Severity and priority.
-- Supporting screenshots or relevant execution evidence.
+- Summary and affected functionality.
+- Environment and relevant test data.
+- Preconditions and steps to reproduce.
+- Expected and actual results.
+- Severity and priority, based on impact.
+- Supporting evidence where available.
+- Status and retest outcome.
 
-Defects are monitored throughout the testing process, with retesting performed after fixes are made available.
+A failed assertion or timeout should be investigated before it is classified as an application defect.
 
 ---
 
-## 7. Test Data Strategy
+## 7. Test Data & Privacy
 
-Test data is prepared to validate different application scenarios while avoiding exposure of sensitive information.
-
-The strategy includes:
-
-- Using sample inputs for valid and invalid ZIP code testing.
-- Preparing positive and negative test scenarios.
-- Using authorized test accounts when authentication testing requires them.
-- Avoiding real member personal information (PII) and protected health information (PHI) in project documentation.
-- Excluding passwords, production credentials, and other sensitive information from the public repository.
+- Use approved test data and authorized test accounts where required.
+- Use synthetic identifiers in public examples.
+- Do not include real member personal information (PII), protected health information (PHI), passwords, or production credentials.
+- Keep internal environment details and confidential implementation information out of the public repository.
 
 ---
 
 ## 8. Tools & Technologies
 
-| Category | Tools & Technologies |
+| Category | Tools |
 | :--- | :--- |
-| **Programming Language** | Java 17 |
-| **Browser Automation** | Selenium WebDriver 4.27.0 |
-| **Test Framework** | TestNG 7.10.2 |
-| **Build Management** | Apache Maven |
-| **Development Environment** | IntelliJ IDEA |
-| **Defect Tracking** | Jira Software |
-| **Test Case Management** | Zephyr |
-| **Database Verification** | Oracle SQL Developer |
-| **Version Control** | Git, GitHub |
-| **CI/CD** | GitHub Actions |
+| Programming Language | Java 17 |
+| Browser Automation | Selenium WebDriver 4.27.0 |
+| Test Framework | TestNG 7.10.2 |
+| Build Management | Apache Maven |
+| Development Environment | IntelliJ IDEA |
+| Defect Tracking | Jira |
+| Test Case Management | Zephyr |
+| Database Verification | Oracle SQL Developer |
+| Version Control | Git, GitHub |
+| CI/CD | GitHub Actions |
 
 ---
 
 ## 9. Quality Assurance Approach
 
-The overall QA approach emphasizes organized test documentation, consistent execution, defect tracking, and repeatable automation.
+The QA approach emphasizes clear test documentation, consistent execution, defect investigation, and repeatable automation.
 
-The strategy supports:
-
-- Early identification of functional issues.
-- Consistent manual test execution.
-- Reusable automated test scripts.
-- Organized test case documentation.
-- Traceability between testing scenarios and test cases.
-- Regression verification following application changes.
-
-The goal is to support reliable application functionality through structured manual and automated testing.
+The goal is to identify issues early, maintain traceability between scenarios and test cases, and verify relevant functionality after changes.
