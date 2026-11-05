@@ -5,7 +5,7 @@
 
 ## Testing Goals
 
-I focused on checking that users could search for plans, review plan information, and move through member-facing workflows without errors. I also checked form behavior, data shown on the page, and changes that could affect existing functionality.
+The testing approach represented in this portfolio focuses on plan search, plan information, member-facing workflows, form behavior, and regression coverage.
 
 ## Testing Approach
 
@@ -45,4 +45,4 @@ When a test fails, I record the steps, expected result, actual result, and any u
 
 ## Test Data
 
-The public examples use synthetic test values. For actual work, use only test accounts and data approved for the environment.
+The public examples use synthetic test values. These public examples use synthetic values. In an actual work environment, use only test accounts and data approved for that environment.
