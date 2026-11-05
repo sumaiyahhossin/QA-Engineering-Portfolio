@@ -3,8 +3,14 @@ name: Humana Selenium Tests
 on:
   push:
     branches: [main]
+    paths:
+      - 'Humana/Selenium-Automation/**'
+      - '.github/workflows/humana-selenium.yml'
   pull_request:
     branches: [main]
+    paths:
+      - 'Humana/Selenium-Automation/**'
+      - '.github/workflows/humana-selenium.yml'
   workflow_dispatch:
 
 jobs:
