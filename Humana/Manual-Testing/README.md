@@ -17,7 +17,7 @@ The test cases cover plan search, plan details, member coverage, enrollment form
 
 Test results are recorded as Passed, Failed, Blocked, Skipped, or Not Run. Each status reflects the outcome of the corresponding test run.
 
-The workbook includes fields for execution dates, build and environment details, actual results, and defect references.
+The workbook includes fields for execution dates and environment details, actual results, and defect references.
 
 ## Test Data
 
