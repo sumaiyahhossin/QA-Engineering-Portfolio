@@ -29,6 +29,7 @@ This section contains QA documentation and independent portfolio examples relate
 - [Playwright automation demo](Automation/Playwright/README.md)
 - [API testing](API-Testing/README.md)
 - [API test cases](API-Testing/API-TEST-CASES.md)
+- [Runnable Postman API automation](API-Testing/Postman/README.md)
 - [SQL testing](SQL-Testing/README.md)
 - [SQL examples](SQL-Testing/SQL-QUERIES.md)
 
