@@ -160,11 +160,3 @@ WHERE member_id = :test_member_id
 ```
 
 **Expected:** Rows cover the supplied date. Eligibility status and other business rules must also be checked before interpreting a row as active coverage.
-
-## QA review notes
-
-- Run these statements only against authorized test data and environments.
-- Compare results with documented requirements, API responses, and expected test records.
-- Record unexpected rows, the relevant test case, and the observed difference before logging a defect.
-- A query returning no rows is not proof that every related workflow works; it only supports the particular check.
-- These are **SQL examples**, not evidence that the statements were executed against Healthfirst systems or that every check passed.
