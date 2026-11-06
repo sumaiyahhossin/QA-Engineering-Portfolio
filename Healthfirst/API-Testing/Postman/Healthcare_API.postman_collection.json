@@ -1,0 +1,253 @@
+{
+  "info": {
+    "name": "Healthcare Member API - Portfolio Demo",
+    "description": "Independent local demo with synthetic data. Not Healthfirst endpoints or systems.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://127.0.0.1:3100"
+    }
+  ],
+  "item": [
+    {
+      "name": "Eligible member",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/members/MEM-1001",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "members",
+            "MEM-1001"
+          ]
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP status', () => pm.response.to.have.status(200));",
+              "const body = pm.response.json();",
+              "pm.test('Assertion 1', () => { pm.expect(body.memberId).to.eql('MEM-1001'); });",
+              "pm.test('Assertion 2', () => { pm.expect(body.eligible).to.eql(true); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Unknown member",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/members/MEM-9999",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "members",
+            "MEM-9999"
+          ]
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP status', () => pm.response.to.have.status(404));",
+              "const body = pm.response.json();",
+              "pm.test('Assertion 1', () => { pm.expect(body.error).to.eql('Member not found'); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Plans by type",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/plans?type=HMO",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "plans"
+          ],
+          "query": [
+            {
+              "key": "type",
+              "value": "HMO"
+            }
+          ]
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP status', () => pm.response.to.have.status(200));",
+              "const body = pm.response.json();",
+              "pm.test('Assertion 1', () => { pm.expect(body.plans).to.be.an('array').with.lengthOf(1); });",
+              "pm.test('Assertion 2', () => { pm.expect(body.plans[0].type).to.eql('HMO'); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Missing eligibility ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/eligibility",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "eligibility"
+          ]
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP status', () => pm.response.to.have.status(400));",
+              "const body = pm.response.json();",
+              "pm.test('Assertion 1', () => { pm.expect(body.error).to.eql('Member ID is required'); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Valid eligibility",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/eligibility?memberId=MEM-1001",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "eligibility"
+          ],
+          "query": [
+            {
+              "key": "memberId",
+              "value": "MEM-1001"
+            }
+          ]
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP status', () => pm.response.to.have.status(200));",
+              "const body = pm.response.json();",
+              "pm.test('Assertion 1', () => { pm.expect(body.eligible).to.eql(true); });",
+              "pm.test('Assertion 2', () => { pm.expect(body.memberId).to.eql('MEM-1001'); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Invalid plan selection",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/selection",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "selection"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\"planId\":\"BAD-PLAN\"}"
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP status', () => pm.response.to.have.status(400));",
+              "const body = pm.response.json();",
+              "pm.test('Assertion 1', () => { pm.expect(body.error).to.eql('Unknown plan'); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Valid plan selection",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/selection",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "selection"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\"planId\":\"PLAN-101\"}"
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP status', () => pm.response.to.have.status(200));",
+              "const body = pm.response.json();",
+              "pm.test('Assertion 1', () => { pm.expect(body.selected).to.eql('PLAN-101'); });"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
