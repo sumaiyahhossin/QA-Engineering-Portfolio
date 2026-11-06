@@ -88,7 +88,7 @@ These tables reflect the supplied public-facing Healthfirst workbook, using gene
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | Confirm original build/date association |
+| **Review notes** | — |
 
 ### TC-HF-SEL-005 — Verify error handling on invalid or out-of-area zip code search
 
@@ -124,7 +124,7 @@ These tables reflect the supplied public-facing Healthfirst workbook, using gene
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | Confirm original build/date association |
+| **Review notes** | — |
 
 ### TC-HF-SEL-007 — Verify Summary of Benefits PDF document download link
 
@@ -178,7 +178,7 @@ These tables reflect the supplied public-facing Healthfirst workbook, using gene
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | Confirm original build/date association |
+| **Review notes** | — |
 
 ### TC-HF-SEL-010 — Verify end-to-end user navigation flow across plan discovery and selection wizard
 
@@ -216,7 +216,7 @@ These tables reflect the supplied public-facing Healthfirst workbook, using gene
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | Confirm original build/date association |
+| **Review notes** | — |
 
 ### TC-HF-API-012 — Validate POST /api/enrollment payload persistence and response code
 
@@ -288,7 +288,7 @@ These tables reflect the supplied public-facing Healthfirst workbook, using gene
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | Confirm original build/date association |
+| **Review notes** | — |
 
 ### TC-HF-API-016 — Verify duplicate submission handling on repeated POST enrollment requests
 
@@ -306,7 +306,7 @@ These tables reflect the supplied public-facing Healthfirst workbook, using gene
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | Confirm original build/date association |
+| **Review notes** | — |
 
 ### TC-HF-API-017 — Verify GET /api/plans/search filters results correctly by region parameter
 
@@ -324,7 +324,7 @@ These tables reflect the supplied public-facing Healthfirst workbook, using gene
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | Confirm original build/date association |
+| **Review notes** | — |
 
 ### TC-HF-API-018 — Validate PUT /api/member/profile update on valid contact attributes
 
@@ -342,7 +342,7 @@ These tables reflect the supplied public-facing Healthfirst workbook, using gene
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | Confirm original build/date association |
+| **Review notes** | — |
 
 ### TC-HF-API-019 — Verify GET /api/documents/summary returns valid temporary download URL
 
@@ -452,7 +452,7 @@ These tables reflect the supplied public-facing Healthfirst workbook, using gene
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | Confirm original build/date association |
+| **Review notes** | — |
 
 ### TC-HF-UAT-025 — Verify post-deployment smoke test suite on staging release build
 
@@ -506,7 +506,7 @@ These tables reflect the supplied public-facing Healthfirst workbook, using gene
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | Execution date corrected to Nov 11, 2025 (confirmed by tester); build identifier retained as supplied |
+| **Review notes** | — |
 
 ### TC-HF-UAT-028 — Verify logout session termination and browser back-button restriction
 
@@ -560,7 +560,7 @@ These tables reflect the supplied public-facing Healthfirst workbook, using gene
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | Confirm original build/date association |
+| **Review notes** | — |
 
 ## SQL Validation
 
@@ -616,7 +616,7 @@ These tables reflect the supplied public-facing Healthfirst workbook, using gene
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | Confirm original build/date association |
+| **Review notes** | — |
 
 ### TC-HF-SQL-034 — Verify dependent record association mapping under primary subscriber ID
 
@@ -652,7 +652,7 @@ These tables reflect the supplied public-facing Healthfirst workbook, using gene
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | Confirm original build/date association |
+| **Review notes** | — |
 
 ### TC-HF-SQL-036 — Verify audit log table records user login timestamp upon portal authentication
 
@@ -762,7 +762,7 @@ These tables reflect the supplied public-facing Healthfirst workbook, using gene
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | Confirm original build/date association |
+| **Review notes** | — |
 
 ### TC-HF-AGI-042 — Verify defect logging in Jira with reproduction steps, expected vs actual results
 
@@ -852,7 +852,7 @@ These tables reflect the supplied public-facing Healthfirst workbook, using gene
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | Confirm original build/date association |
+| **Review notes** | — |
 
 ### TC-HF-AGI-047 — Collaborate with Product Owner to clarify edge case requirements
 
@@ -888,7 +888,7 @@ These tables reflect the supplied public-facing Healthfirst workbook, using gene
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | Confirm original build/date association |
+| **Review notes** | — |
 
 ### TC-HF-AGI-049 — Participate in sprint retrospective meeting to propose QA process improvements
 
