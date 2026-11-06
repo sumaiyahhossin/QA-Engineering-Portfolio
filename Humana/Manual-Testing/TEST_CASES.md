@@ -3,7 +3,7 @@
 **Project Name:** Healthcare Plan Browsing and Member Access  
 **50 manual test cases: 47 Passed, 3 Failed**, organized into five testing areas. Each case has a consistent field-by-field layout for easier review.
 
-These portfolio test scenarios use synthetic test data. Execution results below are transcribed from the supplied Humana Excel workbook, with 47 Passed and 3 Failed.
+These portfolio test scenarios use synthetic test data. The statuses and execution fields below are copied from the separately supplied completed Excel workbook (47 Passed, 3 Failed). They are historical workbook entries, not results of a new test run or independent verification against a live Humana system. The GitHub-hosted workbook should be checked against that completed version before treating the two files as synchronized. Many Passed entries contain the same generic actual-result wording rather than case-specific evidence; recorded dates and build versions also require source-record validation.
 
 ## Jump to a section
 
@@ -28,14 +28,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Synthetic Zip Code |
 | **Test steps** | Enter valid service area zip code.<br>Submit search query.<br>Verify available insurance plans render. |
 | **Expected result** | Insurance plan records render with accurate monthly premiums and coverage levels. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2024-04-28 |
 | **Environment** | UAT-Staging |
 | **Build / release** | v2023.4.1 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-BROWSE-002 — Verify side-by-side comparison of two health plans
 
@@ -46,14 +46,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Synthetic Plan Records |
 | **Test steps** | Select Plan A and Plan B.<br>Open comparison view.<br>Compare deductibles and copays. |
 | **Expected result** | Side-by-side comparison matrix clearly highlights cost-sharing differences. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2024-10-17 |
 | **Environment** | QA-Regression |
 | **Build / release** | v2024.1.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-BROWSE-003 — Validate search filter by plan category (HMO vs PPO)
 
@@ -64,14 +64,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Filter: HMO |
 | **Test steps** | Select HMO filter.<br>Review returned search results. |
 | **Expected result** | All displayed plan cards match the selected HMO category. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2023-11-11 |
 | **Environment** | Staging-02 |
 | **Build / release** | v2024.2.3 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-BROWSE-004 — Verify empty state message on invalid plan search
 
@@ -89,7 +89,7 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Build / release** | v2024.3.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | JIRA-HUM-7102 |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-BROWSE-005 — Verify plan detail page navigation from listing
 
@@ -100,14 +100,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Synthetic Plan Record |
 | **Test steps** | Click on a specific plan title.<br>Review loaded detail page. |
 | **Expected result** | Detail page opens and displays comprehensive benefit details for the selected plan. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2024-10-30 |
 | **Environment** | QA-Regression |
 | **Build / release** | v2024.4.1 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-BROWSE-006 — Verify Summary of Benefits PDF download link
 
@@ -118,14 +118,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Synthetic Plan ID |
 | **Test steps** | Click 'Download Summary of Benefits'.<br>Check browser response. |
 | **Expected result** | Valid PDF document downloads successfully containing plan terms. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2024-05-04 |
 | **Environment** | Staging-02 |
 | **Build / release** | v2025.1.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-BROWSE-007 — Verify pagination controls on large plan search result sets
 
@@ -136,14 +136,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Multi-page dataset |
 | **Test steps** | Click 'Next' page button.<br>Review records on page 2. |
 | **Expected result** | Next result set displays accurately and previous button reactivates. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2025-03-12 |
 | **Environment** | UAT-Staging |
 | **Build / release** | v2023.4.1 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-BROWSE-008 — Verify browser back navigation restores previous search state
 
@@ -154,14 +154,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Browser navigation state |
 | **Test steps** | Click browser 'Back' button. |
 | **Expected result** | Previous search results and scroll position are restored correctly. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2024-10-24 |
 | **Environment** | QA-Regression |
 | **Build / release** | v2024.1.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-BROWSE-009 — Validate search input field clears when 'Reset Filters' is clicked
 
@@ -172,14 +172,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Active filter state |
 | **Test steps** | Click 'Reset Filters' button. |
 | **Expected result** | Search input clears and default plan catalog is restored. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2024-07-19 |
 | **Environment** | Staging-02 |
 | **Build / release** | v2024.2.3 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-BROWSE-010 — Verify responsive layout on mobile viewport simulation
 
@@ -190,14 +190,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Viewport: Mobile emulation |
 | **Test steps** | Resize browser viewport to mobile dimensions.<br>Inspect plan listing. |
 | **Expected result** | UI elements stack vertically without overlapping text or broken buttons. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2024-02-22 |
 | **Environment** | UAT-Staging |
 | **Build / release** | v2024.3.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ---
 
@@ -212,14 +212,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Synthetic Member ID |
 | **Test steps** | Navigate to Coverage section.<br>Review status indicator. |
 | **Expected result** | Coverage status displays 'Active' with correct effective date. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2024-08-21 |
 | **Environment** | QA-Regression |
 | **Build / release** | v2024.4.1 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-COV-012 — Validate coverage effective and termination date formatting
 
@@ -230,14 +230,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Synthetic Coverage Record |
 | **Test steps** | Inspect coverage period dates. |
 | **Expected result** | Dates render in standard format matching backend database records. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2023-10-31 |
 | **Environment** | Staging-02 |
 | **Build / release** | v2025.1.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-COV-013 — Verify member-to-plan association accuracy
 
@@ -248,14 +248,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Synthetic Member & Plan |
 | **Test steps** | Check assigned plan ID on coverage summary. |
 | **Expected result** | Assigned plan ID matches active policy enrollment record. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2024-03-23 |
 | **Environment** | UAT-Staging |
 | **Build / release** | v2023.4.1 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-COV-014 — Verify error state handling for member without active coverage record
 
@@ -273,7 +273,7 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Build / release** | v2024.1.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | JIRA-HUM-7441 |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-COV-015 — Cross-check UI coverage details against backend database via SQL
 
@@ -284,14 +284,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Test Database Schema |
 | **Test steps** | Run query to retrieve member policy details.<br>Compare UI fields with SQL output. |
 | **Expected result** | UI display fields match backend database records 100%. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2024-08-28 |
 | **Environment** | Staging-02 |
 | **Build / release** | v2024.2.3 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-COV-016 — Verify dependent coverage visibility under primary subscriber policy
 
@@ -302,14 +302,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Synthetic Family Record |
 | **Test steps** | Access coverage page.<br>Review dependent list. |
 | **Expected result** | All active dependents listed with correct relationship attributes. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2024-02-20 |
 | **Environment** | UAT-Staging |
 | **Build / release** | v2024.3.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-COV-017 — Validate inactive coverage status display on expired policy
 
@@ -320,14 +320,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Synthetic Expired Record |
 | **Test steps** | View coverage details. |
 | **Expected result** | Status clearly shows 'Terminated' with historical end date. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2024-07-15 |
 | **Environment** | QA-Regression |
 | **Build / release** | v2024.4.1 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-COV-018 — Verify primary care physician (PCP) assignment display
 
@@ -338,14 +338,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Synthetic HMO Member |
 | **Test steps** | Inspect PCP card details. |
 | **Expected result** | Assigned doctor name, clinic address, and phone number display correctly. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2024-03-07 |
 | **Environment** | Staging-02 |
 | **Build / release** | v2025.1.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-COV-019 — Verify coverage page load performance under standard network latency
 
@@ -356,14 +356,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Staging Environment |
 | **Test steps** | Refresh coverage page and observe load response. |
 | **Expected result** | Page loads fully within acceptable user expectation threshold. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2024-08-07 |
 | **Environment** | UAT-Staging |
 | **Build / release** | v2023.4.1 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-COV-020 — Verify post-deployment sanity check on member coverage portal
 
@@ -374,14 +374,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Sanity Release Build |
 | **Test steps** | Execute smoke test checklist covering login and coverage view. |
 | **Expected result** | Core elements load successfully with zero critical defects. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2023-12-27 |
 | **Environment** | QA-Regression |
 | **Build / release** | v2024.1.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ---
 
@@ -396,14 +396,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Synthetic Applicant Data |
 | **Test steps** | Complete all required fields with synthetic test data.<br>Click Submit. |
 | **Expected result** | Form accepts submission and displays confirmation screen with reference ID. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2025-02-02 |
 | **Environment** | Staging-02 |
 | **Build / release** | v2024.2.3 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-ENROLL-022 — Validate required field validation message on blank form submission
 
@@ -414,14 +414,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Blank Name Field |
 | **Test steps** | Leave required name field blank.<br>Click Submit. |
 | **Expected result** | Inline validation error message prompts user to complete required field. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2024-07-09 |
 | **Environment** | UAT-Staging |
 | **Build / release** | v2024.3.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-ENROLL-023 — Validate email format validation check on enrollment form
 
@@ -432,14 +432,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Invalid Email String |
 | **Test steps** | Enter invalid email format.<br>Submit form. |
 | **Expected result** | System displays invalid email format error message and blocks submission. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2025-01-31 |
 | **Environment** | QA-Regression |
 | **Build / release** | v2024.4.1 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-ENROLL-024 — Validate phone number format restriction on contact field
 
@@ -457,7 +457,7 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Build / release** | v2025.1.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | JIRA-HUM-7890 |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-ENROLL-025 — Verify enrollment review step accurately reflects entered data
 
@@ -468,14 +468,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Synthetic Form Data |
 | **Test steps** | Navigate to review screen.<br>Compare input values with displayed summary. |
 | **Expected result** | All entered demographic and plan choices display accurately before final confirmation. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2023-10-14 |
 | **Environment** | UAT-Staging |
 | **Build / release** | v2023.4.1 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-ENROLL-026 — Verify cancel action discards unsaved enrollment draft
 
@@ -486,14 +486,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Partially Filled Form |
 | **Test steps** | Click Cancel button.<br>Confirm prompt. |
 | **Expected result** | Form data resets and browser redirects without saving partial draft. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2025-03-24 |
 | **Environment** | QA-Regression |
 | **Build / release** | v2024.1.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-ENROLL-027 — Prevent duplicate enrollment submission on rapid double-click
 
@@ -504,14 +504,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Double-click Event |
 | **Test steps** | Rapidly double-click submit button. |
 | **Expected result** | System disables button after first click, preventing duplicate transaction records. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2024-06-07 |
 | **Environment** | Staging-02 |
 | **Build / release** | v2024.2.3 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-ENROLL-028 — Verify database records match submitted enrollment form data via SQL
 
@@ -522,14 +522,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Test Database Table |
 | **Test steps** | Query submission table for latest record.<br>Verify columns. |
 | **Expected result** | Database row stores exact values submitted through web form. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2024-02-04 |
 | **Environment** | UAT-Staging |
 | **Build / release** | v2024.3.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-ENROLL-029 — Verify accessibility tab-index ordering across enrollment form fields
 
@@ -540,14 +540,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Keyboard Navigation |
 | **Test steps** | Press Tab key sequentially through form inputs. |
 | **Expected result** | Focus moves logically from top to bottom through all input fields. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2024-06-06 |
 | **Environment** | QA-Regression |
 | **Build / release** | v2024.4.1 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-ENROLL-030 — Verify post-deployment smoke test passes on enrollment submission form
 
@@ -558,14 +558,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Smoke Checklist |
 | **Test steps** | Run manual smoke checklist verifying form submission response. |
 | **Expected result** | System returns 200 OK status on test payload submission. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2025-01-09 |
 | **Environment** | Staging-02 |
 | **Build / release** | v2025.1.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ---
 
@@ -580,14 +580,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Valid Test Credentials |
 | **Test steps** | Enter valid test username and password.<br>Click Login. |
 | **Expected result** | User authenticates successfully and lands on member dashboard. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2023-12-04 |
 | **Environment** | UAT-Staging |
 | **Build / release** | v2023.4.1 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-NAV-032 — Verify login failure with incorrect password
 
@@ -598,14 +598,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Incorrect Password |
 | **Test steps** | Enter valid username and incorrect password.<br>Click Login. |
 | **Expected result** | System displays invalid credentials error message and denies access. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2025-03-25 |
 | **Environment** | QA-Regression |
 | **Build / release** | v2024.1.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-NAV-033 — Verify logout session termination and redirection
 
@@ -616,14 +616,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Active User Session |
 | **Test steps** | Click Logout button.<br>Attempt to use browser Back button. |
 | **Expected result** | Session terminates securely and user cannot access protected pages without re-authenticating. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2024-08-31 |
 | **Environment** | Staging-02 |
 | **Build / release** | v2024.2.3 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-NAV-034 — Verify session timeout behavior after period of inactivity
 
@@ -634,14 +634,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Timed-out Session |
 | **Test steps** | Trigger simulated session timeout or inactivity threshold. |
 | **Expected result** | User redirected to login screen with session expired notification. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2024-03-17 |
 | **Environment** | UAT-Staging |
 | **Build / release** | v2024.3.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-NAV-035 — Verify unauthorized access restriction to protected member routes
 
@@ -652,14 +652,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Protected URL Route |
 | **Test steps** | Enter direct URL for secure dashboard route. |
 | **Expected result** | System redirects unauthenticated user to login portal. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2024-05-31 |
 | **Environment** | QA-Regression |
 | **Build / release** | v2024.4.1 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-NAV-036 — Verify primary navigation menu links route correctly
 
@@ -670,14 +670,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Navigation Menu |
 | **Test steps** | Click each header navigation link. |
 | **Expected result** | Each link opens its designated target page successfully. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2024-12-18 |
 | **Environment** | Staging-02 |
 | **Build / release** | v2025.1.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-NAV-037 — Verify browser refresh maintains active authenticated session state
 
@@ -688,14 +688,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Active Authenticated Session |
 | **Test steps** | Refresh browser window. |
 | **Expected result** | Page reloads and user remains logged in without session loss. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2024-09-22 |
 | **Environment** | UAT-Staging |
 | **Build / release** | v2023.4.1 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-NAV-038 — Verify password complexity rule validation on account registration
 
@@ -706,14 +706,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Simple Password Input |
 | **Test steps** | Enter simple password. |
 | **Expected result** | System displays error requiring minimum length and character mix. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2024-03-21 |
 | **Environment** | QA-Regression |
 | **Build / release** | v2024.1.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-NAV-039 — Verify SQL Injection prevention on login username input field
 
@@ -724,14 +724,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | SQL Injection Payload |
 | **Test steps** | Input SQL injection string. |
 | **Expected result** | Input sanitized; login rejected safely without exposing database errors. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2024-10-24 |
 | **Environment** | Staging-02 |
 | **Build / release** | v2024.2.3 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-NAV-040 — Verify manual test case documentation and status update in test management tool
 
@@ -742,14 +742,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Test Repository |
 | **Test steps** | Update test run status and add execution notes. |
 | **Expected result** | Execution records save accurately with timestamp and tester attribution. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2024-02-20 |
 | **Environment** | UAT-Staging |
 | **Build / release** | v2024.3.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ---
 
@@ -764,14 +764,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | User Story Item |
 | **Test steps** | Review user story acceptance criteria for testability.<br>Confirm edge cases with product owner. |
 | **Expected result** | Acceptance criteria validated and marked ready for sprint estimation. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2024-04-02 |
 | **Environment** | QA-Regression |
 | **Build / release** | v2024.4.1 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-JIRA-042 — Verify defect logging in tracking tool with reproduction steps and severity
 
@@ -782,14 +782,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Defect Ticket |
 | **Test steps** | Create bug ticket.<br>Populate Summary, Steps, Expected vs Actual, and Severity. |
 | **Expected result** | Defect logged successfully in tracking backlog with correct priority label. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2024-02-07 |
 | **Environment** | Staging-02 |
 | **Build / release** | v2025.1.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-JIRA-043 — Verify defect status update and retesting workflow
 
@@ -800,14 +800,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Bug Workflow |
 | **Test steps** | Pull fix in staging environment.<br>Retest scenario.<br>Update ticket status to 'Closed' or 'Reopened'. |
 | **Expected result** | Bug lifecycle tracked accurately through workflow columns. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2025-02-18 |
 | **Environment** | UAT-Staging |
 | **Build / release** | v2023.4.1 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-JIRA-044 — Verify daily QA progress reporting during Agile standup
 
@@ -818,14 +818,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Daily Standup Notes |
 | **Test steps** | Report completed test execution count, active blockers, and daily metrics to team. |
 | **Expected result** | Team aligned on sprint testing velocity and open release risks. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2023-12-10 |
 | **Environment** | QA-Regression |
 | **Build / release** | v2024.1.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-JIRA-045 — Verify regression test execution following bug fix patch deployment
 
@@ -836,14 +836,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Patch Release Build |
 | **Test steps** | Execute targeted manual regression test cases around fixed module. |
 | **Expected result** | Targeted tests pass, confirming fix did not introduce regression issues. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2024-05-04 |
 | **Environment** | Staging-02 |
 | **Build / release** | v2024.2.3 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-JIRA-046 — Verify test repository organization and module structuring
 
@@ -854,14 +854,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Test Repository |
 | **Test steps** | Create and organize test cases under structured folders by module. |
 | **Expected result** | Test cases structured cleanly for audit and execution tracking. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2024-09-06 |
 | **Environment** | UAT-Staging |
 | **Build / release** | v2024.3.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-JIRA-047 — Verify database query execution during data investigation
 
@@ -872,14 +872,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Database Schema |
 | **Test steps** | Investigate discrepancy between UI and DB by running backend select queries. |
 | **Expected result** | Root cause identified via data comparison. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2024-11-26 |
 | **Environment** | QA-Regression |
 | **Build / release** | v2024.4.1 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-JIRA-048 — Verify version control commit workflow and code review collaboration
 
@@ -890,14 +890,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Version Control |
 | **Test steps** | Review code updates and manage local branch commits. |
 | **Expected result** | Version control history maintained cleanly. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2024-10-18 |
 | **Environment** | Staging-02 |
 | **Build / release** | v2025.1.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-JIRA-049 — Verify participation in sprint retrospective meeting
 
@@ -908,14 +908,14 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Sprint Retro Notes |
 | **Test steps** | Discuss what went well, what could improve, and action items for next sprint. |
 | **Expected result** | Retrospective feedback logged and process improvements adopted. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2025-01-18 |
 | **Environment** | UAT-Staging |
 | **Build / release** | v2023.4.1 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
 
 ### TC-JIRA-050 — Verify production sanity test execution and sign-off post-release
 
@@ -926,11 +926,11 @@ These portfolio test scenarios use synthetic test data. Execution results below 
 | **Test data** | Production Release Build |
 | **Test steps** | Run approved sanity checklist verifying core plan browsing and coverage features. |
 | **Expected result** | Sign-off provided to engineering leads confirming production stability. |
-| **Actual result / evidence** | Verified successfully. Manual test steps executed and matched expected results. |
+| **Actual result (workbook entry)** | Verified successfully. Manual test steps executed and matched expected results. *(Generic wording in source workbook; no case-specific observation or attachment supplied.)* |
 | **Status** | Passed |
 | **Execution date** | 2024-07-02 |
 | **Environment** | QA-Regression |
 | **Build / release** | v2024.1.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
-| **Audit notes** | Verified in Agile sprint cycle |
+| **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
