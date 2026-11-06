@@ -34,7 +34,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-SEL-002 — Validate dynamic plan catalog filtering by service area zip code
 
@@ -52,7 +51,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-SEL-003 — Verify side-by-side comparison matrix for selected health plans
 
@@ -70,7 +68,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-SEL-004 — Test formulary drug lookup integration during plan browsing
 
@@ -88,7 +85,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-SEL-005 — Verify error handling on invalid or out-of-area zip code search
 
@@ -106,7 +102,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | DEF-01 |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-SEL-006 — Validate multi-language toggle (English / Spanish) on portal UI
 
@@ -124,7 +119,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-SEL-007 — Verify Summary of Benefits PDF document download link
 
@@ -142,7 +136,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-SEL-008 — Validate session persistence when switching between plan comparison and profile
 
@@ -160,7 +153,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-SEL-009 — Verify responsive layout scaling on mobile device viewports
 
@@ -178,7 +170,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-SEL-010 — Verify end-to-end user navigation flow across plan discovery and selection wizard
 
@@ -196,7 +187,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ## API Testing
 
@@ -216,7 +206,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-API-012 — Validate POST /api/enrollment payload persistence and response code
 
@@ -234,7 +223,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-API-013 — Test negative validation for missing required field in enrollment payload
 
@@ -252,7 +240,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | DEF-02 |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-API-014 — Verify unauthorized access restriction on protected profile endpoint
 
@@ -270,7 +257,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-API-015 — Validate SQL injection prevention on query parameter input strings
 
@@ -288,7 +274,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-API-016 — Verify duplicate submission handling on repeated POST enrollment requests
 
@@ -306,7 +291,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-API-017 — Verify GET /api/plans/search filters results correctly by region parameter
 
@@ -324,7 +308,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-API-018 — Validate PUT /api/member/profile update on valid contact attributes
 
@@ -342,7 +325,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-API-019 — Verify GET /api/documents/summary returns valid temporary download URL
 
@@ -360,7 +342,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-API-020 — Validate API response error payload structure during simulated timeout
 
@@ -378,7 +359,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ## UAT & Exploratory
 
@@ -398,7 +378,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-UAT-022 — Validate form input validation rules with boundary character limits
 
@@ -416,7 +395,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-UAT-023 — Verify accessibility tab-index ordering across portal input forms
 
@@ -434,7 +412,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-UAT-024 — Coordinate User Acceptance Testing (UAT) session with business stakeholders
 
@@ -452,7 +429,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-UAT-025 — Verify post-deployment smoke test suite on staging release build
 
@@ -470,7 +446,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-UAT-026 — Validate cross-browser manual verification on Safari and Firefox
 
@@ -488,7 +463,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-UAT-027 — Verify password complexity rule validation on account registration form
 
@@ -506,7 +480,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-UAT-028 — Verify logout session termination and browser back-button restriction
 
@@ -524,7 +497,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-UAT-029 — Verify email format validation check on member profile update form
 
@@ -542,7 +514,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-UAT-030 — Execute formal staging sanity check post-release deployment build
 
@@ -560,7 +531,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ## SQL Validation
 
@@ -580,7 +550,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-SQL-032 — Verify member policy status attribute matches between UI and database
 
@@ -598,7 +567,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-SQL-033 — Validate plan catalog pricing attributes against backend pricing table
 
@@ -616,7 +584,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-SQL-034 — Verify dependent record association mapping under primary subscriber ID
 
@@ -634,7 +601,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-SQL-035 — Test database query performance on plan catalog search index
 
@@ -652,7 +618,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-SQL-036 — Verify audit log table records user login timestamp upon portal authentication
 
@@ -670,7 +635,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-SQL-037 — Validate data type constraints on member profile update table columns
 
@@ -688,7 +652,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-SQL-038 — Verify soft-delete flag behavior on canceled enrollment drafts
 
@@ -706,7 +669,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-SQL-039 — Cross-check API payload response fields against direct SQL table columns
 
@@ -724,7 +686,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-SQL-040 — Verify database rollback behavior on failed multi-table transaction
 
@@ -742,7 +703,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ## Agile QA
 
@@ -762,7 +722,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-AGI-042 — Verify defect logging in Jira with reproduction steps, expected vs actual results
 
@@ -780,7 +739,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-AGI-043 — Verify defect retesting and workflow transition upon developer fix patch
 
@@ -798,7 +756,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-AGI-044 — Participate in daily Agile standup to report QA metrics and blockers
 
@@ -816,7 +773,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-AGI-045 — Execute targeted manual regression check following bug fix deployment
 
@@ -834,7 +790,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-AGI-046 — Organize test repository structure by functional module in test management tool
 
@@ -852,7 +807,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-AGI-047 — Collaborate with Product Owner to clarify edge case requirements
 
@@ -870,7 +824,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-AGI-048 — Conduct exploratory testing session on newly released feature module
 
@@ -888,7 +841,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-AGI-049 — Participate in sprint retrospective meeting to propose QA process improvements
 
@@ -906,7 +858,6 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
 
 ### TC-HF-AGI-050 — Execute formal staging sanity check post-release deployment build
 
@@ -924,4 +875,3 @@ These manual test cases use generalized test data. Statuses reflect recorded exe
 | **Tester role** | Software Test Analyst |
 | **Defect ID** | — |
 | **Evidence reference** | Evidence not included |
-| **Review notes** | — |
