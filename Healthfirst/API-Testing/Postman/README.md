@@ -21,4 +21,4 @@ The [collection](Healthcare_API.postman_collection.json) can also be imported in
 
 ## Execution evidence
 
-GitHub Actions workflow: [Healthfirst Postman API Demo](../../../../.github/workflows/healthfirst-postman.yml). Check its latest run before claiming a passing CI result. This README does not claim an unverified run.
+The [Healthfirst Postman API Demo workflow](https://github.com/sumaiyahhossin/QA-Engineering-Portfolio/actions/workflows/healthfirst-postman.yml) runs the collection through Newman against the local demo API. A successful workflow was reported on November 5, 2026 (Eastern). The exact request/assertion totals have not been independently confirmed from the run logs, so no per-test pass count is claimed here. Review the linked run logs for detailed execution evidence.
