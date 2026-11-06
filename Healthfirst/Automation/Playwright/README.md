@@ -11,7 +11,7 @@ Five UI tests cover eligible members, required member IDs, unknown members, filt
 Requires Node.js 20 or later.
 
 ```bash
-npm install
+npm ci
 npx playwright install chromium
 npm test
 ```
