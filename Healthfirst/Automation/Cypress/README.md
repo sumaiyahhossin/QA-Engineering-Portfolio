@@ -116,15 +116,13 @@ The project contains five Cypress spec files, seven test suites, and 50 automate
 
 ## Test Results
 
-The GitHub Actions Cypress execution log confirms a successful CI run across all five spec files:
+[GitHub Actions run #5](https://github.com/sumaiyahhossin/QA-Engineering-Portfolio/actions/runs/42157024467) ran all five spec files in headless Chrome 156.
 
 - **50 passing**
 - **0 failing**
 - **0 pending**
 - **0 skipped**
 - **5 of 5 specs passed**
-
-Cypress 16.2.1 ran using Node.js 22 and headless Electron 146. The run summary reports approximately 19 seconds for the test suite. The recorded run used Electron. The CI workflow now targets Chrome; its results must be checked separately from the earlier Electron run. Results apply to the tested commit.
 
 The tests cover portal navigation, plan searches, plan details, eligibility checks, enrollment form validation, API responses, and error handling.
 
