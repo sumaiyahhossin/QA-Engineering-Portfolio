@@ -20,7 +20,7 @@ For a visible browser, run `npm run test:headed`. To open the HTML report after 
 
 ## Test results
 
-No pass/fail claim is made here until the tests have been executed and verified. Playwright generates an HTML report and retains traces for failures. Do not commit reports that might contain sensitive information.
+The JavaScript Playwright suite was verified in GitHub Actions on November 5, 2026 (Eastern): **5 passed, 0 failed** in Chromium. See [verified execution results](TEST_EXECUTION_RESULTS.md) and the [successful workflow run](https://github.com/sumaiyahhossin/QA-Engineering-Portfolio/actions/runs/42142787083). These results apply to the tested commit; rerun tests after changes. Playwright generates an HTML report and retains traces for failures. Do not commit reports that might contain sensitive information.
 
 ## Structure
 
