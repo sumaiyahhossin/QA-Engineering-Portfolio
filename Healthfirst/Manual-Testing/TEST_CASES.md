@@ -1,8 +1,8 @@
 # Healthfirst — Manual Test Cases
 
-**50 test cases · 48 Passed · 2 Failed**
+**50 documented QA cases and activities · 48 recorded Passed · 2 Failed**
 
-These manual test cases use generalized test data. Statuses reflect recorded execution results, not independent verification against a live employer system. Where detailed observations were not documented, no additional behavior has been assumed.
+These records include functional test cases and Agile QA activities. They use generalized test data. Statuses reflect recorded execution results, not independent verification against a live employer system. Where detailed observations were not documented, no additional behavior has been assumed.
 
 ## Jump to a section
 
