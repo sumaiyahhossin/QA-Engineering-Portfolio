@@ -19,4 +19,4 @@ All public examples should avoid member information, credentials, private system
 
 The 48 Passed and 2 Failed statuses are recorded in the public workbook; they are not independently verified test runs. Some Passed entries do not contain a separate observation or screenshot. The two failed cases are linked to the corresponding defect records, which describe the observed behavior.
 
-Some workbook entries contain notes asking for confirmation of historical execution dates or their original source associations. Those notes are retained as open verification items; they should not be presented as confirmed audit evidence. Build/release identifiers are not required for this public portfolio.
+The public workbook does not include build/release identifiers or outstanding date-confirmation placeholders. Execution dates and statuses are retained as recorded; they are not independently verified against employer systems.
