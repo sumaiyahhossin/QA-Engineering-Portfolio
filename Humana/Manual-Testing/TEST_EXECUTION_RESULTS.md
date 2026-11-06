@@ -23,7 +23,7 @@ The separately supplied completed Humana Excel workbook, `Humana_Manual_Test_Cas
 
 - The results above come from the separately uploaded completed workbook. **Do not assume the workbook currently linked in this GitHub repository is the same version.** Its contents need comparison or replacement before the repository can be called fully synchronized.
 - Most Passed rows in the source use the same generic actual-result sentence rather than a case-specific observed outcome or attached evidence. The recorded statuses are preserved, but these descriptions should not be presented as independently corroborated test evidence.
-- Some dates and build labels warrant review against original release or execution records. They have **not** been silently altered.
+- Some execution dates warrant review against original records. Unverified Build / Release fields have been omitted from the portfolio presentation; the original source workbook is retained separately.
 - The defect references are transcribed from the workbook and are not links to publicly verifiable Jira issues.
 - [View all test cases and recorded outcomes](TEST_CASES.md).
 
@@ -37,4 +37,4 @@ The separately supplied completed Humana Excel workbook, `Humana_Manual_Test_Cas
 | Skipped | Execution was intentionally bypassed. |
 | Not Run | No execution result was recorded. |
 
-For future execution cycles, capture the observed result for each test, test date, environment, build, and supporting defect or evidence reference. Keep historical workbook records distinct from newly verified executions.
+For future execution cycles, capture the observed result for each test, test date, environment, and supporting defect or evidence reference. Keep historical workbook records distinct from newly verified executions.
