@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Healthcare Plan Demo</title></head>
+<body>
+  <h1>Healthcare Plan Demo</h1>
+  <p>Independent sample application using fictional information.</p>
+  <label for="member">Member ID</label><input id="member" />
+  <button id="check">Check eligibility</button><p id="eligibility" role="status"></p>
+  <label for="type">Plan type</label><select id="type"><option value="all">All plans</option><option value="HMO">HMO</option><option value="PPO">PPO</option></select>
+  <ul id="plans"></ul><p id="selected" role="status"></p>
+  <script>
+    const plans = [{id:'PLAN-101',name:'Sample HMO',type:'HMO'},{id:'PLAN-202',name:'Sample PPO',type:'PPO'}];
+    const list = document.querySelector('#plans');
+    function render() {
+      list.replaceChildren();
+      plans.filter(p => type.value === 'all' || p.type === type.value).forEach(p => {
+        const li=document.createElement('li');
+        li.textContent=p.name+' ';
+        const button=document.createElement('button');
+        button.textContent='Select '+p.name;
+        button.addEventListener('click',()=>{selected.textContent='Selected: '+p.name;});
+        li.append(button); list.append(li);
+      });
+    }
+    document.querySelector('#check').addEventListener('click',()=>{
+      const id=document.querySelector('#member').value.trim();
+      eligibility.textContent=id==='MEM-1001'?'Eligible':id?'Member not found':'Member ID is required';
+    });
+    document.querySelector('#type').addEventListener('change',render);
+    render();
+  </script>
+</body></html>
