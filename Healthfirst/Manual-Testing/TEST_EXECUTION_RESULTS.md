@@ -1,5 +1,7 @@
 # Healthfirst — Test Execution Results
 
+Recorded execution dates: **May 26, 2025 – October 27, 2026**, matching the updated manual testing spreadsheet. Entries are presented by functional area in the test-case catalog and by execution date in the spreadsheet.
+
 ## Execution summary
 
 | Metric | Recorded result |
@@ -37,6 +39,6 @@ The Agile QA category includes process activities as well as regression-related 
 
 ## Execution record
 
-The 50 recorded outcomes span QA, Staging, and UAT environments. Detailed test steps, expected and actual results, individual execution dates, and test data are maintained in [Manual Test Cases](TEST_CASES.md). This page is the high-level execution report rather than a duplicate of the test-case catalog.
+The 50 recorded outcomes span QA, Staging, and UAT environments. Detailed test steps, expected results, recorded outcome descriptions, individual execution dates, and test data are maintained in [Manual Test Cases](TEST_CASES.md). The associated workbook also contains the defect log and traceability records. This page is the high-level execution report rather than a duplicate of the test-case catalog.
 
 These are recorded manual testing outcomes, not an independently rerun test suite or a claim of access to a live Healthfirst system.
