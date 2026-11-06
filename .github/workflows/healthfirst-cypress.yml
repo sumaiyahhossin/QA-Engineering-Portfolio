@@ -47,7 +47,7 @@ jobs:
           exit 1
 
       - name: Run Cypress
-        run: npm test
+        run: npm test -- --browser chrome
 
       - name: Upload Cypress artifacts on failure
         if: failure()
