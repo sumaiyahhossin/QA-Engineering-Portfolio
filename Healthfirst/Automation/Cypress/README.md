@@ -124,7 +124,7 @@ The GitHub Actions Cypress execution log confirms a successful CI run across all
 - **0 skipped**
 - **5 of 5 specs passed**
 
-Cypress 16.2.1 ran using Node.js 22 and headless Electron 146. The run summary reports approximately 19 seconds for the test suite. The log also warns that Electron is deprecated as a Cypress test browser; switching CI to a supported browser such as Chrome is recommended before a future Cypress upgrade. Results apply to the tested commit; rerun the workflow after code changes.
+Cypress 16.2.1 ran using Node.js 22 and headless Electron 146. The run summary reports approximately 19 seconds for the test suite. The recorded run used Electron. The CI workflow now targets Chrome; its results must be checked separately from the earlier Electron run. Results apply to the tested commit.
 
 The tests cover portal navigation, plan searches, plan details, eligibility checks, enrollment form validation, API responses, and error handling.
 
