@@ -114,9 +114,9 @@ The project contains five Cypress spec files, seven test suites, and 50 automate
 | Error Handling and Additional Scenarios | 6 |
 | **Total** | **50** |
 
-### Latest Test Results
+## Test Results
 
-The supplied GitHub Actions Cypress execution log confirms a successful CI run across all five spec files:
+The GitHub Actions Cypress execution log confirms a successful CI run across all five spec files:
 
 - **50 passing**
 - **0 failing**
@@ -124,7 +124,7 @@ The supplied GitHub Actions Cypress execution log confirms a successful CI run a
 - **0 skipped**
 - **5 of 5 specs passed**
 
-Cypress 16.2.1 ran using Node.js 22 and headless Electron 146. The run summary reports approximately 19 seconds for the test suite. The log also warns that Electron is deprecated as a Cypress test browser; switching CI to a supported browser such as Chrome is recommended before a future Cypress upgrade.
+Cypress 16.2.1 ran using Node.js 22 and headless Electron 146. The run summary reports approximately 19 seconds for the test suite. The log also warns that Electron is deprecated as a Cypress test browser; switching CI to a supported browser such as Chrome is recommended before a future Cypress upgrade. Results apply to the tested commit; rerun the workflow after code changes.
 
 The tests cover portal navigation, plan searches, plan details, eligibility checks, enrollment form validation, API responses, and error handling.
 
