@@ -15,7 +15,7 @@ All entries below start as Not Run.
 | TC007 | API error handling in the UI | Not Run | Pending execution |
 | TC008 | Displayed data validation | Not Run | Pending execution |
 
-When executing, record the date, environment/build, approved test data reference, actual result, status, and defect ID if applicable.
+When executing, record the date, environment, approved test data reference, actual result, status, and defect ID if applicable.
 
 Status Definitions
 
