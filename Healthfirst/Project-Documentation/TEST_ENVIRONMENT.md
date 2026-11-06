@@ -1,30 +1,32 @@
 # Test Environment
 
-**Project Area:** Member-Facing Healthcare Workflows
+**Project:** Member portal and healthcare workflows  
+**Role:** Quality Assurance
 
-## Tools Represented
+## Areas Covered
 
-- Playwright
-- Cypress
-- JavaScript / TypeScript
-- Postman
-- SQL client
-- Jira
-- Zephyr
-- GitHub Actions
+| Area | What I Checked |
+| --- | --- |
+| Member Portal | Navigation, page content, and user flows |
+| Eligibility | Member status, coverage dates, and validation |
+| Plan Search | ZIP code entry, search results, and empty states |
+| Plan Details | Coverage information and comparison behavior |
+| Enrollment Forms | Required fields, invalid input, and submission responses |
+| API | Status codes, response fields, and error handling |
+| Data Checks | Values compared with expected test records |
+
+## Tools
+
+Playwright, Cypress, JavaScript, TypeScript, Postman, SQL, Jira, Zephyr, and GitHub Actions for portfolio automation.
 
 ## Test Data
 
-The portfolio examples use synthetic test records covering valid, invalid, missing, and boundary-value scenarios. No real member data is included.
+The public examples use synthetic member IDs, ZIP codes, and other test values. They contain no real member information, credentials, or confidential environment details.
 
-## Environment Coverage
+## Public Automation Setup
 
-The testing approach covers QA and staging workflows, including application access, API validation, and data checks. Environment and build details are recorded as part of test execution.
+The Playwright, Cypress, and Postman examples run against local demo applications or APIs. GitHub Actions executes portfolio automation; it is not presented as an internal Healthfirst environment.
 
 ## Environment Issues
 
-Environment issues are documented with the date, affected workflow, environment, observed behavior, and impact. Public portfolio materials do not include internal URLs, tokens, screenshots containing private information, or confidential application details.
-
-## Portfolio Scope
-
-The public examples are generic demonstrations. They are not connected to Healthfirst's internal application or API environment.
+Issues are recorded with the affected workflow, environment, observed behavior, impact, and date when available. Public documentation excludes private URLs, tokens, and confidential screenshots.
