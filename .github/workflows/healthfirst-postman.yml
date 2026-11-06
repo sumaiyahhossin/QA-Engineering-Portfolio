@@ -1,0 +1,24 @@
+name: Healthfirst Postman API Demo
+on:
+  push:
+    paths:
+      - 'Healthfirst/API-Testing/Postman/**'
+      - '.github/workflows/healthfirst-postman.yml'
+  pull_request:
+    paths:
+      - 'Healthfirst/API-Testing/Postman/**'
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Healthfirst/API-Testing/Postman
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install
+      - name: Run Postman collection against local demo API
+        run: npm test
