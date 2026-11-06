@@ -1,17 +1,23 @@
 # Playwright Test Execution Results
 
-## Current status
-The JavaScript Playwright suite has not yet been independently verified as passing in GitHub Actions. Five corresponding browser interactions were checked separately using Python Playwright in Chromium and passed; that is **not** a JavaScript suite execution result.
+## Verified GitHub Actions run
 
-| Test | JavaScript Playwright result |
+- Workflow: Healthfirst Playwright Demo
+- Run: #3 — https://github.com/sumaiyahhossin/QA-Engineering-Portfolio/actions/runs/42142787083
+- Commit: a565dfe
+- Execution: November 5, 2026, 8:17 PM Eastern (November 6, 2026, 01:17 UTC)
+- Environment: GitHub Actions Ubuntu runner, Chromium
+- Command: `npm test` (`playwright test`)
+- Result: **5 passed, 0 failed** (1.8 seconds for Playwright tests)
+
+| Test | Verified result |
 | --- | --- |
-| Eligibility lookup | Pending verified run |
-| Required input validation | Pending verified run |
-| Unknown member handling | Pending verified run |
-| Plan type filter | Pending verified run |
-| Plan selection | Pending verified run |
+| Eligibility lookup | Passed |
+| Required input validation | Passed |
+| Unknown member handling | Passed |
+| Plan type filter | Passed |
+| Plan selection | Passed |
 
-## How to verify
-Open GitHub Actions and run **Healthfirst Playwright Demo**. The job must complete successfully, and its log should show five passing tests. Once verified, record the date, runner, browser, and result here. If any test fails, use the report artifact to troubleshoot before recording a passing result.
+The GitHub Actions job completed successfully, including dependency installation, Chromium setup, test execution, and report artifact upload. See the linked workflow logs and `playwright-report` artifact for supporting evidence.
 
-This page intentionally avoids claiming an unverified run.
+These tests run against the independent healthcare demo application, not Healthfirst production systems. Results reflect the linked commit and should be rechecked after subsequent code changes.
