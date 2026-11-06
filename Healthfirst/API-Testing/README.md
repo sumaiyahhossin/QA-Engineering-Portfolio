@@ -26,6 +26,7 @@ This section covers REST API checks using Postman, with examples related to memb
 See [API test cases](API-TEST-CASES.md) for the scenarios covered in this portfolio.
 
 The examples are generic. They do not include Healthfirst endpoints, credentials, private payloads, or production data.
+
 ## Runnable Postman API Automation
 
-The [Postman automation project](Postman/README.md) includes an importable collection, seven automated API requests with assertions, a local synthetic-data server, and a GitHub Actions workflow. Run it with `npm install` and `npm test` from the `Postman` folder. Check the workflow results for verified CI execution.
+The [Postman automation project](Postman/README.md) includes an importable collection, seven automated API requests with assertions, a local synthetic-data server, and a GitHub Actions workflow. Run it with `npm install` and `npm test` from the `Postman` folder. The [GitHub Actions workflow](https://github.com/sumaiyahhossin/QA-Engineering-Portfolio/actions/workflows/healthfirst-postman.yml) has a user-reported successful run; consult the logs for detailed test totals.
