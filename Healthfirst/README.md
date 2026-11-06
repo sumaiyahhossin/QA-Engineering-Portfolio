@@ -14,7 +14,7 @@ Testing focuses on functionality, data accuracy, error handling, and consistent 
 
 | Testing Area | Coverage | Results |
 |---|---|---|
-| Manual Testing | 50 test cases covering member workflows and application functionality | 48 Passed, 2 Failed |
+| Manual QA Records | 50 documented test cases and QA activities, including Agile process records | 48 recorded Passed, 2 Failed |
 | Cypress | 5 spec files covering UI, API workflows, eligibility, enrollment, and error handling | 50 Passed, 0 Failed |
 | Playwright | Browser-based member portal workflows | 5 Passed, 0 Failed |
 | Postman | 7 API requests covering member, plan, eligibility, and selection workflows | 17 Assertions Passed, 0 Failed |
