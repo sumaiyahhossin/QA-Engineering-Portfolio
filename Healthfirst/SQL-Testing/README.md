@@ -11,13 +11,13 @@ This section shows how SQL can support QA checks for member records, eligibility
 | Date quality | Invalid ranges and overlapping periods |
 | Duplicate checks | Repeated eligibility record IDs |
 | Required data | Missing fields |
-| Relationships | Missing member references and joins |
+| Relationships | Missing member or plan references and joins |
 | Data totals | Eligibility counts by status |
-| Point-in-time checks | Coverage dates for a supplied test date |
+| Point-in-time checks | Coverage date ranges for a supplied test date |
 
 ## Queries
 
-[View all 10 SQL validation examples](SQL-QUERIES.md).
+[View all 11 SQL validation examples](SQL-QUERIES.md).
 
 Each query includes its purpose and expected interpretation. The examples use Oracle-compatible syntax, bind variables, and read-only `SELECT` statements. They cover `JOIN`, `LEFT JOIN`, `GROUP BY`, `HAVING`, `COUNT`, null checks, and date comparisons.
 
