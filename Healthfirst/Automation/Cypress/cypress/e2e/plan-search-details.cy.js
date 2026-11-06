@@ -91,6 +91,10 @@ describe("Plan Details and Comparison", () => {
     cy.get('[data-cy="comparison"]').should("be.visible")
       .and("contain", "Essential Silver").and("contain", "Choice Gold")
       .and("contain", "$245").and("contain", "$389");
+
+    cy.searchPlans("10003");
+    cy.get('[data-cy="plan-results"]').should("contain", "No plans found");
+    cy.get('[data-cy="comparison"]').should("not.be.visible");
   });
 
   it("PLAN-06 displays a useful message when plan details are unavailable", () => {

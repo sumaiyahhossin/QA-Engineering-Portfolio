@@ -17,7 +17,7 @@ This project is an independent portfolio demonstration. It is not a production h
 
 ## Test Environment
 
-- Node.js 20 or newer
+- Node.js 22, matching GitHub Actions
 - Cypress 16.2.1, installed from `package-lock.json`
 - Local application at `http://127.0.0.1:4173`
 

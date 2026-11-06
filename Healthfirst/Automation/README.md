@@ -23,6 +23,6 @@ The Playwright project uses JavaScript and a local HTML demo to test eligibility
 - [Postman collection, local API, and execution instructions](../API-Testing/Postman/README.md)
 - [API testing scenarios](../API-Testing/API-TEST-CASES.md)
 
-The Postman project contains seven API requests with automated assertions and a GitHub Actions workflow. The collection uses synthetic data and a local server, not employer endpoints. See its README for the latest execution-evidence status.
+The Postman project contains eight API requests with automated assertions and a GitHub Actions workflow. The collection uses synthetic data and a local server, not employer endpoints. See its README for the latest execution-evidence status.
 
 Each project has its own setup instructions and test coverage. The examples demonstrate automation practices without exposing confidential company data.

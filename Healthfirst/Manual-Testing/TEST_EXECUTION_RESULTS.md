@@ -6,7 +6,7 @@ Recorded execution dates: **May 26, 2025 – October 27, 2026**, matching the up
 
 | Metric | Recorded result |
 |:--|--:|
-| Total test cases | 50 |
+| Total QA records | 50 |
 | Passed | 48 |
 | Failed | 2 |
 | Blocked | 0 |

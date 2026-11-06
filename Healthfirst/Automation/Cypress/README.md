@@ -45,7 +45,7 @@ Cypress/
 
 ## Requirements and Setup
 
-Node.js 20 or newer is required.
+Use Node.js 22 to match GitHub Actions.
 
 From this directory, install dependencies:
 

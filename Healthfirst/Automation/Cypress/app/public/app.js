@@ -90,7 +90,6 @@ function renderPlans(plans, zip) {
         <button class="button button-secondary" data-action="compare" data-plan-id="${escapeHtml(plan.id)}">Compare</button>
       </div>
     </article>`).join("")}</div>`;
-  document.querySelector('[data-cy="comparison"]').hidden = true;
 }
 
 document.addEventListener("click", async (event) => {
@@ -147,6 +146,7 @@ document.querySelector('[data-cy="plan-search-form"]').addEventListener("submit"
   const error = document.querySelector('[data-cy="plan-search-error"]');
   clearError(error);
   planResults.replaceChildren();
+  document.querySelector('[data-cy="comparison"]').hidden = true;
   if (!zip) return showError(error, "Enter a ZIP code to search.");
   if (!/^\d{5}$/.test(zip)) return showError(error, "Enter a valid five-digit ZIP code.");
   try {

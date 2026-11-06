@@ -17,7 +17,7 @@ Testing focuses on functionality, data accuracy, error handling, and consistent 
 | Manual QA Records | 50 documented test cases and QA activities, including Agile process records | 48 recorded Passed, 2 Failed |
 | Cypress | 5 spec files covering UI, API workflows, eligibility, enrollment, and error handling | 50 Passed, 0 Failed |
 | Playwright | Browser-based member portal workflows | 5 Passed, 0 Failed |
-| Postman | 7 API requests covering member, plan, eligibility, and selection workflows | 17 Assertions Passed, 0 Failed |
+| Postman | 8 API requests covering member, plan, eligibility, and selection workflows | [GitHub Actions results](https://github.com/sumaiyahhossin/QA-Engineering-Portfolio/actions/workflows/healthfirst-postman.yml) |
 | SQL Testing | 11 SQL examples covering member records, eligibility, and data validation | Documented examples |
 
 ## Project Documentation
