@@ -31,6 +31,10 @@
 
 Both failures are retained as recorded. The defect references identify the associated issues; the available execution entries do not provide detailed observed behavior or independent evidence of retesting.
 
+## Scope of recorded cases
+
+The Agile QA category includes process activities as well as regression-related checks; these are not all independent functional test executions. Two entries describe similar staging sanity-check activities (TC-HF-UAT-030 and TC-HF-AGI-050). Both original records are retained, but they should not be treated as proof of two distinct test executions without supporting run details.
+
 ## Execution record
 
 The 50 recorded outcomes span QA, Staging, and UAT environments. Detailed test steps, expected and actual results, individual execution dates, and test data are maintained in [Manual Test Cases](TEST_CASES.md). This page is the high-level execution report rather than a duplicate of the test-case catalog.
