@@ -146,9 +146,9 @@ ORDER BY eligibility_status;
 
 **Expected:** Counts match the seeded dataset. An unexpected status or count may indicate missing or incorrectly classified records.
 
-## 10. Validate coverage active on a test date
+## 10. Check whether a coverage period includes a test date
 
-Check date-range eligibility using an explicit date rather than relying on the current date.
+Check the recorded coverage date range using an explicit test date. This query checks the dates only; eligibility status and other business rules must be validated separately.
 
 ```sql
 SELECT eligibility_id, member_id, plan_id,
@@ -159,4 +159,20 @@ WHERE member_id = :test_member_id
   AND (end_date IS NULL OR end_date >= :as_of_date);
 ```
 
-**Expected:** Rows cover the supplied date. Eligibility status and other business rules must also be checked before interpreting a row as active coverage.
+**Expected:** Rows have an effective date on or before the supplied date and either no end date or an end date on or after it. This result alone does not establish that the member is eligible.
+
+
+## 11. Find eligibility records without a matching plan
+
+Check for eligibility records whose plan reference does not exist in the plan table.
+
+```sql
+SELECT e.eligibility_id, e.member_id, e.plan_id
+FROM sample_eligibility e
+LEFT JOIN sample_plans p
+  ON p.plan_id = e.plan_id
+WHERE e.plan_id IS NOT NULL
+  AND p.plan_id IS NULL;
+```
+
+**Expected:** No rows when every eligibility record references an existing plan. A returned row indicates a missing plan reference that should be checked against the test data and applicable requirements.
