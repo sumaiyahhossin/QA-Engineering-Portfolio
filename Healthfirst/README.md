@@ -26,6 +26,7 @@ This section contains QA documentation and independent portfolio examples relate
 - [Defect reports](Manual-Testing/Defect-Reports/README.md)
 - [Cypress automation demo](Automation/Cypress/README.md)
 - [Cypress test plan](Automation/Cypress/TEST_PLAN.md)
+- [Playwright automation demo](Automation/Playwright/README.md)
 - [API testing](API-Testing/README.md)
 - [API test cases](API-Testing/API-TEST-CASES.md)
 - [SQL testing](SQL-Testing/README.md)
@@ -33,6 +34,6 @@ This section contains QA documentation and independent portfolio examples relate
 
 ## Tools
 
-Cypress, JavaScript, Node.js, Postman, REST APIs, JSON, SQL, Jira, and Zephyr.
+Cypress, Playwright, JavaScript, Node.js, Postman, REST APIs, JSON, SQL, Jira, and Zephyr.
 
 The documentation and test examples in this folder are portfolio materials. They are not copies of Healthfirst's internal test cases, source code, systems, or records. The Harbor Health application in the Cypress folder is fictional and uses synthetic data.
