@@ -5,12 +5,12 @@ This section brings together manual QA documentation for member-facing healthcar
 ## Files
 
 - **Excel workbook:** The uploaded public Healthfirst manual QA workbook contains the broader test case and execution records, defect tracking, regression coverage, requirements traceability, and test-cycle information. It is a sanitized portfolio version, not an internal company export.
-- [Manual test cases](TEST_CASES.md): A workbook-aligned index of all 50 test case IDs and scenario titles across plan selection, API, UAT, SQL, and Agile QA. Full test steps and expected results remain in the Excel workbook.
-- [Execution tracking example](TEST_EXECUTION_RESULTS.md): An eight-row **Not Run** template for recording a new execution. These placeholders are separate from the completed results documented in the Excel workbook.
+- [Manual test cases](TEST_CASES.md): Detailed workbook-aligned tables for all 50 test cases, including steps, expected and recorded actual results, statuses, dates, environments, and defect references.
+- [Execution tracking example](TEST_EXECUTION_RESULTS.md): A 50-row summary of the recorded manual execution results: 48 Passed and 2 Failed, including dates, environments, and defect references.
 - [Defect reports](Defect-Reports/README.md): Defect documentation guidance and a [reusable defect report template](Defect-Reports/DEFECT-REPORT-TEMPLATE.md).
 
 ## How the materials fit together
 
-The Excel workbook demonstrates broader manual QA documentation. The Markdown test case index matches the workbook's 50 test case IDs and scenario titles. The separate eight-row execution tracker is a reusable **Not Run** example; its IDs and statuses should not be treated as the workbook's execution history. Record an actual result only after a test is performed and verified.
+The Excel workbook demonstrates broader manual QA documentation. The detailed Markdown test cases and execution-results summary reflect the same 50 recorded test cases. The results are transcribed from the portfolio workbook and have not been independently rerun against employer systems. Where specific observed behavior was not recorded, the original general wording is retained rather than inventing details.
 
 All public examples should avoid member information, credentials, private system addresses, and confidential employer records.
