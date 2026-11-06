@@ -2,7 +2,7 @@
 
 This project covers quality assurance testing for a healthcare member portal, including member eligibility, health plan search, enrollment, API functionality, and data validation.
 
-The portfolio includes manual testing documentation, automated test scripts, API testing, SQL examples, and project documentation.
+The portfolio includes manual testing records, automated test scripts, API tests, SQL validation examples, and project documentation.
 
 ## Project Overview
 
