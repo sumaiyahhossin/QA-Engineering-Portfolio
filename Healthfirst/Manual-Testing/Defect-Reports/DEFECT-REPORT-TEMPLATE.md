@@ -7,6 +7,7 @@ Use this template to document an issue reproduced during testing. Fill in the de
 | Field | Details |
 | --- | --- |
 | Defect ID | [Ticket ID] |
+| Related Test Case ID | [Test case ID associated with the defect] |
 | Summary | [Short description of the issue] |
 | Defect Type | [Functional / UI / Data / API / Performance / Security] |
 | Application / Area | [Affected page or feature] |
