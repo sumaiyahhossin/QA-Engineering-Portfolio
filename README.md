@@ -5,7 +5,7 @@ Hi, I'm Sumaiyah. This repository contains selected QA documentation and indepen
 The portfolio is organized into two sections:
 
 - **Humana** – manual testing, Selenium automation, SQL examples, and project documentation.
-- **Healthfirst** – manual testing, API and SQL examples, project documentation, and a runnable Cypress demo project.
+- **Healthfirst** – manual testing, API and SQL examples, project documentation, and runnable Cypress and Playwright demos.
 
 ## Experience
 
@@ -66,6 +66,7 @@ Quality assurance specialist with 3 years of experience in manual and automated 
 - [Defect Report Template](Healthfirst/Manual-Testing/Defect-Reports/README.md)
 - [Cypress Automation Demo](Healthfirst/Automation/Cypress/README.md)
 - [Cypress Test Plan](Healthfirst/Automation/Cypress/TEST_PLAN.md)
+- [Playwright Automation Demo](Healthfirst/Automation/Playwright/README.md)
 - [API Testing](Healthfirst/API-Testing/README.md)
 - [API Test Cases](Healthfirst/API-Testing/API-TEST-CASES.md)
 - [SQL Testing](Healthfirst/SQL-Testing/README.md)
