@@ -1,41 +1,47 @@
 # Test Strategy
 
-**Project area:** Member-facing healthcare workflows
+**Project:** Member portal and healthcare workflows  
+**Role:** Quality Assurance
 
-## Functional Testing
+## Testing Goals
 
-Cover the main member workflows, eligibility-related steps, plan browsing, plan selection, required fields, and error messages.
+Focus on member navigation, eligibility, plan information, selection workflows, validation messages, and regression coverage.
 
-## Positive and Negative Testing
+## Testing Approach
 
-Check normal user flows as well as missing information, invalid formats, unsupported values, and unsuccessful service responses.
+### Manual Testing
+- Review requirements and identify main user flows.
+- Write positive, negative, and boundary test cases.
+- Record actual results and defects.
+- Retest fixes and related workflows.
 
-## Boundary Testing
+### UI Automation
+- Use Playwright and Cypress for repeatable browser checks.
+- Focus on visible behavior and stable locators.
+- Keep tests independent and review failures and reports.
 
-Check values around documented limits, including date ranges and minimum or maximum field lengths.
+### API Testing
+- Use Postman to check methods, status codes, response fields, and error handling.
+- Validate responses against documented expectations.
 
-## UI Automation
+### Data Checks
+- Compare displayed and returned values with expected test data.
+- Use generic SQL examples without private schemas or member records.
 
-Use Playwright and Cypress for repeatable browser checks. Keep tests focused on user-visible behavior, use stable locators, and avoid depending on test execution order.
+## Test Levels
 
-## API Testing
+| Level | What I Checked |
+| --- | --- |
+| Functional | Individual features and user actions |
+| Integration | Connected steps in a workflow |
+| System | Complete flows within the test scope |
+| Smoke | Core workflows after updates |
+| Regression | Existing behavior after changes |
 
-Use Postman to check request methods, status codes, response structure, required fields, error responses, and values against the API requirements.
+## Defect Tracking
 
-## Data Validation
+Record steps to reproduce, expected and actual behavior, severity, priority, and relevant evidence. Check application, data, environment, and automation causes before logging an issue. Retest fixes and perform related regression checks.
 
-Compare application or API values with expected test data. SQL examples in this portfolio use generic table and column names.
+## Test Data and Portfolio Scope
 
-## Regression Testing
-
-After a change or defect fix, retest the affected workflow and check related areas that could be impacted.
-
-## Defect Reporting
-
-Include clear steps to reproduce, expected behavior, actual behavior, severity, priority, and relevant evidence. Retest the fix and run the related regression checks.
-
-## Test Data
-
-Use synthetic values in public examples. Do not include member information, credentials, private URLs, internal schemas, or confidential employer material.
-
-This strategy describes the approach used in the portfolio examples; it is not an internal Healthfirst document.
+Public examples use synthetic data and local demo systems. They do not contain real member information, employer credentials, private URLs, or internal Healthfirst source code.
