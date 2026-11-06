@@ -1,0 +1,30 @@
+name: Healthfirst Playwright Demo
+on:
+  push:
+    paths:
+      - 'Healthfirst/Automation/Playwright/**'
+      - '.github/workflows/healthfirst-playwright.yml'
+  pull_request:
+    paths:
+      - 'Healthfirst/Automation/Playwright/**'
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Healthfirst/Automation/Playwright
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install
+      - run: npx playwright install --with-deps chromium
+      - run: npm test
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: playwright-report
+          path: Healthfirst/Automation/Playwright/playwright-report/
+          retention-days: 7
