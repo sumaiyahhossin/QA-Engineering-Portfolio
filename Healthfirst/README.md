@@ -30,6 +30,7 @@ This section contains QA documentation and independent portfolio examples relate
 - [API testing](API-Testing/README.md)
 - [API test cases](API-Testing/API-TEST-CASES.md)
 - [Runnable Postman API automation](API-Testing/Postman/README.md)
+- [Postman CI workflow](https://github.com/sumaiyahhossin/QA-Engineering-Portfolio/actions/workflows/healthfirst-postman.yml)
 - [SQL testing](SQL-Testing/README.md)
 - [SQL examples](SQL-Testing/SQL-QUERIES.md)
 
