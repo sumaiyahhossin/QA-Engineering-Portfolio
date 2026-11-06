@@ -3,7 +3,7 @@
 **Project Name:** Healthcare Plan Browsing and Member Access  
 **50 manual test cases: 47 Passed, 3 Failed**, organized into five testing areas. Each case has a consistent field-by-field layout for easier review.
 
-These portfolio test scenarios use synthetic test data. The statuses and execution fields below are copied from the separately supplied completed Excel workbook (47 Passed, 3 Failed). They are historical workbook entries, not results of a new test run or independent verification against a live Humana system. The GitHub-hosted workbook should be checked against that completed version before treating the two files as synchronized. Many Passed entries contain the same generic actual-result wording rather than case-specific evidence; recorded dates and build versions also require source-record validation.
+These portfolio test scenarios use synthetic test data. The statuses and execution fields below are copied from the separately supplied completed Excel workbook (47 Passed, 3 Failed). They are historical workbook entries, not results of a new test run or independent verification against a live Humana system. The GitHub-hosted workbook should be checked against that completed version before treating the two files as synchronized. Many Passed entries contain the same generic actual-result wording rather than case-specific evidence; recorded execution dates require source-record validation.
 
 ## Jump to a section
 
@@ -32,7 +32,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2024-04-28 |
 | **Environment** | UAT-Staging |
-| **Build / release** | v2023.4.1 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -50,7 +49,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2024-10-17 |
 | **Environment** | QA-Regression |
-| **Build / release** | v2024.1.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -68,7 +66,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2023-11-11 |
 | **Environment** | Staging-02 |
-| **Build / release** | v2024.2.3 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -86,7 +83,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Failed |
 | **Execution date** | 2024-09-05 |
 | **Environment** | UAT-Staging |
-| **Build / release** | v2024.3.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | JIRA-HUM-7102 |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -104,7 +100,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2024-10-30 |
 | **Environment** | QA-Regression |
-| **Build / release** | v2024.4.1 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -122,7 +117,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2024-05-04 |
 | **Environment** | Staging-02 |
-| **Build / release** | v2025.1.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -140,7 +134,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2025-03-12 |
 | **Environment** | UAT-Staging |
-| **Build / release** | v2023.4.1 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -158,7 +151,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2024-10-24 |
 | **Environment** | QA-Regression |
-| **Build / release** | v2024.1.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -176,7 +168,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2024-07-19 |
 | **Environment** | Staging-02 |
-| **Build / release** | v2024.2.3 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -194,7 +185,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2024-02-22 |
 | **Environment** | UAT-Staging |
-| **Build / release** | v2024.3.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -216,7 +206,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2024-08-21 |
 | **Environment** | QA-Regression |
-| **Build / release** | v2024.4.1 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -234,7 +223,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2023-10-31 |
 | **Environment** | Staging-02 |
-| **Build / release** | v2025.1.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -252,7 +240,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2024-03-23 |
 | **Environment** | UAT-Staging |
-| **Build / release** | v2023.4.1 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -270,7 +257,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Failed |
 | **Execution date** | 2024-04-22 |
 | **Environment** | QA-Regression |
-| **Build / release** | v2024.1.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | JIRA-HUM-7441 |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -288,7 +274,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2024-08-28 |
 | **Environment** | Staging-02 |
-| **Build / release** | v2024.2.3 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -306,7 +291,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2024-02-20 |
 | **Environment** | UAT-Staging |
-| **Build / release** | v2024.3.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -324,7 +308,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2024-07-15 |
 | **Environment** | QA-Regression |
-| **Build / release** | v2024.4.1 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -342,7 +325,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2024-03-07 |
 | **Environment** | Staging-02 |
-| **Build / release** | v2025.1.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -360,7 +342,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2024-08-07 |
 | **Environment** | UAT-Staging |
-| **Build / release** | v2023.4.1 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -378,7 +359,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2023-12-27 |
 | **Environment** | QA-Regression |
-| **Build / release** | v2024.1.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -400,7 +380,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2025-02-02 |
 | **Environment** | Staging-02 |
-| **Build / release** | v2024.2.3 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -418,7 +397,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2024-07-09 |
 | **Environment** | UAT-Staging |
-| **Build / release** | v2024.3.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -436,7 +414,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2025-01-31 |
 | **Environment** | QA-Regression |
-| **Build / release** | v2024.4.1 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -454,7 +431,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Failed |
 | **Execution date** | 2024-12-17 |
 | **Environment** | Staging-02 |
-| **Build / release** | v2025.1.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | JIRA-HUM-7890 |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -472,7 +448,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2023-10-14 |
 | **Environment** | UAT-Staging |
-| **Build / release** | v2023.4.1 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -490,7 +465,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2025-03-24 |
 | **Environment** | QA-Regression |
-| **Build / release** | v2024.1.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -508,7 +482,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2024-06-07 |
 | **Environment** | Staging-02 |
-| **Build / release** | v2024.2.3 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -526,7 +499,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2024-02-04 |
 | **Environment** | UAT-Staging |
-| **Build / release** | v2024.3.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -544,7 +516,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2024-06-06 |
 | **Environment** | QA-Regression |
-| **Build / release** | v2024.4.1 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -562,7 +533,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2025-01-09 |
 | **Environment** | Staging-02 |
-| **Build / release** | v2025.1.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -584,7 +554,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2023-12-04 |
 | **Environment** | UAT-Staging |
-| **Build / release** | v2023.4.1 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -602,7 +571,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2025-03-25 |
 | **Environment** | QA-Regression |
-| **Build / release** | v2024.1.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -620,7 +588,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2024-08-31 |
 | **Environment** | Staging-02 |
-| **Build / release** | v2024.2.3 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -638,7 +605,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2024-03-17 |
 | **Environment** | UAT-Staging |
-| **Build / release** | v2024.3.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -656,7 +622,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2024-05-31 |
 | **Environment** | QA-Regression |
-| **Build / release** | v2024.4.1 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -674,7 +639,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2024-12-18 |
 | **Environment** | Staging-02 |
-| **Build / release** | v2025.1.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -692,7 +656,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2024-09-22 |
 | **Environment** | UAT-Staging |
-| **Build / release** | v2023.4.1 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -710,7 +673,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2024-03-21 |
 | **Environment** | QA-Regression |
-| **Build / release** | v2024.1.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -728,7 +690,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2024-10-24 |
 | **Environment** | Staging-02 |
-| **Build / release** | v2024.2.3 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -746,7 +707,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2024-02-20 |
 | **Environment** | UAT-Staging |
-| **Build / release** | v2024.3.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -768,7 +728,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2024-04-02 |
 | **Environment** | QA-Regression |
-| **Build / release** | v2024.4.1 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -786,7 +745,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2024-02-07 |
 | **Environment** | Staging-02 |
-| **Build / release** | v2025.1.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -804,7 +762,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2025-02-18 |
 | **Environment** | UAT-Staging |
-| **Build / release** | v2023.4.1 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -822,7 +779,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2023-12-10 |
 | **Environment** | QA-Regression |
-| **Build / release** | v2024.1.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -840,7 +796,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2024-05-04 |
 | **Environment** | Staging-02 |
-| **Build / release** | v2024.2.3 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -858,7 +813,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2024-09-06 |
 | **Environment** | UAT-Staging |
-| **Build / release** | v2024.3.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -876,7 +830,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2024-11-26 |
 | **Environment** | QA-Regression |
-| **Build / release** | v2024.4.1 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -894,7 +847,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2024-10-18 |
 | **Environment** | Staging-02 |
-| **Build / release** | v2025.1.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -912,7 +864,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2025-01-18 |
 | **Environment** | UAT-Staging |
-| **Build / release** | v2023.4.1 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
@@ -930,7 +881,6 @@ These portfolio test scenarios use synthetic test data. The statuses and executi
 | **Status** | Passed |
 | **Execution date** | 2024-07-02 |
 | **Environment** | QA-Regression |
-| **Build / release** | v2024.1.0 |
 | **Tester role** | Junior QA Analyst |
 | **Defect ID** | — |
 | **Workbook audit note** | Verified in Agile sprint cycle *(source workbook wording; not independently corroborated)* |
