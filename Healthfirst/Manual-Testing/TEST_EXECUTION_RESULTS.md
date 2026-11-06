@@ -35,4 +35,4 @@ Both failures are retained as recorded. The defect references identify the assoc
 
 The 50 recorded outcomes span QA, Staging, and UAT environments. Detailed test steps, expected and actual results, individual execution dates, and test data are maintained in [Manual Test Cases](TEST_CASES.md). This page is the high-level execution report rather than a duplicate of the test-case catalog.
 
-These are recorded manual testing outcomes, not an independently rerun test suite or a claim of access to a live Healthfirst system. The Build/Release field is omitted.
+These are recorded manual testing outcomes, not an independently rerun test suite or a claim of access to a live Healthfirst system.
