@@ -1,0 +1,11 @@
+{
+  "name": "healthcare-postman-demo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "node run-tests.js"
+  },
+  "devDependencies": {
+    "newman": "^6.2.1"
+  }
+}
