@@ -12,7 +12,6 @@ Use this template to document an issue reproduced during testing. Fill in the de
 | Defect Type | [Functional / UI / Data / API / Performance / Security] |
 | Application / Area | [Affected page or feature] |
 | Environment | [QA or staging, browser, and version] |
-| Build | [Build number, if available] |
 | Severity | [Impact of the issue] |
 | Priority | [How soon it needs to be fixed] |
 | Reported By | [Name or team] |
