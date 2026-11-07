@@ -55,6 +55,7 @@ Quality assurance specialist with 3 years of experience in manual and automated 
 
 ### Healthfirst
 
+- [Healthfirst Portfolio Overview](Healthfirst/README.md)
 - [Project Overview](Healthfirst/Project-Documentation/PROJECT_OVERVIEW.md)
 - [Test Plan](Healthfirst/Project-Documentation/TEST_PLAN.md)
 - [Test Strategy](Healthfirst/Project-Documentation/TEST_STRATEGY.md)

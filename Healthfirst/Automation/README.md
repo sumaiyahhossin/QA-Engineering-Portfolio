@@ -16,13 +16,13 @@ The Cypress project includes a local healthcare member portal demo, test fixture
 - [Verified execution results](Playwright/TEST_EXECUTION_RESULTS.md)
 - [Playwright UI test code](Playwright/tests/member-workflows.spec.js)
 
-The Playwright project uses JavaScript and a local HTML demo to test eligibility lookup, required-field validation, unknown member handling, plan filtering, and plan selection. All five tests passed in the [verified GitHub Actions run](https://github.com/sumaiyahhossin/QA-Engineering-Portfolio/actions/runs/42142787083) on November 5, 2026 (Eastern).
+The Playwright project uses JavaScript and a local HTML demo to test eligibility lookup, required-field validation, unknown member handling, plan filtering, and plan selection. All five tests passed in the [verified GitHub Actions run](https://github.com/sumaiyahhossin/QA-Engineering-Portfolio/actions/runs/42315394263).
 
 ## Postman API Automation
 
 - [Postman collection, local API, and execution instructions](../API-Testing/Postman/README.md)
 - [API testing scenarios](../API-Testing/API-TEST-CASES.md)
 
-The Postman project contains eight API requests with automated assertions and a GitHub Actions workflow. The collection uses synthetic data and a local server, not employer endpoints. See its README for the latest execution-evidence status.
+The Postman project contains eight API requests with automated assertions and a GitHub Actions workflow. The collection uses synthetic data and a local server, not employer endpoints. GitHub Actions verifies the collection against the local API.
 
 Each project has its own setup instructions and test coverage. The examples demonstrate automation practices without exposing confidential company data.

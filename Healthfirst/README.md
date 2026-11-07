@@ -1,23 +1,15 @@
 # Healthfirst QA Portfolio
 
-This project covers quality assurance testing for a healthcare member portal, including member eligibility, health plan search, enrollment, API functionality, and data validation.
-
-The portfolio includes manual testing records, automated test scripts, API tests, SQL validation examples, and project documentation.
-
-## Project Overview
-
-The application supports common healthcare workflows, allowing members to review coverage information, search available health plans, check eligibility, and complete enrollment-related actions.
-
-Testing focuses on functionality, data accuracy, error handling, and consistent application behavior.
+My QA work at Healthfirst focused on member-facing workflows such as eligibility, coverage information, plan search, and enrollment. This portfolio brings together public QA records and runnable demos built with synthetic data.
 
 ## Testing Areas
 
 | Testing Area | Coverage | Results |
 |---|---|---|
 | Manual QA Records | 50 documented test cases and QA activities, including Agile process records | 48 recorded Passed, 2 Failed |
-| Cypress | 5 spec files covering UI, API workflows, eligibility, enrollment, and error handling | 50 Passed, 0 Failed |
-| Playwright | Browser-based member portal workflows | 5 Passed, 0 Failed |
-| Postman | 8 API requests covering member, plan, eligibility, and selection workflows | [GitHub Actions results](https://github.com/sumaiyahhossin/QA-Engineering-Portfolio/actions/workflows/healthfirst-postman.yml) |
+| Cypress | 5 spec files covering UI, API workflows, eligibility, enrollment, and error handling | [50 tests passed](https://github.com/sumaiyahhossin/QA-Engineering-Portfolio/actions/workflows/healthfirst-cypress.yml) |
+| Playwright | Browser-based member portal workflows | [5 tests passed](https://github.com/sumaiyahhossin/QA-Engineering-Portfolio/actions/workflows/healthfirst-playwright.yml) |
+| Postman | 8 API requests covering member, plan, eligibility, and selection workflows | [19 assertions passed](https://github.com/sumaiyahhossin/QA-Engineering-Portfolio/actions/workflows/healthfirst-postman.yml) |
 | SQL Testing | 11 SQL examples covering member records, eligibility, and data validation | Documented examples |
 
 ## Project Documentation
@@ -32,6 +24,7 @@ Testing focuses on functionality, data accuracy, error handling, and consistent 
 
 Manual testing covers functional workflows, eligibility validation, plan search, enrollment, and application behavior.
 
+- [Excel Workbook](Manual-Testing/Healthfirst_Manual_Test_Cases.xlsx)
 - [Manual Testing Overview](Manual-Testing/README.md)
 - [Test Cases](Manual-Testing/TEST_CASES.md)
 - [Test Execution Results](Manual-Testing/TEST_EXECUTION_RESULTS.md)
@@ -91,10 +84,3 @@ Coverage includes:
 - **CI/CD:** GitHub Actions
 - **QA Management:** Jira, Zephyr
 - **Version Control:** Git, GitHub
-
-## Test Data and Privacy
-
-All public portfolio examples use synthetic test data. No real member information, credentials, confidential employer documentation, or private system information is included.
-
-Automation examples use a demo application and are intended to demonstrate QA testing approaches and technical skills.
-

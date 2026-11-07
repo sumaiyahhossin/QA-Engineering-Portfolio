@@ -20,4 +20,4 @@
 
 The GitHub Actions job completed successfully, including dependency installation, Chromium setup, test execution, and report artifact upload. See the linked workflow logs and `playwright-report` artifact for supporting evidence.
 
-These tests run against the independent healthcare demo application, not Healthfirst production systems. Results reflect the linked commit and should be rechecked after subsequent code changes.
+[Latest Playwright workflow runs](https://github.com/sumaiyahhossin/QA-Engineering-Portfolio/actions/workflows/healthfirst-playwright.yml)

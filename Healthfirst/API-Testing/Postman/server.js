@@ -1,18 +1,73 @@
 const http = require('node:http');
-const members = {'MEM-1001': {memberId:'MEM-1001',eligible:true}};
-const plans = [{id:'PLAN-101',type:'HMO',name:'Sample HMO'},{id:'PLAN-202',type:'PPO',name:'Sample PPO'}];
-const server = http.createServer((req,res)=>{
- const u = new URL(req.url,'http://localhost'); let status=200, data;
- const send=()=>{res.writeHead(status,{'Content-Type':'application/json'});res.end(JSON.stringify(data));};
- if(req.method==='GET' && u.pathname.startsWith('/members/')) {data=members[decodeURIComponent(u.pathname.slice(9))];if(!data){status=404;data={error:'Member not found'};}return send();}
- if(req.method==='GET' && u.pathname==='/plans'){data={plans:plans.filter(p=>!u.searchParams.has('type')||p.type===u.searchParams.get('type'))};return send();}
- if(req.method==='GET' && u.pathname==='/eligibility'){const id=u.searchParams.get('memberId');if(!id){status=400;data={error:'Member ID is required'};}else if(!members[id]){status=404;data={error:'Member not found'};}else{data=members[id];}return send();}
- if(req.method==='POST' && u.pathname==='/selection'){let raw='';req.on('data',c=>raw+=c);req.on('end',()=>{let payload;try{payload=JSON.parse(raw);}catch{status=400;data={error:'Invalid JSON'};return send();}if (!payload || typeof payload !== 'object' || Array.isArray(payload)) {
-  status = 400;
-  data = {error: 'Request body must be a JSON object'};
-  return send();
- }
- if(!plans.some(p=>p.id===payload.planId)){status=400;data={error:'Unknown plan'};}else{data={selected:payload.planId};}send();});return;}
- status=404;data={error:'Route not found'};send();
+
+const members = new Map([
+  ['MEM-1001', { memberId: 'MEM-1001', eligible: true }],
+]);
+const plans = [
+  { id: 'PLAN-101', type: 'HMO', name: 'Sample HMO' },
+  { id: 'PLAN-202', type: 'PPO', name: 'Sample PPO' },
+];
+
+function sendJson(response, status, body) {
+  response.writeHead(status, { 'Content-Type': 'application/json' });
+  response.end(JSON.stringify(body));
+}
+
+function sendMember(response, memberId) {
+  const member = members.get(memberId);
+  return member
+    ? sendJson(response, 200, member)
+    : sendJson(response, 404, { error: 'Member not found' });
+}
+
+async function selectPlan(request, response) {
+  let payload;
+  try {
+    request.setEncoding('utf8');
+    let raw = '';
+    for await (const chunk of request) raw += chunk;
+    payload = JSON.parse(raw);
+  } catch {
+    return sendJson(response, 400, { error: 'Invalid JSON' });
+  }
+
+  if (!payload || typeof payload !== 'object' || Array.isArray(payload)) {
+    return sendJson(response, 400, { error: 'Request body must be a JSON object' });
+  }
+  if (!plans.some((plan) => plan.id === payload.planId)) {
+    return sendJson(response, 400, { error: 'Unknown plan' });
+  }
+  return sendJson(response, 200, { selected: payload.planId });
+}
+
+const server = http.createServer((request, response) => {
+  const { pathname, searchParams } = new URL(request.url, 'http://localhost');
+
+  if (request.method === 'GET' && pathname.startsWith('/members/')) {
+    let memberId;
+    try {
+      memberId = decodeURIComponent(pathname.slice('/members/'.length));
+    } catch {
+      return sendJson(response, 400, { error: 'Invalid member ID' });
+    }
+    return sendMember(response, memberId);
+  }
+  if (request.method === 'GET' && pathname === '/plans') {
+    const type = searchParams.get('type');
+    const results = type === null ? plans : plans.filter((plan) => plan.type === type);
+    return sendJson(response, 200, { plans: results });
+  }
+  if (request.method === 'GET' && pathname === '/eligibility') {
+    const memberId = searchParams.get('memberId');
+    if (!memberId) return sendJson(response, 400, { error: 'Member ID is required' });
+    return sendMember(response, memberId);
+  }
+  if (request.method === 'POST' && pathname === '/selection') {
+    return selectPlan(request, response);
+  }
+  return sendJson(response, 404, { error: 'Route not found' });
 });
-server.listen(3100,'127.0.0.1',()=>console.log('Demo API listening on 127.0.0.1:3100'));
+
+server.listen(3100, '127.0.0.1', () => {
+  console.log('Demo API listening on http://127.0.0.1:3100');
+});

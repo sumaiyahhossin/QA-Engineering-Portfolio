@@ -29,4 +29,4 @@ The examples are generic. They do not include Healthfirst endpoints, credentials
 
 ## Runnable Postman API Automation
 
-The [Postman automation project](Postman/README.md) includes an importable collection, eight automated API requests with assertions, a local synthetic-data server, and a GitHub Actions workflow. Run it with `npm install` and `npm test` from the `Postman` folder. The [30 documented API scenarios](API-TEST-CASES.md) cover a broader set of workflows than the runnable demo. See the [GitHub Actions runs](https://github.com/sumaiyahhossin/QA-Engineering-Portfolio/actions/workflows/healthfirst-postman.yml) for execution results.
+The [Postman automation project](Postman/README.md) includes an importable collection, eight automated API requests with assertions, a local synthetic-data server, and a GitHub Actions workflow. Run it with `npm ci` and `npm test` from the `Postman` folder. The [30 documented API scenarios](API-TEST-CASES.md) cover a broader set of workflows than the runnable demo. See the [GitHub Actions runs](https://github.com/sumaiyahhossin/QA-Engineering-Portfolio/actions/workflows/healthfirst-postman.yml) for execution results.

@@ -4,6 +4,7 @@ const planResults = document.querySelector('[data-cy="plan-results"]');
 const eligibilityResults = document.querySelector('[data-cy="eligibility-results"]');
 const planChoice = document.querySelector('[data-cy="enrollment-plan"]');
 let availablePlans = [];
+let planSearchController;
 let enrollmentPlansLoaded = false;
 let enrollmentPlansLoading = false;
 
@@ -144,18 +145,22 @@ document.querySelector('[data-cy="plan-search-form"]').addEventListener("submit"
   event.preventDefault();
   const zip = document.querySelector('[data-cy="plan-zip"]').value.trim();
   const error = document.querySelector('[data-cy="plan-search-error"]');
+  planSearchController?.abort();
   clearError(error);
   planResults.replaceChildren();
   document.querySelector('[data-cy="comparison"]').hidden = true;
   if (!zip) return showError(error, "Enter a ZIP code to search.");
   if (!/^\d{5}$/.test(zip)) return showError(error, "Enter a valid five-digit ZIP code.");
+  const controller = new AbortController();
+  planSearchController = controller;
   try {
-    const response = await fetch(`/api/plans?zip=${encodeURIComponent(zip)}`);
+    const response = await fetch(`/api/plans?zip=${encodeURIComponent(zip)}`, { signal: controller.signal });
     const body = await response.json();
     if (!response.ok) throw new Error(body.error || "Plan search is unavailable. Try again.");
     if (!body || !Array.isArray(body.plans)) throw new Error("We couldn't read the plan results. Try again.");
-    renderPlans(body.plans, body.zip);
+    if (!controller.signal.aborted) renderPlans(body.plans, body.zip);
   } catch (requestError) {
+    if (controller.signal.aborted) return;
     showError(error, requestErrorMessage(requestError, "Plan search is unavailable. Try again."));
   }
 });

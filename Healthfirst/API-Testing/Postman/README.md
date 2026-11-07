@@ -7,7 +7,7 @@ This independent healthcare API demo uses a local Node.js server and synthetic m
 Requires Node.js 20 or later.
 
 ```bash
-npm install
+npm ci
 npm test
 ```
 
@@ -21,4 +21,4 @@ The [collection](Healthcare_API.postman_collection.json) can also be imported in
 
 ## Test Results
 
-[View the GitHub Actions workflow and its runs](https://github.com/sumaiyahhossin/QA-Engineering-Portfolio/actions/workflows/healthfirst-postman.yml).
+[GitHub Actions](https://github.com/sumaiyahhossin/QA-Engineering-Portfolio/actions/runs/42315394212) completed all eight requests with 19 passing assertions.
