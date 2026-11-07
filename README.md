@@ -1,6 +1,6 @@
 # QA Engineering Portfolio
 
-Hi, I'm Sumaiyah. This repository contains selected QA documentation and independent testing examples based on healthcare and insurance workflows.
+Hi, I'm Sumaiyah. I put this portfolio together to show how I approach QA work, from writing test cases and checking data to automating repeatable tests. The examples use healthcare and insurance workflows.
 
 The portfolio is organized into two sections:
 
@@ -12,16 +12,16 @@ The portfolio is organized into two sections:
 ### Healthfirst
 **May 2025 – Present**
 
-Work includes testing member-facing healthcare workflows, eligibility-related processes, and health plan selection, along with manual and automated testing, API checks, and data validation.
+I test member eligibility and plan selection workflows, check API responses, and validate data. I also run regression tests when changes affect member-facing features.
 
 ### Humana
 **Junior QA Analyst | October 2023 – March 2025**
 
-Tested healthcare plan browsing and member-facing workflows. Work included manual test cases, selected Java and Selenium automation, SQL data review, and issue tracking with Jira and Zephyr.
+I tested plan search, coverage details, and sign-in. I wrote manual test cases, automated selected checks with Java and Selenium, reviewed test data with SQL, and tracked defects in Jira and Zephyr.
 
 ## About Me
 
-Quality assurance specialist with 3 years of experience in manual and automated testing of healthcare and insurance applications. Skilled in test design, eligibility-based workflows, defect analysis, and reliable software releases.
+I have 3 years of QA experience testing healthcare and insurance applications. My work includes manual and regression testing, browser automation, API checks, SQL validation, and documenting defects so they can be reproduced and retested.
 
 ## Technical Skills
 
