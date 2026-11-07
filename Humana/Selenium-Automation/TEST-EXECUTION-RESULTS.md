@@ -1,18 +1,17 @@
 # Selenium Test Execution Results
 
-The Selenium suite runs against local HTML pages in `src/test/resources/fixtures`. It does not connect to Humana systems or use real member information.
+The [Humana Selenium GitHub Actions workflow](https://github.com/sumaiyahhossin/QA-Engineering-Portfolio/actions/workflows/humana-selenium.yml) runs the Java 17 and TestNG suite in headless Chrome against local HTML fixtures with synthetic test data.
 
-## Recording a Test Run
+## Verified execution
 
-After a completed local or GitHub Actions run, record:
+[GitHub Actions run #56](https://github.com/sumaiyahhossin/QA-Engineering-Portfolio/actions/runs/42131063764) completed successfully with **9 tests passed, 0 failed, 0 errors, and 0 skipped**.
 
-- Execution date
-- Run type (local or GitHub Actions)
-- Workflow run link, if applicable
-- Total tests, passed, failed, skipped, and errors
-- Build result
-- Relevant failure details
+| Test class | Coverage | Tests |
+| --- | --- | ---: |
+| `Test01_LoginTest` | Sign-in page and valid credentials | 2 |
+| `Test02_InvalidLoginTest` | Invalid credentials and required fields | 2 |
+| `Test03_PlanSearchTest` | Page load, ZIP entry, search submission, and results | 4 |
+| `Test04_PlanDetailsTest` | Plan details opened from search results | 1 |
+| **Total** | | **9** |
 
-Use the Maven Surefire reports under `target/surefire-reports` to confirm local test counts and outcomes. For GitHub Actions, use the summary and logs from the specific completed workflow run.
-
-Only add execution counts and a run link after checking the corresponding report. Keep results from separate runs clearly identified.
+Local Maven runs write detailed results to `target/surefire-reports/`.
