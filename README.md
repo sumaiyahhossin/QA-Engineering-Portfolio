@@ -4,20 +4,20 @@ Hi, I'm Sumaiyah. This repository contains selected QA documentation and indepen
 
 The portfolio is organized into two sections:
 
-- **Humana** – manual testing, Selenium automation, SQL examples, and project documentation.
 - **Healthfirst** – manual testing, API and SQL examples, project documentation, and runnable Cypress and Playwright demos.
+- **Humana** – manual testing, Selenium automation, SQL examples, and project documentation.
 
 ## Experience
-
-### Humana
-**Junior QA Analyst | October 2023 – March 2025**
-
-Tested healthcare plan browsing and member-facing workflows. Work included manual test cases, selected Java and Selenium automation, SQL data review, and issue tracking with Jira and Zephyr.
 
 ### Healthfirst
 **May 2025 – Present**
 
 Work includes testing member-facing healthcare workflows, eligibility-related processes, and health plan selection, along with manual and automated testing, API checks, and data validation.
+
+### Humana
+**Junior QA Analyst | October 2023 – March 2025**
+
+Tested healthcare plan browsing and member-facing workflows. Work included manual test cases, selected Java and Selenium automation, SQL data review, and issue tracking with Jira and Zephyr.
 
 ## About Me
 
@@ -38,21 +38,6 @@ Quality assurance specialist with 3 years of experience in manual and automated 
 
 ## Portfolio
 
-### Humana
-
-- [Project Overview](Humana/Project-Documentation/PROJECT_OVERVIEW.md)
-- [Test Plan](Humana/Project-Documentation/TEST_PLAN.md)
-- [Test Strategy](Humana/Project-Documentation/TEST_STRATEGY.md)
-- [Test Environment](Humana/Project-Documentation/TEST_ENVIRONMENT.md)
-- [Test Scenarios](Humana/Project-Documentation/TEST_SCENARIOS.md)
-- [Manual Testing](Humana/Manual-Testing/README.md)
-- [Manual Test Cases](Humana/Manual-Testing/TEST_CASES.md)
-- [Execution Results](Humana/Manual-Testing/TEST_EXECUTION_RESULTS.md)
-- [Defect Report Template](Humana/Manual-Testing/Defect-Reports/README.md)
-- [Selenium Automation](Humana/Selenium-Automation/README.md)
-- [Selenium Results](Humana/Selenium-Automation/TEST-EXECUTION-RESULTS.md)
-- [SQL Testing](Humana/SQL-Testing/README.md)
-
 ### Healthfirst
 
 - [Healthfirst Portfolio Overview](Healthfirst/README.md)
@@ -72,6 +57,21 @@ Quality assurance specialist with 3 years of experience in manual and automated 
 - [API Test Cases](Healthfirst/API-Testing/API-TEST-CASES.md)
 - [SQL Testing](Healthfirst/SQL-Testing/README.md)
 - [SQL Examples](Healthfirst/SQL-Testing/SQL-QUERIES.md)
+
+### Humana
+
+- [Project Overview](Humana/Project-Documentation/PROJECT_OVERVIEW.md)
+- [Test Plan](Humana/Project-Documentation/TEST_PLAN.md)
+- [Test Strategy](Humana/Project-Documentation/TEST_STRATEGY.md)
+- [Test Environment](Humana/Project-Documentation/TEST_ENVIRONMENT.md)
+- [Test Scenarios](Humana/Project-Documentation/TEST_SCENARIOS.md)
+- [Manual Testing](Humana/Manual-Testing/README.md)
+- [Manual Test Cases](Humana/Manual-Testing/TEST_CASES.md)
+- [Execution Results](Humana/Manual-Testing/TEST_EXECUTION_RESULTS.md)
+- [Defect Report Template](Humana/Manual-Testing/Defect-Reports/README.md)
+- [Selenium Automation](Humana/Selenium-Automation/README.md)
+- [Selenium Results](Humana/Selenium-Automation/TEST-EXECUTION-RESULTS.md)
+- [SQL Testing](Humana/SQL-Testing/README.md)
 
 ## Portfolio Notes
 
