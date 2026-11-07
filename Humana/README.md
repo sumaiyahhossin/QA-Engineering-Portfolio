@@ -43,7 +43,7 @@ Tested healthcare plan browsing and member-facing workflows. My work included wr
 ## Automation
 
 - [Selenium Automation](Selenium-Automation/README.md)
-- [Selenium Test Scripts](Selenium-Automation/Test-Scripts/README.md)
+- [Selenium Test Scripts](Selenium-Automation/src/test/java/com/humana/portal/tests/)
 - [Selenium Execution Results](Selenium-Automation/TEST-EXECUTION-RESULTS.md)
 
 ## SQL Testing
