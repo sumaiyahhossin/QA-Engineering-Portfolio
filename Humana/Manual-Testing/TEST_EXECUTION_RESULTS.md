@@ -19,7 +19,7 @@ The [Excel workbook](Humana_Manual_Test_Cases.xlsx) records 50 QA entries from O
 | TC-COV-014 | Coverage page exposed raw Java stack trace error text instead of a graceful message. | JIRA-HUM-7441 |
 | TC-ENROLL-024 | Phone format validation failed to restrict unaccepted characters. | JIRA-HUM-7890 |
 
-[View the full case catalog](TEST_CASES.md).
+[Full case catalog](TEST_CASES.md) · [Defect log](Defect-Reports/README.md)
 
 ## Status definitions
 

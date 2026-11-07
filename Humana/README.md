@@ -35,6 +35,7 @@ Tested healthcare plan browsing and member-facing workflows. My work included wr
 
 ## Manual Testing
 
+- [Excel Workbook](Manual-Testing/Humana_Manual_Test_Cases.xlsx)
 - [Manual Testing Overview](Manual-Testing/README.md)
 - [Manual Test Cases](Manual-Testing/TEST_CASES.md)
 - [Execution Results and Status Definitions](Manual-Testing/TEST_EXECUTION_RESULTS.md)
@@ -49,6 +50,7 @@ Tested healthcare plan browsing and member-facing workflows. My work included wr
 ## SQL Testing
 
 - [SQL Testing](SQL-Testing/README.md)
+- [SQL Queries](SQL-Testing/SQL-QUERIES.md)
 
 ## Portfolio & Data Notes
 

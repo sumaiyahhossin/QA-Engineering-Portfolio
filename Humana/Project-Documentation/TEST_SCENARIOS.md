@@ -9,15 +9,16 @@ This document lists the main workflows covered by the manual test cases and sele
 
 | Scenario ID | Area | Scenario | Coverage |
 | --- | --- | --- | --- |
-| TS-BROWSE-001 | Plan Search | Plan search page loads | Manual |
-| TS-BROWSE-002 | Plan Search | ZIP code entry and validation | Manual / Automated |
+| TS-BROWSE-001 | Plan Search | Plan search page loads | Manual / Automated |
+| TS-BROWSE-002 | Plan Search | Enter a five-digit ZIP code | Manual / Automated |
+| TS-BROWSE-006 | Plan Search | Validate invalid ZIP input and empty results | Manual |
 | TS-BROWSE-003 | Plan Search | Submit a plan search | Manual / Automated |
 | TS-BROWSE-004 | Plan Search | Review search results | Manual / Automated |
 | TS-BROWSE-005 | Plan Details | Open plan details from results | Manual / Automated |
 | TS-NAV-006 | Sign-In | Sign-in page loads | Manual / Automated |
 | TS-NAV-007 | Sign-In | Invalid credentials show an error | Manual / Automated |
 | TS-NAV-008 | Sign-In | Blank fields are validated | Manual / Automated |
-| TS-NAV-009 | Sign-In | Enter valid-format test values | Manual |
+| TS-NAV-009 | Sign-In | Submit valid synthetic credentials and see a success message | Manual / Automated |
 | TS-SANITY-010 | Regression | Recheck key workflows after a change | Manual / Automated |
 
 ## What to Check
@@ -42,4 +43,4 @@ This document lists the main workflows covered by the manual test cases and sele
 
 ## Test Data and Execution
 
-The manual test cases and the Humana_Manual_Test_Cases.xlsx workbook contain the detailed steps and expected results. The Selenium checks in this repository run against local HTML fixtures with synthetic values.
+The [manual case catalog](../Manual-Testing/TEST_CASES.md) and [Excel workbook](../Manual-Testing/Humana_Manual_Test_Cases.xlsx) include detailed steps and expected results. The [Selenium suite](../Selenium-Automation/README.md) runs against local HTML fixtures with synthetic values.

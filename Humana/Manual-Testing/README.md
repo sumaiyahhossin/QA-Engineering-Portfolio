@@ -4,10 +4,10 @@ This folder contains manual test cases and an Excel workbook for organizing test
 
 ## Files
 
-- [TEST_CASES.md](TEST_CASES.md) — 50 test cases with steps and expected results.
+- [TEST_CASES.md](TEST_CASES.md) — 50 QA records covering test cases and Agile QA activities.
 - [Humana_Manual_Test_Cases.xlsx](Humana_Manual_Test_Cases.xlsx) — Spreadsheet version of the test cases with execution tracking.
 - [TEST_EXECUTION_RESULTS.md](TEST_EXECUTION_RESULTS.md) — Status definitions and execution tracking details.
-- [Defect-Reports/](Defect-Reports/README.md) — Defect report template.
+- [Defect-Reports/](Defect-Reports/README.md) — Recorded defects and a report template.
 
 ## Coverage
 

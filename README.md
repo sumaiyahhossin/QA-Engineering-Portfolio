@@ -60,6 +60,7 @@ Quality assurance specialist with 3 years of experience in manual and automated 
 
 ### Humana
 
+- [Humana Portfolio Overview](Humana/README.md)
 - [Project Overview](Humana/Project-Documentation/PROJECT_OVERVIEW.md)
 - [Test Plan](Humana/Project-Documentation/TEST_PLAN.md)
 - [Test Strategy](Humana/Project-Documentation/TEST_STRATEGY.md)

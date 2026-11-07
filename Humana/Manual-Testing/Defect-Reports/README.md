@@ -1,7 +1,13 @@
 # Defect Reports
 
-This folder contains the format I use to document issues found during testing.
+These three failures are recorded in the [Excel workbook](../Humana_Manual_Test_Cases.xlsx).
 
-- [DEFECT-REPORT-TEMPLATE.md](DEFECT-REPORT-TEMPLATE.md) — A blank template with fields for issue summaries, preconditions, reproduction steps, expected vs. actual outcomes, evidence, and retest tracking.
+| Defect | Test case | Expected behavior | Recorded behavior | Severity | Recorded status |
+| --- | --- | --- | --- | --- | --- |
+| JIRA-HUM-7102 | TC-BROWSE-004 | Show a clear no-results message. | The page showed an indefinite loading indicator. | Medium | Closed |
+| JIRA-HUM-7441 | TC-COV-014 | Show a user-friendly message for a member without assigned coverage. | The coverage page exposed a Java stack trace. | High | Closed |
+| JIRA-HUM-7890 | TC-ENROLL-024 | Reject invalid phone characters or show a validation message. | The form allowed invalid characters. | High | Closed |
 
-A good report should make it easy for anyone to reproduce the issue. Clearly outline what you did, what should happen, and what actually occurred. Only attach screenshots or logs when using sanitized, non-sensitive test data.
+Closure status comes from the workbook. Public records contain no retest details.
+
+[Defect report template](DEFECT-REPORT-TEMPLATE.md)

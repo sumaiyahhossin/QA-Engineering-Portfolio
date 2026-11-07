@@ -2,6 +2,8 @@
 
 This folder contains SQL examples for data validation related to member and coverage workflows.
 
+[View the five SQL queries and expected results](SQL-QUERIES.md).
+
 ## Queries Included
 
 - Find a member test record and check its status.
