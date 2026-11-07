@@ -1,6 +1,6 @@
 # Healthfirst QA Portfolio
 
-My QA work at Healthfirst focused on member-facing workflows such as eligibility, coverage information, plan search, and enrollment. This portfolio brings together public QA records and runnable demos built with synthetic data.
+At Healthfirst, I test member-facing workflows including eligibility, coverage information, plan search, and enrollment. This section shows how I document test cases and defects, along with separate runnable demos using synthetic data.
 
 ## Testing Areas
 
