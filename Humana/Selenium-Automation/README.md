@@ -38,6 +38,6 @@ mvn clean test
 
 Maven runs the TestNG suite configured in `testng.xml`. Test results are written to the Maven Surefire reports under `target/surefire-reports`.
 
-## Test Data
+## Test Results
 
-The local pages use synthetic test values. Do not add real member information, credentials, internal URLs, or confidential employer details to the repository.
+[GitHub Actions](https://github.com/sumaiyahhossin/QA-Engineering-Portfolio/actions/workflows/humana-selenium.yml) runs the suite in headless Chrome with Java 17. See the [execution report](TEST-EXECUTION-RESULTS.md) for the verified totals.
