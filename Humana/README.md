@@ -5,7 +5,7 @@
 ![Selenium](https://img.shields.io/badge/Selenium-4.27.0-green)
 ![TestNG](https://img.shields.io/badge/TestNG-7.10.2-red)
 
-This section contains my Humana QA experience and independent portfolio examples covering healthcare plan browsing and member workflows.
+This section covers the plan search, coverage, and sign-in workflows I tested at Humana. I also included independent test cases, SQL examples, and Selenium demos to show the testing approach.
 
 ## Experience
 
