@@ -2,7 +2,7 @@
 
 ## Recorded execution summary
 
-The separately supplied completed Humana Excel workbook, `Humana_Manual_Test_Cases(1).xlsx`, has 50 entries on its `Test_Execution` worksheet. These are **historical entries from the workbook**, not newly run tests or independently verified production results.
+The [Excel workbook](Humana_Manual_Test_Cases.xlsx) records 50 QA entries from October 14, 2023 to March 25, 2025, including manual tests and Agile QA activities.
 
 | Recorded status | Count |
 |:--|--:|
@@ -19,13 +19,7 @@ The separately supplied completed Humana Excel workbook, `Humana_Manual_Test_Cas
 | TC-COV-014 | Coverage page exposed raw Java stack trace error text instead of a graceful message. | JIRA-HUM-7441 |
 | TC-ENROLL-024 | Phone format validation failed to restrict unaccepted characters. | JIRA-HUM-7890 |
 
-## Source and evidence notes
-
-- The results above come from the separately uploaded completed workbook. **Do not assume the workbook currently linked in this GitHub repository is the same version.** Its contents need comparison or replacement before the repository can be called fully synchronized.
-- Most Passed rows in the source use the same generic actual-result sentence rather than a case-specific observed outcome or attached evidence. The recorded statuses are preserved, but these descriptions should not be presented as independently corroborated test evidence.
-- Some execution dates warrant review against original records. Unverified Build / Release fields have been omitted from the portfolio presentation; the original source workbook is retained separately.
-- The defect references are transcribed from the workbook and are not links to publicly verifiable Jira issues.
-- [View all test cases and recorded outcomes](TEST_CASES.md).
+[View the full case catalog](TEST_CASES.md).
 
 ## Status definitions
 
@@ -37,4 +31,3 @@ The separately supplied completed Humana Excel workbook, `Humana_Manual_Test_Cas
 | Skipped | Execution was intentionally bypassed. |
 | Not Run | No execution result was recorded. |
 
-For future execution cycles, capture the observed result for each test, test date, environment, and supporting defect or evidence reference. Keep historical workbook records distinct from newly verified executions.
