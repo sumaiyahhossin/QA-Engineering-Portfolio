@@ -1,6 +1,6 @@
 # Healthfirst — Test Execution Results
 
-Recorded execution dates: **May 26, 2025 – October 27, 2026**, matching the updated manual testing spreadsheet. Entries are presented by functional area in the test-case catalog and by execution date in the spreadsheet.
+The records span **May 26, 2025 through October 27, 2026**. This is the earliest-to-latest date range, not a continuous daily testing period. The two failed cases below were recorded on **February 9, 2026** and **May 1, 2026**; both fall within that range. The [test-case catalog](TEST_CASES.md) groups cases by testing area, while the [Excel workbook](Healthfirst_Manual_Test_Cases.xlsx) contains individual execution dates.
 
 ## Execution summary
 
